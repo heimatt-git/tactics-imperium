@@ -1,30 +1,21 @@
-# TACTICS: Imperium — modèle vierge d'army builder de fan
+# TACTICS: Imperium
 
-Modèle figé pour créer un army builder (listes d'armée avec budget de points) pour un jeu de figurines. **Ne pas modifier ce modèle** : on en fait une copie pour chaque nouveau jeu.
+Army builder (constructeur de listes d'armée) **gratuit, de fan et non officiel** pour Warhammer 40,000, fondé sur les règles de fans « Dust Imperium » (Ork, Space Marines, Astra Militarum, Chevaliers Impériaux, Chaos Space Marines).
 
-Contenu : builder complet, Shot Format (parties courtes), atelier de créations de la communauté (CONFIDENTIAL), éditeur de base avec publication sur GitHub, cartes générées, export PDF/PNG, français/anglais, site installable sur téléphone, collection personnelle, aide.
+Ce site n'est pas affilié à Games Workshop. Warhammer 40,000 et ses marques appartiennent à leurs ayants droit. Aucun logo ni emblème officiel n'est utilisé ; les textes de compétences sont reformulés. Les photos viennent de fans et restent la propriété de leurs auteurs.
 
-Les données (`data/`) sont **fictives** : 4 unités, 3 blocs, 1 peloton, 4 compétences. Elles servent à tester.
+## Contenu
 
-## Créer un nouveau jeu à partir du modèle
+Builder de listes, cartes d'unités générées, export PDF/PNG, collection personnelle, Shot Format (parties courtes), atelier de créations, éditeur de base, français/anglais, deux thèmes (acier et rouge sang, machine antique), site installable sur téléphone.
 
-1. Copier tout le dossier du modèle dans un nouveau dossier (et, plus tard, dans un nouveau dépôt GitHub).
-2. Dans ce nouveau dossier, lancer une seule fois : `node scripts/new-game.mjs "Nom du jeu" identifiantcourt`. Cela remplace « TACTICS: Imperium » par « TACTICS: Imperium Nom du jeu » et « imperium » par l'identifiant dans tous les fichiers (titres, clés de stockage du navigateur, nom du site installable).
-3. Remplacer les données de `data/` : `units.json`, `blocs.json`, `skills.json`, `skills.fr.json` (puis `short-format.json` si le Shot Format est utilisé).
-4. Remplacer `img/bandeau.png` (bannière des cartes) et les icônes `img/icon-*.png`, `img/apple-touch-icon.png`. Ne pas reprendre d'illustrations ni de logos officiels.
-5. Lancer `node scripts/validate.mjs` (vérification de la base) puis `node scripts/bump-version.mjs` (anti-cache). Voir un site en local : `python3 -m http.server 8000`.
-6. Mettre en ligne sur GitHub Pages (dépôt public, Settings → Pages → branche `main` / racine).
+## Corriger une erreur
 
-## Ce qui est propre au jeu d'origine et à adapter
+Ouvrez un ticket sur le dépôt GitHub (Issues) : « Signaler une erreur d'unité » ou « Proposer une photo ».
 
-- `js/rules.js` : règles de construction (limite de points, bonus héros de 10 %, part de faction de 75 %, mercenaires, véhicule capturé, pilotes, commissaires, pelotons). Ce sont celles du jeu d'origine : à adapter ou simplifier selon le nouveau jeu.
-- `js/dice.js` et `js/data.js` : symboles d'attaque et types d'unités (infanterie, véhicule, héros, aéronef, objet).
-- `data/short-format.json` : réglages du Shot Format (budget, interdits, rappels). Le lien Discord y est un exemple.
-- `js/atelier.js` : salon Discord d'envoi des créations (constantes `DISCORD` et `CHANNEL`).
-- Textes d'aide (`js/aide.js`) et traductions (`js/i18n.js`).
+## Pour les mainteneurs
 
-## Éditeur de base
-
-L'éditeur de base (page `editeur-2k26hdl.html`, adresse à garder privée et à renommer pour chaque jeu) publie sur GitHub avec un jeton personnel qui reste dans le navigateur. **Règle importante :** fermer l'éditeur avant de déposer à la main des fichiers dans `data/` : il republie sa copie en mémoire et écraserait le dépôt.
-
-Outil de fan non officiel et gratuit. Aucune donnée, image ou marque officielle n'est incluse dans ce modèle.
+- `node scripts/validate.mjs` : vérifie la base de données (`data/`).
+- `node scripts/bump-version.mjs` : change la version anti-cache.
+- Voir le site en local : `python3 -m http.server 8000`.
+- L'éditeur de base (`editeur-2k26hdl.html`) publie sur GitHub avec un jeton personnel qui reste dans le navigateur. Fermez-le avant de déposer des fichiers à la main dans `data/`.
+- `js/rules.js` contient encore les règles de construction d'origine : à adapter.
