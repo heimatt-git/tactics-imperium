@@ -155,7 +155,7 @@ const EN = {
   "Changer de thème": "Change theme",
   "Outil communautaire · base {v}": "Community tool · database {v}",
   "Levez votre armée": "Raise your army",
-  "Choisissez un bloc et un format, puis composez vos pelotons. Les points, le bonus de faction et les héros sont vérifiés en direct. {u} unités et {p} pelotons disponibles.": "Pick a bloc and a format, then build your platoons. Points, faction bonus and heroes are checked live. {u} units and {p} platoons available.",
+  "Choisissez un bloc et un format, puis composez vos pelotons. Les points et les héros sont vérifiés en direct. {u} unités et {p} pelotons disponibles.": "Pick a bloc and a format, then build your platoons. Points and heroes are checked live. {u} units and {p} platoons available.",
   "Nom": "Name",
   "Ex. Mon équipe": "e.g. My team",
   "{n} unités": "{n} units",

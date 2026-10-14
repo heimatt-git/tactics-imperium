@@ -31,7 +31,7 @@ export function analyzeArmy(list, data) {
   const errors = [];
   const warnings = [];
   const limit = Math.max(0, Number(list.limit) || 0);
-  const pool = Math.floor(limit * BONUS_RATE);
+  const pool = 0;
   const rows = list.entries
     .map((e) => { const u = data.unitsById.get(e.u); return { e, u, fac: u?.faction || null, cost: entryCost(e, data), cat: entryCategory(e, list, data) }; })
     .filter((r) => {
@@ -108,54 +108,13 @@ export function analyzeArmy(list, data) {
     }
   }
 
-  // --- Type d'armée et bonus héros
+  // Pas de bonus de faction ni de bonus de héros dans ce jeu : le coût compté est le coût réel.
   const factions = new Set(rows.filter((r) => r.cat === 'faction').map((r) => r.fac));
-  let kind = 'none';
-  let kindLabel = t('Aucun bonus');
-  let covered = 0;
-  let share = 0;
-  let reason = '';
-
-  const cover = (eligibleRows) => {
-    let left = pool;
-    let c = 0;
-    const coveredBy = { bloc: 0, faction: 0 };
-    for (const r of eligibleRows) {
-      if (left <= 0) break;
-      const use = Math.min(left, r.cost);
-      left -= use; c += use;
-      coveredBy[r.cat === 'faction' ? 'faction' : 'bloc'] += use;
-    }
-    return { c, coveredBy };
-  };
-
-  if (list.bloc === MERC) {
-    const allMerc = rows.every((r) => r.cat === 'bloc' || r.cat === 'captured');
-    if (rows.length && allMerc) {
-      const { c } = cover(rows.filter((r) => r.u.type === 'hero' && r.cat === 'bloc'));
-      covered = c; kind = 'merc'; kindLabel = t('Armée mercenaire'); share = 1;
-    }
-  } else if (factions.size > 1) {
-    reason = t('Plusieurs factions présentes ({list}) : pas de bonus.', { list: [...factions].map((f) => factionName(f, data)).join(', ') });
-  } else if (factions.size === 1) {
-    const F = [...factions][0];
-    const heroes = rows.filter((r) => r.u.type === 'hero' && (r.cat === 'bloc' || (r.cat === 'faction' && r.fac === F)));
-    heroes.sort((a, b) => (a.cat === 'bloc' ? -1 : 1) - (b.cat === 'bloc' ? -1 : 1));
-    const { c, coveredBy } = cover(heroes);
-    const fPts = rows.filter((r) => r.cat === 'faction').reduce((s, r) => s + r.cost, 0) - coveredBy.faction;
-    const base = total - c;
-    share = base > 0 ? fPts / base : 0;
-    if (share >= FACTION_SHARE) { kind = 'faction'; kindLabel = t('Armée de faction {f}', { f: factionName(F, data) }); covered = c; }
-    else reason = t('Faction {f} : {p} % des points (75 % requis pour le bonus).', { f: factionName(F, data), p: Math.round(share * 100) });
-  } else {
-    const heroes = rows.filter((r) => r.u.type === 'hero' && r.cat === 'bloc');
-    const { c } = cover(heroes);
-    const bPts = rows.filter((r) => r.cat === 'bloc').reduce((s, r) => s + r.cost, 0) - c;
-    const base = total - c;
-    share = base > 0 ? bPts / base : 0;
-    if (rows.length && share >= FACTION_SHARE) { kind = 'bloc'; kindLabel = t('Armée de bloc {b}', { b: blocName(list.bloc, data) }); covered = c; }
-    else if (rows.length) reason = t('Unités du bloc : {p} % des points (75 % requis pour le bonus).', { p: Math.round(share * 100) });
-  }
+  const kind = 'none';
+  const kindLabel = '';
+  const covered = 0;
+  const share = 0;
+  const reason = '';
 
   const counted = total - covered;
   if (counted > limit) errors.push(t('Limite dépassée : {c} pts comptés pour {l} pts autorisés.', { c: counted, l: limit }));

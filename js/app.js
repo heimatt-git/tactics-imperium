@@ -137,7 +137,7 @@ function renderHome() {
     <section class="home-hero">
       <div class="eyebrow">${t('Outil communautaire · base {v}', { v: esc(D.meta.version || '') })}</div>
       <h1 class="h-display">${t('Levez votre armée')}</h1>
-      <p>${t('Choisissez un bloc et un format, puis composez vos pelotons. Les points, le bonus de faction et les héros sont vérifiés en direct. {u} unités et {p} pelotons disponibles.', { u: D.units.length, p: D.platoons.length })}</p>
+      <p>${t('Choisissez un bloc et un format, puis composez vos pelotons. Les points et les héros sont vérifiés en direct. {u} unités et {p} pelotons disponibles.', { u: D.units.length, p: D.platoons.length })}</p>
     </section>
     <div class="home-grid">
       <section class="panel">
@@ -347,8 +347,6 @@ function renderBuilder() {
           <i class="${over ? 'over' : ''}" style="width:${pct(A.counted)}%"></i>
         </div>
         <div class="sum-chips">
-          <span class="chip ${A.kind === 'none' ? '' : 'ok'}">${esc(A.kindLabel)}</span>
-          ${A.kind !== 'none' ? `<span class="chip">${t('Bonus héros')} <b class="num">${A.covered}/${A.pool}</b></span>` : ''}
           <span class="chip">${t('Total dépensé')} <b class="num">${A.total}</b></span>
           ${A.errors.length ? `<span class="chip bad">${t(A.errors.length > 1 ? '{n} erreurs' : '{n} erreur', { n: A.errors.length })}</span>` : `<span class="chip ok">${t('Liste valide')}</span>`}
           ${S.col ? (S.col.missing.length ? `<span class="chip warn">${t('Collection : {n} manquant(s)', { n: S.col.missing.reduce((x, m) => x + m.short, 0) })}</span>` : `<span class="chip ok">${t('Collection : complète')}</span>`) : ''}
@@ -708,7 +706,7 @@ function listText(A) {
     if (e.join) { const tu = D.unitsById.get(L.entries.find((x) => x.k === e.join)?.u); if (tu) bits.push((isCarriable(u) && !isJoiner(u) ? t('transporté par') : tu.type === 'vehicle' || tu.type === 'aircraft' ? t('pilote') : t('rejoint')) + ' ' + tu.name); }
     return `${ind}- ${u.name} (${entryCost(e, D)})${bits.length ? ' [' + bits.join(', ') + ']' : ''}`;
   };
-  const out = [`${L.name}`, ...(L.confidential ? [t('CONFIDENTIAL : contient des créations de la communauté, non officielles')] : []), `${blocName(L.bloc, D)} · ${A.counted}/${L.limit} pts${A.covered ? t(' (+{n} pts de héros en bonus)', { n: A.covered }) : ''} · ${A.kindLabel}`, ''];
+  const out = [`${L.name}`, ...(L.confidential ? [t('CONFIDENTIAL : contient des créations de la communauté, non officielles')] : []), `${blocName(L.bloc, D)} · ${A.counted}/${L.limit} pts`, ''];
   for (const pi of L.platoons) {
     const P = D.platoonsById.get(pi.p);
     const st = A.platoonStatus.find((s) => s.key === pi.k);
@@ -768,7 +766,7 @@ function openPdf(A) {
     if (ind.length) sections.push({ title: t('Unités indépendantes'), rows: ind });
     const recap = {
       title: L.name, confidential: !!L.confidential, sections,
-      lines: [`${blocName(L.bloc, D)} · ${A.counted}/${L.limit} pts · ${A.kindLabel}`, t('{n} unité(s)', { n: cards.length })],
+      lines: [`${blocName(L.bloc, D)} · ${A.counted}/${L.limit} pts`, t('{n} unité(s)', { n: cards.length })],
     };
     return exportListPDF({ filename: `${fileSlug(L.name)}.pdf`, recap, cards, includeCards, format, onProgress });
   }));
@@ -786,7 +784,7 @@ function printHTML(A) {
       ${ws.map((w) => `<tr><td class="wn">${esc(w.name)}${(w.specials || []).length ? ' (' + w.specials.map(esc).join(', ') + ')' : ''}</td><td>${esc(w.count ?? '')}</td><td>${esc(w.range ?? '')}</td><td>${(w.vsInfantry || []).map(attackHtml).join(' ')}</td><td>${(w.vsVehicle || []).map(attackHtml).join(' ')}</td><td>${(w.vsAircraft || []).map(attackHtml).join(' ')}</td></tr>`).join('')}</table>` : ''}
     </div>`;
   };
-  return `<h1>${esc(L.name)}</h1>${L.confidential ? `<p><b>${esc(t('CONFIDENTIAL : contient des créations de la communauté, non officielles'))}</b></p>` : ''}<p>${esc(blocName(L.bloc, D))} · ${A.counted}/${L.limit} pts · ${esc(A.kindLabel)}</p>
+  return `<h1>${esc(L.name)}</h1>${L.confidential ? `<p><b>${esc(t('CONFIDENTIAL : contient des créations de la communauté, non officielles'))}</b></p>` : ''}<p>${esc(blocName(L.bloc, D))} · ${A.counted}/${L.limit} pts</p>
     ${L.platoons.map((pi) => { const P = D.platoonsById.get(pi.p); return `<h3>${esc(P?.name || '')}</h3><p><i>${esc(P?.advantage || '')}</i></p>${platoonOrder(L, pi.k, D).map(card).join('')}`; }).join('')}
     ${L.entries.some((e) => !e.pl) ? `<h3>${t('Unités indépendantes')}</h3>${orderTree(L.entries.filter((e) => !e.pl), D).map(card).join('')}` : ''}
     ${printCredit()}`;
