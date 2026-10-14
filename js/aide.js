@@ -156,7 +156,6 @@ function render() {
     <nav class="topnav">
       <a href="index.html">${L('Builder', 'Builder')}</a>
       <a href="index.html#/collection">${L('Ma collection', 'My collection')}</a>
-      <a href="shot.html">Shot Format</a>
       <a href="atelier.html">${L('Atelier', 'Workshop')}</a>
       <a href="aide.html" class="on">${L('Aide', 'Help')}</a>
       <button id="lang-btn" type="button" lang="${LANG === 'fr' ? 'en' : 'fr'}" title="${LANG === 'fr' ? 'English version' : 'Version française'}">${LANG === 'fr' ? 'EN' : 'FR'}</button>

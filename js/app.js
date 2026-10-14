@@ -6,7 +6,7 @@ import { attackHtml } from './dice.js';
 import { t, LANG, initLang, setLang } from './i18n.js';
 import { exportListPDF, pdfDialogHTML, bindPdfDialog } from './pdf.js';
 import { initCardArt, pixelListed, pixelPath, pixelMini, resolveArt, getPrefs, setPrefs, ownPhotoAvailable, ownPhotoURL, saveOwnPhoto, deleteOwnPhoto } from './cardart.js';
-import { openUnitCard, thumb, artOf } from './unitcard.js';
+import { openUnitCard, thumb, artOf, initThumbs } from './unitcard.js';
 import { getQty, hasCollection, usageOf, missingFor, overEntryKeys } from './collection.js';
 import { renderCollectionPage } from './collectionpage.js';
 import { initImages, imagesAvailable, imageURL, hasImage, imageCount, saveImage, deleteImage, clearImages, matchFiles, storageEstimate, SIDES } from './images.js';
@@ -58,6 +58,7 @@ async function init() {
     S.data = await loadData();
     S.official = S.data;
     S.all = withCustom(S.official, await loadCustom());
+    initThumbs(S.official.photos);
   } catch (e) {
     app.innerHTML = `<div class="wrap"><div class="issue bad"><b>!</b><span>${esc(t('Impossible de charger la base : {e}. Si vous ouvrez le fichier directement depuis votre disque, utilisez plutôt un petit serveur local (voir README).', { e: e.message }))}</span></div></div>`;
     return;
@@ -104,7 +105,6 @@ function topbar(active) {
     <nav class="topnav">
       <a href="#/" class="${active === 'home' ? 'on' : ''}">${t('Mes listes')}</a>
       <a href="#/collection" class="${active === 'collection' ? 'on' : ''}">${t('Ma collection')}</a>
-      <a href="shot.html">Shot Format</a>
       <a href="atelier.html">${t('Atelier')}</a>
       <a href="aide.html">${t('Aide')}</a>
       <button id="lang-btn" type="button" lang="${LANG === 'fr' ? 'en' : 'fr'}" title="${LANG === 'fr' ? 'English version' : 'Version française'}">${LANG === 'fr' ? 'EN' : 'FR'}</button>
@@ -446,7 +446,7 @@ function unitRow(u, captured) {
     colTag(u.id),
   ].join('');
   return `<div class="urow">
-    <div class="nm${pixelListed(u.id) ? ' wt' : ''}" data-card="${esc(u.id)}" data-cap="${captured ? 1 : ''}" tabindex="0" role="button" aria-label="${esc(t('Voir la carte {n}', { n: u.name }))}">
+    <div class="nm${thumb(u.id) ? ' wt' : ''}" data-card="${esc(u.id)}" data-cap="${captured ? 1 : ''}" tabindex="0" role="button" aria-label="${esc(t('Voir la carte {n}', { n: u.name }))}">
       ${thumb(u.id)}<b>${esc(u.name)}</b>${u.subtitle ? `<small>${esc(u.subtitle)}</small>` : ''}<div class="tags">${tags}</div>
     </div>
     <span class="cost">${cost}</span>
@@ -592,7 +592,7 @@ function entryRow(e, level = 0) {
     ctrls += `<button class="btn icon danger" data-rm="${e.k}" aria-label="${esc(t('Retirer {n}', { n: u.name }))}">✕</button>`;
   }
   return `<div class="erow ${joined ? 'joined' : ''}${level > 1 ? ' l2' : ''}">
-    <div class="nm${pixelListed(u.id) ? ' wt' : ''}" data-card="${esc(u.id)}" data-cap="${e.cap ? 1 : ''}" tabindex="0" role="button">
+    <div class="nm${thumb(u.id) ? ' wt' : ''}" data-card="${esc(u.id)}" data-cap="${e.cap ? 1 : ''}" tabindex="0" role="button">
       ${thumb(u.id)}<b>${joined ? '↳ ' : ''}${esc(u.name)}</b><small>${esc(typeLabel(u.type))}${u.armor ? ' · ' + t('Armure') + ' ' + esc(u.armor) : ''}</small>${tags ? `<div class="tags">${tags}</div>` : ''}
     </div>
     <span class="cost">${cost}</span>

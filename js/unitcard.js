@@ -11,7 +11,11 @@ let D = null; // base de données de la fiche ouverte
 const communityPhotos = (id) => D.photos?.[id] || [];
 
 // Miniature : petite version (160 px) de l'illustration de l'unité, si elle en a une
+let thumbPhotos = {};
+export function initThumbs(photos) { thumbPhotos = photos || {}; }
 export function thumb(id, size = 64) {
+  const ph = thumbPhotos[id]?.[0]?.file;
+  if (ph) return `<img class="thumb" src="${esc(ph)}" alt="" width="${size}" height="${size}" loading="lazy" decoding="async">`;
   return pixelListed(id) ? `<img class="thumb" src="${esc(pixelMini(id))}" alt="" width="${size}" height="${size}" loading="lazy" onerror="this.onerror=null;this.src='${esc(pixelPath(id))}'">` : '';
 }
 
