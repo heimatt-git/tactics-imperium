@@ -1,0 +1,70 @@
+{
+ "blocs": [
+  {
+   "id": "Imperium",
+   "name": "Impérium",
+   "nameEn": "Imperium",
+   "color": "#3f6b8f",
+   "description": "Les armées de l'Humanité : soldats de la Garde, Space Marines et Chevaliers, réunis sous une même bannière.",
+   "factions": [
+    {
+     "id": "astra-militarum",
+     "name": "Astra Militarum",
+     "description": "L'immense infanterie de l'Impérium, soutenue par ses chars.",
+     "color": "#6b7048"
+    },
+    {
+     "id": "chevaliers-imperiaux",
+     "name": "Chevaliers Impériaux",
+     "description": "Grands marcheurs de guerre pilotés par des nobles.",
+     "color": "#2c3e63"
+    },
+    {
+     "id": "space-marines",
+     "name": "Space Marines",
+     "description": "Guerriers d'élite en armure, formés pour les missions les plus dures.",
+     "color": "#3f6b8f"
+    }
+   ]
+  },
+  {
+   "id": "Chaos",
+   "name": "Chaos",
+   "nameEn": "Chaos",
+   "color": "#3a3a3f",
+   "description": "Légions renégates, cultes et créatures corrompues, au service de leurs propres dieux.",
+   "factions": [
+    {
+     "id": "chaos-space-marines",
+     "name": "Chaos Space Marines",
+     "description": "Guerriers déchus des légions, devenus les fidèles du Chaos.",
+     "color": "#3a3a3f"
+    }
+   ]
+  },
+  {
+   "id": "Ork",
+   "name": "Ork",
+   "nameEn": "Orks",
+   "color": "#4f7a34",
+   "description": "Hordes bruyantes de peaux-vertes : nombreuses, brutales et pleines de bricolages.",
+   "factions": [
+    {
+     "id": "ork",
+     "name": "Ork",
+     "description": "Boyz, machines bricolées et chefs de guerre : la bagarre avant tout.",
+     "color": "#4f7a34"
+    }
+   ]
+  },
+  {
+   "id": "Mercenaries",
+   "name": "Xenos",
+   "nameEn": "Xenos",
+   "color": "#6b6b6b",
+   "description": "Races extraterrestres indépendantes, utilisables par tous les blocs.",
+   "factions": []
+  }
+ ],
+ "platoons": []
+}

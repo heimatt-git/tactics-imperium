@@ -1,0 +1,8796 @@
+{
+ "meta": {
+  "version": "0.2.0",
+  "source": "TACTICS: Imperium — projet de fan non officiel (règles maison de type DUST). Lots 1 à 5 : Astra Militarum, Chevaliers Impériaux, Space Marines, Ork, Chaos",
+  "updated": "2026-10-14"
+ },
+ "units": [
+  {
+   "id": "imperium--company-commander",
+   "name": "Company Commander",
+   "subtitle": "Garde Impérial",
+   "bloc": "Imperium",
+   "type": "hero",
+   "faction": "astra-militarum",
+   "cost": 9,
+   "health": 4,
+   "move": 2,
+   "march": 4,
+   "armor": 2,
+   "capturable": false,
+   "skills": [
+    "Officier"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Pistolet à plasma",
+     "count": 1,
+     "range": 3,
+     "specials": [
+      "Laser pistol"
+     ],
+     "vsInfantry": [
+      "2/1",
+      "2/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsVehicle": [
+      "2/1",
+      "1/1",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "1/1",
+      "1/1",
+      "1/1"
+     ]
+    },
+    {
+     "name": "Epée Energétique",
+     "count": 1,
+     "range": "c",
+     "specials": [],
+     "vsInfantry": [
+      "2/1",
+      "2/1",
+      "2/1",
+      "2/1"
+     ],
+     "vsVehicle": [
+      "2/1",
+      "2/1",
+      "2/1",
+      "2/1",
+      "2/1",
+      "2/1",
+      "2/1"
+     ],
+     "vsAircraft": []
+    }
+   ]
+  },
+  {
+   "id": "imperium--escouade-de-commandement-astra-militarum",
+   "name": "Escouade de Commandement",
+   "subtitle": "Garde Impérial",
+   "bloc": "Imperium",
+   "type": "infantry",
+   "faction": "astra-militarum",
+   "cost": 12,
+   "health": 5,
+   "move": 2,
+   "march": 4,
+   "armor": 2,
+   "capturable": false,
+   "skills": [
+    "Escouade de Commandement",
+    "Bannière"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Epée Energétique",
+     "count": 1,
+     "range": "c",
+     "specials": [],
+     "vsInfantry": [
+      "2/1",
+      "2/1",
+      "2/1",
+      "2/1"
+     ],
+     "vsVehicle": [
+      "2/1",
+      "2/1",
+      "2/1",
+      "2/1",
+      "2/1",
+      "2/1",
+      "2/1"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Gantelet énergétique",
+     "count": 1,
+     "range": "c",
+     "specials": [],
+     "vsInfantry": [
+      "2/1",
+      "2/1",
+      "2/1",
+      "2/1"
+     ],
+     "vsVehicle": [
+      "2/2",
+      "2/2",
+      "2/2",
+      "2/2",
+      "2/2",
+      "2/2",
+      "2/2"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Fusil laser",
+     "count": 3,
+     "range": 3,
+     "specials": [],
+     "vsInfantry": [
+      "5/1",
+      "4/1",
+      "3/1"
+     ],
+     "vsVehicle": [
+      "3/1"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Pistolet laser",
+     "count": 2,
+     "range": 2,
+     "specials": [],
+     "vsInfantry": [
+      "4/1",
+      "3/1",
+      "2/1"
+     ],
+     "vsVehicle": [
+      "2/1"
+     ],
+     "vsAircraft": []
+    }
+   ]
+  },
+  {
+   "id": "imperium--infantry-squad",
+   "name": "Infantry Squad",
+   "subtitle": "Garde Impérial",
+   "bloc": "Imperium",
+   "type": "infantry",
+   "faction": "astra-militarum",
+   "cost": 9,
+   "health": 5,
+   "move": 2,
+   "march": 4,
+   "armor": 2,
+   "capturable": false,
+   "skills": [],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Fusil laser",
+     "count": 3,
+     "range": 3,
+     "specials": [],
+     "vsInfantry": [
+      "5/1",
+      "4/1",
+      "3/1"
+     ],
+     "vsVehicle": [
+      "3/1"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Fuseur",
+     "count": 1,
+     "range": 3,
+     "specials": [],
+     "vsInfantry": [
+      "1/4",
+      "1/4",
+      "1/4",
+      "1/4"
+     ],
+     "vsVehicle": [
+      "1/AK",
+      "1/AK",
+      "1/AK",
+      "1/5",
+      "1/4",
+      "1/3",
+      "1/3"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Pistolet laser",
+     "count": 1,
+     "range": 2,
+     "specials": [],
+     "vsInfantry": [
+      "4/1",
+      "3/1",
+      "2/1"
+     ],
+     "vsVehicle": [
+      "2/1"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Epée tronçonneuse",
+     "count": 1,
+     "range": "c",
+     "specials": [],
+     "vsInfantry": [
+      "3/1",
+      "3/1",
+      "3/1",
+      "3/1"
+     ],
+     "vsVehicle": [
+      "2/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsAircraft": []
+    }
+   ]
+  },
+  {
+   "id": "imperium--militarum-tempestus-scions",
+   "name": "Militarum Tempestus Scions",
+   "subtitle": "Scions",
+   "bloc": "Imperium",
+   "type": "infantry",
+   "faction": "astra-militarum",
+   "cost": 10,
+   "health": 5,
+   "move": 2,
+   "march": 4,
+   "armor": 2,
+   "capturable": false,
+   "skills": [
+    "Courageux"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Fusil laser",
+     "count": 2,
+     "range": 3,
+     "specials": [],
+     "vsInfantry": [
+      "5/1",
+      "4/1",
+      "3/1"
+     ],
+     "vsVehicle": [
+      "3/1"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Fusil à plasma",
+     "count": 1,
+     "range": 6,
+     "specials": [],
+     "vsInfantry": [
+      "2/1",
+      "2/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsVehicle": [
+      "5/1",
+      "4/1",
+      "3/1",
+      "2/1",
+      "1/1",
+      "1/1"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Fuseur",
+     "count": 1,
+     "range": 3,
+     "specials": [],
+     "vsInfantry": [
+      "1/4",
+      "1/4",
+      "1/4",
+      "1/4"
+     ],
+     "vsVehicle": [
+      "1/AK",
+      "1/AK",
+      "1/AK",
+      "1/5",
+      "1/4",
+      "1/3",
+      "1/3"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Pistolet laser",
+     "count": 1,
+     "range": 2,
+     "specials": [],
+     "vsInfantry": [
+      "4/1",
+      "3/1",
+      "2/1"
+     ],
+     "vsVehicle": [
+      "2/1"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Epée tronçonneuse",
+     "count": 1,
+     "range": "c",
+     "specials": [],
+     "vsInfantry": [
+      "3/1",
+      "3/1",
+      "3/1",
+      "3/1"
+     ],
+     "vsVehicle": [
+      "2/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsAircraft": []
+    }
+   ]
+  },
+  {
+   "id": "imperium--veterans",
+   "name": "Veterans",
+   "subtitle": "Garde Impérial",
+   "bloc": "Imperium",
+   "type": "infantry",
+   "faction": "astra-militarum",
+   "cost": 11,
+   "health": 5,
+   "move": 2,
+   "march": 4,
+   "armor": 2,
+   "capturable": false,
+   "skills": [
+    "Expert : Arme",
+    "Observateur d'Artillerie"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Fusil laser",
+     "count": 3,
+     "range": 3,
+     "specials": [],
+     "vsInfantry": [
+      "5/1",
+      "4/1",
+      "3/1"
+     ],
+     "vsVehicle": [
+      "3/1"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Pistolet à plasma",
+     "count": 1,
+     "range": 3,
+     "specials": [
+      "Laser pistol"
+     ],
+     "vsInfantry": [
+      "2/1",
+      "2/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsVehicle": [
+      "2/1",
+      "1/1",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "1/1",
+      "1/1",
+      "1/1"
+     ]
+    },
+    {
+     "name": "Epée tronçonneuse",
+     "count": 1,
+     "range": "c",
+     "specials": [],
+     "vsInfantry": [
+      "3/1",
+      "3/1",
+      "3/1",
+      "3/1"
+     ],
+     "vsVehicle": [
+      "2/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Fusil à plasma",
+     "count": 1,
+     "range": 6,
+     "specials": [],
+     "vsInfantry": [
+      "2/1",
+      "2/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsVehicle": [
+      "5/1",
+      "4/1",
+      "3/1",
+      "2/1",
+      "1/1",
+      "1/1"
+     ],
+     "vsAircraft": []
+    }
+   ]
+  },
+  {
+   "id": "imperium--leman-russ-battle-tanks",
+   "name": "Leman Russ Battle Tanks",
+   "subtitle": "Véhicule R4",
+   "bloc": "Imperium",
+   "type": "vehicle",
+   "faction": "astra-militarum",
+   "cost": 22,
+   "health": 8,
+   "move": 2,
+   "march": 4,
+   "armor": 4,
+   "capturable": false,
+   "skills": [
+    "Chenillé"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Obusier",
+     "count": 1,
+     "range": 18,
+     "mount": "Tourelle",
+     "specials": [],
+     "vsInfantry": [
+      "B/1",
+      "B/1",
+      "B/1",
+      "B/1"
+     ],
+     "vsVehicle": [
+      "1/AK",
+      "1/AK",
+      "1/AK",
+      "1/5",
+      "1/4",
+      "1/3",
+      "1/2"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Bolter lourd",
+     "count": 1,
+     "range": 8,
+     "mount": "Face",
+     "specials": [],
+     "vsInfantry": [
+      "6/2",
+      "6/2",
+      "6/2",
+      "4/2"
+     ],
+     "vsVehicle": [
+      "3/3",
+      "2/2",
+      "2/2",
+      "1/2",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "3/1",
+      "2/1"
+     ]
+    },
+    {
+     "name": "Fuseur",
+     "count": 1,
+     "range": 3,
+     "mount": "Droite",
+     "specials": [],
+     "vsInfantry": [
+      "1/4",
+      "1/4",
+      "1/4",
+      "1/4"
+     ],
+     "vsVehicle": [
+      "1/AK",
+      "1/AK",
+      "1/AK",
+      "1/5",
+      "1/4",
+      "1/3",
+      "1/3"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Fuseur",
+     "count": 1,
+     "range": 3,
+     "mount": "Gauche",
+     "specials": [],
+     "vsInfantry": [
+      "1/4",
+      "1/4",
+      "1/4",
+      "1/4"
+     ],
+     "vsVehicle": [
+      "1/AK",
+      "1/AK",
+      "1/AK",
+      "1/5",
+      "1/4",
+      "1/3",
+      "1/3"
+     ],
+     "vsAircraft": []
+    }
+   ]
+  },
+  {
+   "id": "imperium--chimera",
+   "name": "Chimera",
+   "subtitle": "Véhicule R3",
+   "bloc": "Imperium",
+   "type": "vehicle",
+   "faction": "astra-militarum",
+   "cost": 10,
+   "health": 6,
+   "move": 2,
+   "march": 5,
+   "armor": 3,
+   "capturable": false,
+   "skills": [
+    "Chenillé",
+    "Passagers (10)"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Serre laser",
+     "count": 1,
+     "range": 8,
+     "mount": "Tourelle",
+     "specials": [],
+     "vsInfantry": [
+      "5/1",
+      "5/1",
+      "5/1",
+      "4/1"
+     ],
+     "vsVehicle": [
+      "3/3",
+      "3/2",
+      "2/2",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "3/2",
+      "2/2",
+      "1/1"
+     ]
+    },
+    {
+     "name": "Lance-flammes",
+     "count": 1,
+     "range": 1,
+     "mount": "Face",
+     "specials": [
+      "Flame : Flamethrower"
+     ],
+     "vsInfantry": [
+      "BB/1",
+      "BB/1",
+      "BB/1",
+      "B/1"
+     ],
+     "vsVehicle": [
+      "BB/AK",
+      "BB/AK",
+      "B/2",
+      "B/2",
+      "B/2",
+      "B/2",
+      "B/2"
+     ],
+     "vsAircraft": []
+    }
+   ]
+  },
+  {
+   "id": "imperium--scout-sentinel",
+   "name": "Scout Sentinel",
+   "subtitle": "Marcheur R3",
+   "bloc": "Imperium",
+   "type": "vehicle",
+   "faction": "astra-militarum",
+   "cost": 6,
+   "health": 4,
+   "move": 2,
+   "march": 5,
+   "armor": 3,
+   "capturable": false,
+   "skills": [
+    "Scout"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Serre laser",
+     "count": 1,
+     "range": 8,
+     "mount": "Face",
+     "specials": [],
+     "vsInfantry": [
+      "5/1",
+      "5/1",
+      "5/1",
+      "4/1"
+     ],
+     "vsVehicle": [
+      "3/3",
+      "3/2",
+      "2/2",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "3/2",
+      "2/2",
+      "1/1"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "imperium--leman-russ-executor",
+   "name": "Leman Russ Executor",
+   "subtitle": "Véhicule R4",
+   "bloc": "Imperium",
+   "type": "vehicle",
+   "faction": "astra-militarum",
+   "cost": 18,
+   "health": 8,
+   "move": 2,
+   "march": 4,
+   "armor": 4,
+   "capturable": false,
+   "skills": [
+    "Chenillé"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Canon Executeur",
+     "count": 1,
+     "range": 24,
+     "mount": "Tourelle",
+     "specials": [],
+     "vsInfantry": [
+      "B/1",
+      "B/1",
+      "B/1",
+      "B/1"
+     ],
+     "vsVehicle": [
+      "1/AK",
+      "1/AK",
+      "1/AK",
+      "1/9",
+      "1/8",
+      "1/6",
+      "1/4"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Bolter lourd",
+     "count": 1,
+     "range": 8,
+     "mount": "Face",
+     "specials": [],
+     "vsInfantry": [
+      "6/2",
+      "6/2",
+      "6/2",
+      "4/2"
+     ],
+     "vsVehicle": [
+      "3/3",
+      "2/2",
+      "2/2",
+      "1/2",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "3/1",
+      "2/1"
+     ]
+    },
+    {
+     "name": "Mitrailleuse",
+     "count": 1,
+     "range": 6,
+     "mount": "Tourelle",
+     "specials": [],
+     "vsInfantry": [
+      "4/1",
+      "3/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsVehicle": [
+      "2/1",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "2/1",
+      "1/1"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "imperium--malcador",
+   "name": "Malcador",
+   "subtitle": "Véhicule R5",
+   "bloc": "Imperium",
+   "type": "vehicle",
+   "faction": "astra-militarum",
+   "cost": 23,
+   "health": 6,
+   "move": 2,
+   "march": 4,
+   "armor": 5,
+   "capturable": false,
+   "skills": [
+    "Chenillé"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Canon Executeur",
+     "count": 1,
+     "range": 24,
+     "mount": "Tourelle",
+     "specials": [],
+     "vsInfantry": [
+      "B/1",
+      "B/1",
+      "B/1",
+      "B/1"
+     ],
+     "vsVehicle": [
+      "1/AK",
+      "1/AK",
+      "1/AK",
+      "1/9",
+      "1/8",
+      "1/6",
+      "1/4"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Autocanon",
+     "count": 1,
+     "range": 16,
+     "mount": "Face",
+     "specials": [],
+     "vsInfantry": [
+      "B/1",
+      "B/1",
+      "B/1",
+      "B/1"
+     ],
+     "vsVehicle": [
+      "1/AK",
+      "1/AK",
+      "1/5",
+      "1/4",
+      "1/4",
+      "1/3",
+      "1/3"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Autocanon",
+     "count": 1,
+     "range": 16,
+     "mount": "Droite",
+     "specials": [],
+     "vsInfantry": [
+      "B/1",
+      "B/1",
+      "B/1",
+      "B/1"
+     ],
+     "vsVehicle": [
+      "1/AK",
+      "1/AK",
+      "1/5",
+      "1/4",
+      "1/4",
+      "1/3",
+      "1/3"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Autocanon",
+     "count": 1,
+     "range": 16,
+     "mount": "Gauche",
+     "specials": [],
+     "vsInfantry": [
+      "B/1",
+      "B/1",
+      "B/1",
+      "B/1"
+     ],
+     "vsVehicle": [
+      "1/AK",
+      "1/AK",
+      "1/5",
+      "1/4",
+      "1/4",
+      "1/3",
+      "1/3"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Mitrailleuse",
+     "count": 1,
+     "range": 6,
+     "mount": "Tourelle",
+     "specials": [],
+     "vsInfantry": [
+      "4/1",
+      "3/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsVehicle": [
+      "2/1",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "2/1",
+      "1/1"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "imperium--hastaires",
+   "name": "Hastaires",
+   "subtitle": "Marcheur R5 - Armigères",
+   "bloc": "Imperium",
+   "type": "vehicle",
+   "faction": "chevaliers-imperiaux",
+   "cost": 24,
+   "health": 12,
+   "move": 2,
+   "march": 4,
+   "armor": 5,
+   "capturable": false,
+   "skills": [],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Bitronçonneur Reaper",
+     "count": 1,
+     "range": "c",
+     "mount": "Tourelle",
+     "specials": [
+      "Cutting"
+     ],
+     "vsInfantry": [
+      "4/1",
+      "4/1",
+      "4/1",
+      "4/1"
+     ],
+     "vsVehicle": [
+      "4/2",
+      "4/2",
+      "4/2",
+      "3/2",
+      "3/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Lance Thermique",
+     "count": 1,
+     "range": 3,
+     "mount": "Tourelle",
+     "specials": [
+      "Flamme"
+     ],
+     "vsInfantry": [
+      "B/1",
+      "B/1",
+      "B/1",
+      "B/1"
+     ],
+     "vsVehicle": [
+      "2/AK",
+      "2/AK",
+      "2/AK",
+      "1/5",
+      "1/4",
+      "1/3",
+      "1/3"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Mitrailleuse",
+     "count": 1,
+     "range": 6,
+     "mount": "Tourelle",
+     "specials": [],
+     "vsInfantry": [
+      "4/1",
+      "3/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsVehicle": [
+      "2/1",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "2/1",
+      "1/1"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "imperium--helveriens",
+   "name": "Helvériens",
+   "subtitle": "Marcheur R5 - Armigères",
+   "bloc": "Imperium",
+   "type": "vehicle",
+   "faction": "chevaliers-imperiaux",
+   "cost": 28,
+   "health": 12,
+   "move": 2,
+   "march": 4,
+   "armor": 5,
+   "capturable": false,
+   "skills": [],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Autocanon accélérateur jumelé",
+     "count": 2,
+     "range": 24,
+     "mount": "Tourelle",
+     "specials": [],
+     "vsInfantry": [
+      "BB/1",
+      "BB/1",
+      "B/1",
+      "B/1"
+     ],
+     "vsVehicle": [
+      "1/AK",
+      "1/AK",
+      "1/AK",
+      "1/AK",
+      "1/5",
+      "1/4",
+      "1/4"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Mitrailleuse",
+     "count": 1,
+     "range": 6,
+     "mount": "Tourelle",
+     "specials": [],
+     "vsInfantry": [
+      "4/1",
+      "3/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsVehicle": [
+      "2/1",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "2/1",
+      "1/1"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "imperium--paladin",
+   "name": "Paladin",
+   "subtitle": "Marcheur R7",
+   "bloc": "Imperium",
+   "type": "vehicle",
+   "faction": "chevaliers-imperiaux",
+   "cost": 43,
+   "health": 22,
+   "move": 2,
+   "march": 3,
+   "armor": 7,
+   "capturable": false,
+   "skills": [
+    "Véhicule Large"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Obusier de chevalier",
+     "count": 1,
+     "range": 18,
+     "mount": "Tourelle",
+     "specials": [],
+     "vsInfantry": [
+      "B/1",
+      "B/1",
+      "B/1",
+      "B/1"
+     ],
+     "vsVehicle": [
+      "1/AK",
+      "1/AK",
+      "1/AK",
+      "1/5",
+      "1/4",
+      "1/3",
+      "1/2"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Epée tronçonneuse de Chevalier",
+     "count": 1,
+     "range": "c",
+     "mount": "Tourelle",
+     "specials": [],
+     "vsInfantry": [
+      "3/AK",
+      "3/AK",
+      "3/AK",
+      "3/AK"
+     ],
+     "vsVehicle": [
+      "1/AK",
+      "1/AK",
+      "1/AK",
+      "1/8",
+      "1/7",
+      "1/7",
+      "1/6"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Mitrailleuse",
+     "count": 1,
+     "range": 6,
+     "mount": "Tourelle",
+     "specials": [],
+     "vsInfantry": [
+      "4/1",
+      "3/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsVehicle": [
+      "2/1",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "2/1",
+      "1/1"
+     ]
+    },
+    {
+     "name": "Piétiner - Stomp (Chevalier)",
+     "count": 1,
+     "range": "c",
+     "mount": "Tourelle",
+     "specials": [],
+     "vsInfantry": [
+      "B/AK",
+      "B/AK",
+      "B/AK",
+      "B/AK"
+     ],
+     "vsVehicle": [
+      "2/4",
+      "2/4",
+      "2/3",
+      "2/3",
+      "2/3",
+      "2/2",
+      "2/2"
+     ],
+     "vsAircraft": []
+    }
+   ]
+  },
+  {
+   "id": "imperium--galant",
+   "name": "Galant",
+   "subtitle": "Marcheur R7",
+   "bloc": "Imperium",
+   "type": "vehicle",
+   "faction": "chevaliers-imperiaux",
+   "cost": 44,
+   "health": 22,
+   "move": 2,
+   "march": 3,
+   "armor": 7,
+   "capturable": false,
+   "skills": [
+    "Véhicule Large"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Gantelet Thunderstrike",
+     "count": 1,
+     "range": "c",
+     "mount": "Tourelle",
+     "specials": [
+      "Grapple"
+     ],
+     "vsInfantry": [
+      "6/1",
+      "6/1",
+      "6/1",
+      "6/1"
+     ],
+     "vsVehicle": [
+      "2/AK",
+      "2/AK",
+      "2/5",
+      "2/4",
+      "2/4",
+      "2/3",
+      "2/3"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Epée tronçonneuse de Chevalier",
+     "count": 1,
+     "range": "c",
+     "mount": "Tourelle",
+     "specials": [],
+     "vsInfantry": [
+      "3/AK",
+      "3/AK",
+      "3/AK",
+      "3/AK"
+     ],
+     "vsVehicle": [
+      "1/AK",
+      "1/AK",
+      "1/AK",
+      "1/8",
+      "1/7",
+      "1/7",
+      "1/6"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Mitrailleuse",
+     "count": 1,
+     "range": 6,
+     "mount": "Tourelle",
+     "specials": [],
+     "vsInfantry": [
+      "4/1",
+      "3/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsVehicle": [
+      "2/1",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "2/1",
+      "1/1"
+     ]
+    },
+    {
+     "name": "Piétiner - Stomp (Chevalier)",
+     "count": 1,
+     "range": "c",
+     "mount": "Tourelle",
+     "specials": [],
+     "vsInfantry": [
+      "B/AK",
+      "B/AK",
+      "B/AK",
+      "B/AK"
+     ],
+     "vsVehicle": [
+      "2/4",
+      "2/4",
+      "2/3",
+      "2/3",
+      "2/3",
+      "2/2",
+      "2/2"
+     ],
+     "vsAircraft": []
+    }
+   ]
+  },
+  {
+   "id": "imperium--croise",
+   "name": "Croisé",
+   "subtitle": "Marcheur R7",
+   "bloc": "Imperium",
+   "type": "vehicle",
+   "faction": "chevaliers-imperiaux",
+   "cost": 43,
+   "health": 22,
+   "move": 2,
+   "march": 3,
+   "armor": 7,
+   "capturable": false,
+   "skills": [
+    "Véhicule Large"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Obusier de chevalier",
+     "count": 1,
+     "range": 18,
+     "mount": "Tourelle",
+     "specials": [],
+     "vsInfantry": [
+      "B/1",
+      "B/1",
+      "B/1",
+      "B/1"
+     ],
+     "vsVehicle": [
+      "1/AK",
+      "1/AK",
+      "1/AK",
+      "1/5",
+      "1/4",
+      "1/3",
+      "1/2"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Gatling Avenger",
+     "count": 1,
+     "range": 14,
+     "mount": "Tourelle",
+     "specials": [
+      "Advanced Reactive fire"
+     ],
+     "vsInfantry": [
+      "BB/1",
+      "BB/1",
+      "BB/1",
+      "BB/1"
+     ],
+     "vsVehicle": [
+      "4/AK",
+      "4/AK",
+      "4/5",
+      "3/4",
+      "3/4",
+      "2/3",
+      "1/3"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Mitrailleuse",
+     "count": 1,
+     "range": 6,
+     "mount": "Tourelle",
+     "specials": [],
+     "vsInfantry": [
+      "4/1",
+      "3/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsVehicle": [
+      "2/1",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "2/1",
+      "1/1"
+     ]
+    },
+    {
+     "name": "Piétiner - Stomp (Chevalier)",
+     "count": 1,
+     "range": "c",
+     "mount": "Tourelle",
+     "specials": [],
+     "vsInfantry": [
+      "B/AK",
+      "B/AK",
+      "B/AK",
+      "B/AK"
+     ],
+     "vsVehicle": [
+      "2/4",
+      "2/4",
+      "2/3",
+      "2/3",
+      "2/3",
+      "2/2",
+      "2/2"
+     ],
+     "vsAircraft": []
+    }
+   ]
+  },
+  {
+   "id": "imperium--vigilant",
+   "name": "Vigilant",
+   "subtitle": "Marcheur R7",
+   "bloc": "Imperium",
+   "type": "vehicle",
+   "faction": "chevaliers-imperiaux",
+   "cost": 44,
+   "health": 22,
+   "move": 2,
+   "march": 3,
+   "armor": 7,
+   "capturable": false,
+   "skills": [
+    "Véhicule Large"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Gantelet Thunderstrike",
+     "count": 1,
+     "range": "c",
+     "mount": "Tourelle",
+     "specials": [
+      "Grapple"
+     ],
+     "vsInfantry": [
+      "6/1",
+      "6/1",
+      "6/1",
+      "6/1"
+     ],
+     "vsVehicle": [
+      "2/AK",
+      "2/AK",
+      "2/5",
+      "2/4",
+      "2/4",
+      "2/3",
+      "2/3"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Gatling Avenger",
+     "count": 1,
+     "range": 14,
+     "mount": "Tourelle",
+     "specials": [
+      "Advanced Reactive fire"
+     ],
+     "vsInfantry": [
+      "BB/1",
+      "BB/1",
+      "BB/1",
+      "BB/1"
+     ],
+     "vsVehicle": [
+      "4/AK",
+      "4/AK",
+      "4/5",
+      "3/4",
+      "3/4",
+      "2/3",
+      "1/3"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Mitrailleuse",
+     "count": 1,
+     "range": 6,
+     "mount": "Tourelle",
+     "specials": [],
+     "vsInfantry": [
+      "4/1",
+      "3/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsVehicle": [
+      "2/1",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "2/1",
+      "1/1"
+     ]
+    },
+    {
+     "name": "Piétiner - Stomp (Chevalier)",
+     "count": 1,
+     "range": "c",
+     "mount": "Tourelle",
+     "specials": [],
+     "vsInfantry": [
+      "B/AK",
+      "B/AK",
+      "B/AK",
+      "B/AK"
+     ],
+     "vsVehicle": [
+      "2/4",
+      "2/4",
+      "2/3",
+      "2/3",
+      "2/3",
+      "2/2",
+      "2/2"
+     ],
+     "vsAircraft": []
+    }
+   ]
+  },
+  {
+   "id": "imperium--errant",
+   "name": "Errant",
+   "subtitle": "Marcheur R7",
+   "bloc": "Imperium",
+   "type": "vehicle",
+   "faction": "chevaliers-imperiaux",
+   "cost": 45,
+   "health": 22,
+   "move": 2,
+   "march": 3,
+   "armor": 7,
+   "capturable": false,
+   "skills": [
+    "Véhicule Large"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Epée tronçonneuse de Chevalier",
+     "count": 1,
+     "range": "c",
+     "mount": "Tourelle",
+     "specials": [],
+     "vsInfantry": [
+      "3/AK",
+      "3/AK",
+      "3/AK",
+      "3/AK"
+     ],
+     "vsVehicle": [
+      "1/AK",
+      "1/AK",
+      "1/AK",
+      "1/8",
+      "1/7",
+      "1/7",
+      "1/6"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Canon Thermique",
+     "count": 1,
+     "range": 5,
+     "mount": "Tourelle",
+     "specials": [
+      "Flamme"
+     ],
+     "vsInfantry": [
+      "BB/1",
+      "BB/1",
+      "BB/1",
+      "BB/1"
+     ],
+     "vsVehicle": [
+      "3/AK",
+      "3/AK",
+      "3/AK",
+      "2/5",
+      "2/4",
+      "2/3",
+      "2/3"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Mitrailleuse",
+     "count": 1,
+     "range": 6,
+     "mount": "Tourelle",
+     "specials": [],
+     "vsInfantry": [
+      "4/1",
+      "3/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsVehicle": [
+      "2/1",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "2/1",
+      "1/1"
+     ]
+    },
+    {
+     "name": "Piétiner - Stomp (Chevalier)",
+     "count": 1,
+     "range": "c",
+     "mount": "Tourelle",
+     "specials": [],
+     "vsInfantry": [
+      "B/AK",
+      "B/AK",
+      "B/AK",
+      "B/AK"
+     ],
+     "vsVehicle": [
+      "2/4",
+      "2/4",
+      "2/3",
+      "2/3",
+      "2/3",
+      "2/2",
+      "2/2"
+     ],
+     "vsAircraft": []
+    }
+   ]
+  },
+  {
+   "id": "imperium--precepteur",
+   "name": "Précepteur",
+   "subtitle": "Marcheur R7",
+   "bloc": "Imperium",
+   "type": "vehicle",
+   "faction": "chevaliers-imperiaux",
+   "cost": 45,
+   "health": 22,
+   "move": 2,
+   "march": 3,
+   "armor": 7,
+   "capturable": false,
+   "skills": [
+    "Véhicule Large"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Gantelet Thunderstrike",
+     "count": 1,
+     "range": "c",
+     "mount": "Tourelle",
+     "specials": [
+      "Grapple"
+     ],
+     "vsInfantry": [
+      "6/1",
+      "6/1",
+      "6/1",
+      "6/1"
+     ],
+     "vsVehicle": [
+      "2/AK",
+      "2/AK",
+      "2/5",
+      "2/4",
+      "2/4",
+      "2/3",
+      "2/3"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Impulseur Laser",
+     "count": 1,
+     "range": 24,
+     "mount": "Tourelle",
+     "specials": [],
+     "vsInfantry": [
+      "14/1",
+      "14/1",
+      "14/1",
+      "14/1"
+     ],
+     "vsVehicle": [
+      "4/4",
+      "4/4",
+      "4/4",
+      "4/4",
+      "4/4",
+      "4/4",
+      "4/4"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Mitrailleuse",
+     "count": 1,
+     "range": 6,
+     "mount": "Tourelle",
+     "specials": [],
+     "vsInfantry": [
+      "4/1",
+      "3/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsVehicle": [
+      "2/1",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "2/1",
+      "1/1"
+     ]
+    },
+    {
+     "name": "Piétiner - Stomp (Chevalier)",
+     "count": 1,
+     "range": "c",
+     "mount": "Tourelle",
+     "specials": [],
+     "vsInfantry": [
+      "B/AK",
+      "B/AK",
+      "B/AK",
+      "B/AK"
+     ],
+     "vsVehicle": [
+      "2/4",
+      "2/4",
+      "2/3",
+      "2/3",
+      "2/3",
+      "2/2",
+      "2/2"
+     ],
+     "vsAircraft": []
+    }
+   ]
+  },
+  {
+   "id": "imperium--castellan",
+   "name": "Castellan",
+   "subtitle": "Marcheur R7 - Dominus",
+   "bloc": "Imperium",
+   "type": "vehicle",
+   "faction": "chevaliers-imperiaux",
+   "cost": 59,
+   "health": 24,
+   "move": 1,
+   "march": 3,
+   "armor": 7,
+   "capturable": false,
+   "skills": [
+    "Véhicule Large"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Lance Volcano",
+     "count": 1,
+     "range": 5,
+     "mount": "Tourelle",
+     "specials": [
+      "Flamme"
+     ],
+     "vsInfantry": [
+      "BB/1",
+      "BB/1",
+      "BB/1",
+      "BB/1"
+     ],
+     "vsVehicle": [
+      "3/AK",
+      "3/AK",
+      "3/AK",
+      "2/5",
+      "2/4",
+      "2/3",
+      "2/3"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Décimateur à Plasma",
+     "count": 1,
+     "range": 14,
+     "mount": "Tourelle",
+     "specials": [
+      "Laser"
+     ],
+     "vsInfantry": [
+      "7/1",
+      "7/1",
+      "6/1",
+      "5/1"
+     ],
+     "vsVehicle": [
+      "15/1",
+      "14/1",
+      "13/1",
+      "12/1",
+      "11/1",
+      "10/1",
+      "9/1"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Missile Shieldbreaker",
+     "count": 2,
+     "range": 10,
+     "mount": "Tourelle",
+     "specials": [],
+     "vsInfantry": [
+      "B/1",
+      "B/1",
+      "B/1",
+      "B/1"
+     ],
+     "vsVehicle": [
+      "1/AK",
+      "1/AK",
+      "1/AK",
+      "1/4",
+      "1/3",
+      "1/2",
+      "1/1"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Canon Siegebreaker",
+     "count": 2,
+     "range": 8,
+     "mount": "Tourelle",
+     "specials": [],
+     "vsInfantry": [
+      "7/2",
+      "7/2",
+      "7/2",
+      "5/2"
+     ],
+     "vsVehicle": [
+      "4/3",
+      "3/2",
+      "3/2",
+      "2/2",
+      "1/2"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Fuseurs jumelés Dominus",
+     "count": 2,
+     "range": 4,
+     "mount": "Face",
+     "specials": [
+      "Phaser : Phaser SMG"
+     ],
+     "vsInfantry": [
+      "5/1",
+      "5/1",
+      "5/1",
+      "5/1"
+     ],
+     "vsVehicle": [
+      "2/2",
+      "2/2",
+      "2/2",
+      "2/2",
+      "2/2",
+      "2/2",
+      "2/2"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Piétiner - Stomp (Chevalier)",
+     "count": 1,
+     "range": "c",
+     "mount": "Tourelle",
+     "specials": [],
+     "vsInfantry": [
+      "B/AK",
+      "B/AK",
+      "B/AK",
+      "B/AK"
+     ],
+     "vsVehicle": [
+      "2/4",
+      "2/4",
+      "2/3",
+      "2/3",
+      "2/3",
+      "2/2",
+      "2/2"
+     ],
+     "vsAircraft": []
+    }
+   ]
+  },
+  {
+   "id": "imperium--vaillant",
+   "name": "Vaillant",
+   "subtitle": "Marcheur R7 - Dominus",
+   "bloc": "Imperium",
+   "type": "vehicle",
+   "faction": "chevaliers-imperiaux",
+   "cost": 61,
+   "health": 24,
+   "move": 1,
+   "march": 3,
+   "armor": 7,
+   "capturable": false,
+   "skills": [
+    "Véhicule Large"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Cannon Conflagration",
+     "count": 1,
+     "range": 14,
+     "mount": "Tourelle",
+     "specials": [],
+     "vsInfantry": [
+      "BB/AK",
+      "BB/AK",
+      "BB/AK",
+      "BB/AK"
+     ],
+     "vsVehicle": [
+      "5/AK",
+      "4/AK",
+      "3/AK",
+      "2/AK",
+      "3/7",
+      "3/8",
+      "2/8"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Harpon Thundercoil",
+     "count": 1,
+     "range": 6,
+     "mount": "Tourelle",
+     "specials": [
+      "Filoguidé"
+     ],
+     "vsInfantry": [
+      "B/1",
+      "B/1",
+      "B/1",
+      "B/1"
+     ],
+     "vsVehicle": [
+      "4/AK",
+      "4/AK",
+      "4/6",
+      "4/5",
+      "4/5",
+      "4/4",
+      "4/4"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Missile Shieldbreaker",
+     "count": 4,
+     "range": 10,
+     "mount": "Tourelle",
+     "specials": [],
+     "vsInfantry": [
+      "B/1",
+      "B/1",
+      "B/1",
+      "B/1"
+     ],
+     "vsVehicle": [
+      "1/AK",
+      "1/AK",
+      "1/AK",
+      "1/4",
+      "1/3",
+      "1/2",
+      "1/1"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Canon Siegebreaker",
+     "count": 1,
+     "range": 8,
+     "mount": "Tourelle",
+     "specials": [],
+     "vsInfantry": [
+      "7/2",
+      "7/2",
+      "7/2",
+      "5/2"
+     ],
+     "vsVehicle": [
+      "4/3",
+      "3/2",
+      "3/2",
+      "2/2",
+      "1/2"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Fuseurs jumelés Dominus",
+     "count": 2,
+     "range": 4,
+     "mount": "Face",
+     "specials": [
+      "Phaser : Phaser SMG"
+     ],
+     "vsInfantry": [
+      "5/1",
+      "5/1",
+      "5/1",
+      "5/1"
+     ],
+     "vsVehicle": [
+      "2/2",
+      "2/2",
+      "2/2",
+      "2/2",
+      "2/2",
+      "2/2",
+      "2/2"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Piétiner - Stomp (Chevalier)",
+     "count": 1,
+     "range": "c",
+     "mount": "Tourelle",
+     "specials": [],
+     "vsInfantry": [
+      "B/AK",
+      "B/AK",
+      "B/AK",
+      "B/AK"
+     ],
+     "vsVehicle": [
+      "2/4",
+      "2/4",
+      "2/3",
+      "2/3",
+      "2/3",
+      "2/2",
+      "2/2"
+     ],
+     "vsAircraft": []
+    }
+   ]
+  },
+  {
+   "id": "imperium--lancier",
+   "name": "Lancier",
+   "subtitle": "Marcheur R7 - Cerastus",
+   "bloc": "Imperium",
+   "type": "vehicle",
+   "faction": "chevaliers-imperiaux",
+   "cost": 52,
+   "health": 25,
+   "move": 2,
+   "march": 4,
+   "armor": 7,
+   "capturable": false,
+   "skills": [
+    "Véhicule Large",
+    "Résistant aux Dommages"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Lance de Cérastus (mélée)",
+     "count": 1,
+     "range": "c",
+     "mount": "Tourelle",
+     "specials": [],
+     "vsInfantry": [
+      "3/AK",
+      "3/AK",
+      "3/AK",
+      "3/AK"
+     ],
+     "vsVehicle": [
+      "4/AK",
+      "3/AK",
+      "2/AK",
+      "2/8",
+      "2/8",
+      "1/8",
+      "1/8"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Lance de Cérastus (Tir)",
+     "count": 1,
+     "range": 4,
+     "mount": "Tourelle",
+     "specials": [],
+     "vsInfantry": [
+      "B/1",
+      "B/1",
+      "B/1",
+      "B/1"
+     ],
+     "vsVehicle": [
+      "1/AK",
+      "1/AK",
+      "1/AK",
+      "1/5",
+      "1/4",
+      "1/3",
+      "1/2"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Bouclier de Lancier",
+     "count": 1,
+     "range": "c",
+     "mount": "Tourelle",
+     "specials": [],
+     "vsInfantry": [
+      "1/1",
+      "1/1",
+      "1/1",
+      "1/1"
+     ],
+     "vsVehicle": [
+      "1/2",
+      "1/2",
+      "1/1",
+      "1/1",
+      "1/1",
+      "1/1",
+      "1/1"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Piétiner - Stomp (Chevalier)",
+     "count": 1,
+     "range": "c",
+     "mount": "Tourelle",
+     "specials": [],
+     "vsInfantry": [
+      "B/AK",
+      "B/AK",
+      "B/AK",
+      "B/AK"
+     ],
+     "vsVehicle": [
+      "2/4",
+      "2/4",
+      "2/3",
+      "2/3",
+      "2/3",
+      "2/2",
+      "2/2"
+     ],
+     "vsAircraft": []
+    }
+   ]
+  },
+  {
+   "id": "imperium--archeron",
+   "name": "Archéron",
+   "subtitle": "Marcheur R7 - Cerastus",
+   "bloc": "Imperium",
+   "type": "vehicle",
+   "faction": "chevaliers-imperiaux",
+   "cost": 52,
+   "health": 25,
+   "move": 2,
+   "march": 4,
+   "armor": 7,
+   "capturable": false,
+   "skills": [
+    "Véhicule Large"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Lance-flamme Archéron",
+     "count": 1,
+     "range": 3,
+     "mount": "Tourelle",
+     "specials": [
+      "Flamme"
+     ],
+     "vsInfantry": [
+      "BB/1",
+      "BB/1",
+      "BB/1",
+      "BB/1"
+     ],
+     "vsVehicle": [
+      "BB/AK",
+      "BB/AK",
+      "BB/4",
+      "BB/4",
+      "BB/4",
+      "BB/4",
+      "BB/4"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Poing tronçonneur Archéron",
+     "count": 1,
+     "range": "c",
+     "mount": "Tourelle",
+     "specials": [],
+     "vsInfantry": [
+      "7/2",
+      "7/2",
+      "7/2",
+      "5/2"
+     ],
+     "vsVehicle": [
+      "4/3",
+      "3/2",
+      "3/2",
+      "2/2",
+      "1/2",
+      "1/2",
+      "1/2"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Bolter lourd jumelé de Cérastus",
+     "count": 1,
+     "range": 8,
+     "mount": "Tourelle",
+     "specials": [],
+     "vsInfantry": [
+      "7/2",
+      "7/2",
+      "7/2",
+      "5/2"
+     ],
+     "vsVehicle": [
+      "4/3",
+      "3/2",
+      "3/2",
+      "2/2",
+      "1/2"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Piétiner - Stomp (Chevalier)",
+     "count": 1,
+     "range": "c",
+     "mount": "Tourelle",
+     "specials": [],
+     "vsInfantry": [
+      "B/AK",
+      "B/AK",
+      "B/AK",
+      "B/AK"
+     ],
+     "vsVehicle": [
+      "2/4",
+      "2/4",
+      "2/3",
+      "2/3",
+      "2/3",
+      "2/2",
+      "2/2"
+     ],
+     "vsAircraft": []
+    }
+   ]
+  },
+  {
+   "id": "imperium--castigateur",
+   "name": "Castigateur",
+   "subtitle": "Marcheur R7 - Cerastus",
+   "bloc": "Imperium",
+   "type": "vehicle",
+   "faction": "chevaliers-imperiaux",
+   "cost": 50,
+   "health": 25,
+   "move": 2,
+   "march": 4,
+   "armor": 7,
+   "capturable": false,
+   "skills": [
+    "Véhicule Large"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Mega Bolter de Cérastus",
+     "count": 1,
+     "range": 8,
+     "mount": "Tourelle",
+     "specials": [],
+     "vsInfantry": [
+      "7/2",
+      "7/2",
+      "7/2",
+      "5/2"
+     ],
+     "vsVehicle": [
+      "4/AK",
+      "4/AK",
+      "4/3",
+      "3/3",
+      "3/2",
+      "3/2",
+      "2/2"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Glaive de Cérastus",
+     "count": 1,
+     "range": "c",
+     "mount": "Tourelle",
+     "specials": [],
+     "vsInfantry": [
+      "3/AK",
+      "3/AK",
+      "2/AK",
+      "2/AK"
+     ],
+     "vsVehicle": [
+      "4/3",
+      "4/2",
+      "3/2",
+      "3/2",
+      "2/2",
+      "2/2",
+      "2/2"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Piétiner - Stomp (Chevalier)",
+     "count": 1,
+     "range": "c",
+     "mount": "Tourelle",
+     "specials": [],
+     "vsInfantry": [
+      "B/AK",
+      "B/AK",
+      "B/AK",
+      "B/AK"
+     ],
+     "vsVehicle": [
+      "2/4",
+      "2/4",
+      "2/3",
+      "2/3",
+      "2/3",
+      "2/2",
+      "2/2"
+     ],
+     "vsAircraft": []
+    }
+   ]
+  },
+  {
+   "id": "imperium--capitaine",
+   "name": "Capitaine",
+   "subtitle": "Space Marines",
+   "bloc": "Imperium",
+   "type": "hero",
+   "faction": "space-marines",
+   "cost": 14,
+   "health": 5,
+   "move": 2,
+   "march": 4,
+   "armor": 3,
+   "capturable": false,
+   "skills": [
+    "Courageux",
+    "Résistant aux Dommages",
+    "Officier"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Fusil bolter",
+     "count": 1,
+     "range": 4,
+     "specials": [],
+     "vsInfantry": [
+      "5/1",
+      "5/1",
+      "4/1",
+      "2/1"
+     ],
+     "vsVehicle": [
+      "3/2",
+      "3/2",
+      "2/1",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "1/2",
+      "1/1",
+      "1/1"
+     ]
+    },
+    {
+     "name": "Epée Energétique",
+     "count": 1,
+     "range": "c",
+     "specials": [],
+     "vsInfantry": [
+      "2/1",
+      "2/1",
+      "2/1",
+      "2/1"
+     ],
+     "vsVehicle": [
+      "2/1",
+      "2/1",
+      "2/1",
+      "2/1",
+      "2/1",
+      "2/1",
+      "2/1"
+     ],
+     "vsAircraft": []
+    }
+   ]
+  },
+  {
+   "id": "imperium--chapelain",
+   "name": "Chapelain",
+   "subtitle": "Space Marines",
+   "bloc": "Imperium",
+   "type": "hero",
+   "faction": "space-marines",
+   "cost": 11,
+   "health": 5,
+   "move": 2,
+   "march": 4,
+   "armor": 3,
+   "capturable": false,
+   "skills": [
+    "Courageux",
+    "Résistant aux Dommages"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Pistolet bolter",
+     "count": 1,
+     "range": 2,
+     "specials": [],
+     "vsInfantry": [
+      "3/1",
+      "3/1",
+      "2/1"
+     ],
+     "vsVehicle": [
+      "2/1"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Crozius arcanum",
+     "count": 1,
+     "range": "c",
+     "specials": [
+      "Cutting"
+     ],
+     "vsInfantry": [
+      "3/1",
+      "3/1",
+      "3/1",
+      "3/1"
+     ],
+     "vsVehicle": [
+      "3/2",
+      "3/2",
+      "3/2",
+      "2/2",
+      "2/1",
+      "1/1",
+      "1/1"
+     ],
+     "vsAircraft": []
+    }
+   ]
+  },
+  {
+   "id": "imperium--escouade-de-commandement-space-marines",
+   "name": "Escouade de Commandement",
+   "subtitle": "Space Marines",
+   "bloc": "Imperium",
+   "type": "infantry",
+   "faction": "space-marines",
+   "cost": 18,
+   "health": 3,
+   "move": 2,
+   "march": 4,
+   "armor": 3,
+   "capturable": false,
+   "skills": [
+    "Courageux",
+    "Résistant aux Dommages",
+    "Escouade de Commandement"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Epée Energétique",
+     "count": 1,
+     "range": "c",
+     "specials": [],
+     "vsInfantry": [
+      "2/1",
+      "2/1",
+      "2/1",
+      "2/1"
+     ],
+     "vsVehicle": [
+      "2/1",
+      "2/1",
+      "2/1",
+      "2/1",
+      "2/1",
+      "2/1",
+      "2/1"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Hache énergétique",
+     "count": 1,
+     "range": "c",
+     "specials": [],
+     "vsInfantry": [
+      "2/1",
+      "2/1",
+      "2/1",
+      "2/1"
+     ],
+     "vsVehicle": [
+      "2/1",
+      "2/1",
+      "2/1",
+      "2/1",
+      "2/1",
+      "2/1",
+      "2/1"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Servobras",
+     "count": 1,
+     "range": "c",
+     "specials": [
+      "Grapple"
+     ],
+     "vsInfantry": [
+      "1/1",
+      "1/1",
+      "1/1",
+      "1/1"
+     ],
+     "vsVehicle": [
+      "1/2",
+      "1/2",
+      "1/1",
+      "1/1",
+      "1/1",
+      "1/1",
+      "1/1"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Pistolet bolter",
+     "count": 3,
+     "range": 2,
+     "specials": [],
+     "vsInfantry": [
+      "3/1",
+      "3/1",
+      "2/1"
+     ],
+     "vsVehicle": [
+      "2/1"
+     ],
+     "vsAircraft": []
+    }
+   ]
+  },
+  {
+   "id": "imperium--escouade-d-assaut-intercessor",
+   "name": "Escouade d’Assaut Intercessor",
+   "subtitle": "Space Marines",
+   "bloc": "Imperium",
+   "type": "infantry",
+   "faction": "space-marines",
+   "cost": 12,
+   "health": 3,
+   "move": 2,
+   "march": 4,
+   "armor": 3,
+   "capturable": false,
+   "skills": [
+    "Courageux",
+    "Résistant aux Dommages"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Epée tronçonneuse",
+     "count": 3,
+     "range": "c",
+     "specials": [],
+     "vsInfantry": [
+      "3/1",
+      "3/1",
+      "3/1",
+      "3/1"
+     ],
+     "vsVehicle": [
+      "2/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Pistolet bolter",
+     "count": 3,
+     "range": 2,
+     "specials": [],
+     "vsInfantry": [
+      "3/1",
+      "3/1",
+      "2/1"
+     ],
+     "vsVehicle": [
+      "2/1"
+     ],
+     "vsAircraft": []
+    }
+   ]
+  },
+  {
+   "id": "imperium--escouade-intercessor",
+   "name": "Escouade Intercessor",
+   "subtitle": "Space Marines",
+   "bloc": "Imperium",
+   "type": "infantry",
+   "faction": "space-marines",
+   "cost": 12,
+   "health": 3,
+   "move": 2,
+   "march": 4,
+   "armor": 3,
+   "capturable": false,
+   "skills": [
+    "Courageux",
+    "Résistant aux Dommages"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Fusil bolter",
+     "count": 3,
+     "range": 4,
+     "specials": [],
+     "vsInfantry": [
+      "5/1",
+      "5/1",
+      "4/1",
+      "2/1"
+     ],
+     "vsVehicle": [
+      "3/2",
+      "3/2",
+      "2/1",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "1/2",
+      "1/1",
+      "1/1"
+     ]
+    },
+    {
+     "name": "Pistolet bolter",
+     "count": 3,
+     "range": 2,
+     "specials": [],
+     "vsInfantry": [
+      "3/1",
+      "3/1",
+      "2/1"
+     ],
+     "vsVehicle": [
+      "2/1"
+     ],
+     "vsAircraft": []
+    }
+   ]
+  },
+  {
+   "id": "imperium--escouade-d-assaut-avec-reacteur-dorsaux",
+   "name": "Escouade d’Assaut avec réacteur dorsaux",
+   "subtitle": "Space Marines Réacteur dorsaux",
+   "bloc": "Imperium",
+   "type": "infantry",
+   "faction": "space-marines",
+   "cost": 15,
+   "health": 3,
+   "move": 3,
+   "march": 6,
+   "armor": 3,
+   "capturable": false,
+   "skills": [
+    "Courageux",
+    "Résistant aux Dommages",
+    "Vol"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Epée tronçonneuse",
+     "count": 3,
+     "range": "c",
+     "specials": [],
+     "vsInfantry": [
+      "3/1",
+      "3/1",
+      "3/1",
+      "3/1"
+     ],
+     "vsVehicle": [
+      "2/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Pistolet bolter",
+     "count": 3,
+     "range": 2,
+     "specials": [],
+     "vsInfantry": [
+      "3/1",
+      "3/1",
+      "2/1"
+     ],
+     "vsVehicle": [
+      "2/1"
+     ],
+     "vsAircraft": []
+    }
+   ]
+  },
+  {
+   "id": "imperium--escouade-infernus",
+   "name": "Escouade Infernus",
+   "subtitle": "Space Marines",
+   "bloc": "Imperium",
+   "type": "infantry",
+   "faction": "space-marines",
+   "cost": 15,
+   "health": 3,
+   "move": 2,
+   "march": 4,
+   "armor": 3,
+   "capturable": false,
+   "skills": [
+    "Courageux",
+    "Résistant aux Dommages"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Lance-flammes",
+     "count": 3,
+     "range": 1,
+     "specials": [
+      "Flame : Flamethrower"
+     ],
+     "vsInfantry": [
+      "BB/1",
+      "BB/1",
+      "BB/1",
+      "B/1"
+     ],
+     "vsVehicle": [
+      "BB/AK",
+      "BB/AK",
+      "B/2",
+      "B/2",
+      "B/2",
+      "B/2",
+      "B/2"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Pistolet bolter",
+     "count": 3,
+     "range": 2,
+     "specials": [],
+     "vsInfantry": [
+      "3/1",
+      "3/1",
+      "2/1"
+     ],
+     "vsVehicle": [
+      "2/1"
+     ],
+     "vsAircraft": []
+    }
+   ]
+  },
+  {
+   "id": "imperium--escouade-desolation",
+   "name": "Escouade Désolation",
+   "subtitle": "Space Marines",
+   "bloc": "Imperium",
+   "type": "infantry",
+   "faction": "space-marines",
+   "cost": 16,
+   "health": 3,
+   "move": 2,
+   "march": 4,
+   "armor": 3,
+   "capturable": false,
+   "skills": [
+    "Courageux",
+    "Résistant aux Dommages"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Lance-missiles Désolator (AT)",
+     "count": 3,
+     "range": 4,
+     "specials": [
+      "Grenade"
+     ],
+     "vsInfantry": [
+      "1/1",
+      "1/1",
+      "1/1",
+      "1/1"
+     ],
+     "vsVehicle": [
+      "1/AK",
+      "1/AK",
+      "1/3",
+      "1/2",
+      "1/1",
+      "1/1",
+      "1/1"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Lance-missiles Désolator (AI)",
+     "count": 3,
+     "range": 4,
+     "specials": [
+      "Flame burst"
+     ],
+     "vsInfantry": [
+      "B/1",
+      "B/1",
+      "B/1",
+      "B/1"
+     ],
+     "vsVehicle": [
+      "1/3",
+      "1/2",
+      "1/2",
+      "1/2",
+      "1/2",
+      "1/2",
+      "1/2"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Pistolet bolter",
+     "count": 1,
+     "range": 2,
+     "specials": [],
+     "vsInfantry": [
+      "3/1",
+      "3/1",
+      "2/1"
+     ],
+     "vsVehicle": [
+      "2/1"
+     ],
+     "vsAircraft": []
+    }
+   ]
+  },
+  {
+   "id": "imperium--escouade-eliminator",
+   "name": "Escouade Eliminator",
+   "subtitle": "Space Marines",
+   "bloc": "Imperium",
+   "type": "infantry",
+   "faction": "space-marines",
+   "cost": 14,
+   "health": 3,
+   "move": 2,
+   "march": 4,
+   "armor": 3,
+   "capturable": false,
+   "skills": [
+    "Courageux",
+    "Résistant aux Dommages",
+    "Lunettes de Visée"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Fusil de sniper Primaris",
+     "count": 3,
+     "range": 10,
+     "specials": [
+      "Sniper rifle"
+     ],
+     "vsInfantry": [
+      "1/1",
+      "1/1",
+      "1/1",
+      "1/1"
+     ],
+     "vsVehicle": [
+      "1/4",
+      "1/3",
+      "1/3",
+      "1/2",
+      "1/2",
+      "1/1",
+      "1/1"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Pistolet bolter",
+     "count": 3,
+     "range": 2,
+     "specials": [],
+     "vsInfantry": [
+      "3/1",
+      "3/1",
+      "2/1"
+     ],
+     "vsVehicle": [
+      "2/1"
+     ],
+     "vsAircraft": []
+    }
+   ]
+  },
+  {
+   "id": "imperium--escouade-suppressor",
+   "name": "Escouade Suppressor",
+   "subtitle": "Phobos Réacteur dorsaux",
+   "bloc": "Imperium",
+   "type": "infantry",
+   "faction": "space-marines",
+   "cost": 18,
+   "health": 3,
+   "move": 3,
+   "march": 6,
+   "armor": 3,
+   "capturable": false,
+   "skills": [
+    "Courageux",
+    "Résistant aux Dommages",
+    "Vol"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Autocanon",
+     "count": 3,
+     "range": 16,
+     "specials": [],
+     "vsInfantry": [
+      "B/1",
+      "B/1",
+      "B/1",
+      "B/1"
+     ],
+     "vsVehicle": [
+      "1/AK",
+      "1/AK",
+      "1/5",
+      "1/4",
+      "1/4",
+      "1/3",
+      "1/3"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Pistolet bolter",
+     "count": 3,
+     "range": 2,
+     "specials": [],
+     "vsInfantry": [
+      "3/1",
+      "3/1",
+      "2/1"
+     ],
+     "vsVehicle": [
+      "2/1"
+     ],
+     "vsAircraft": []
+    }
+   ]
+  },
+  {
+   "id": "imperium--escouade-scout",
+   "name": "Escouade Scout",
+   "subtitle": "Scout SM",
+   "bloc": "Imperium",
+   "type": "infantry",
+   "faction": "space-marines",
+   "cost": 8,
+   "health": 3,
+   "move": 2,
+   "march": 4,
+   "armor": 2,
+   "capturable": false,
+   "skills": [
+    "Courageux",
+    "Scout"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Epée tronçonneuse",
+     "count": 1,
+     "range": "c",
+     "specials": [],
+     "vsInfantry": [
+      "3/1",
+      "3/1",
+      "3/1",
+      "3/1"
+     ],
+     "vsVehicle": [
+      "2/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Pistolet bolter",
+     "count": 1,
+     "range": 2,
+     "specials": [],
+     "vsInfantry": [
+      "3/1",
+      "3/1",
+      "2/1"
+     ],
+     "vsVehicle": [
+      "2/1"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Fusil bolter",
+     "count": 2,
+     "range": 4,
+     "specials": [],
+     "vsInfantry": [
+      "5/1",
+      "5/1",
+      "4/1",
+      "2/1"
+     ],
+     "vsVehicle": [
+      "3/2",
+      "3/2",
+      "2/1",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "1/2",
+      "1/1",
+      "1/1"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "imperium--escouade-aggressor",
+   "name": "Escouade Aggressor",
+   "subtitle": "Gravis",
+   "bloc": "Imperium",
+   "type": "infantry",
+   "faction": "space-marines",
+   "cost": 19,
+   "health": 3,
+   "move": 2,
+   "march": 3,
+   "armor": 4,
+   "capturable": false,
+   "skills": [
+    "Courageux",
+    "Résistant aux Dommages"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Gantelet Flamstorm (Tir)",
+     "count": 6,
+     "range": 1,
+     "specials": [
+      "Flame : Flamethrower"
+     ],
+     "vsInfantry": [
+      "B/1",
+      "B/1",
+      "B/1",
+      "B/1"
+     ],
+     "vsVehicle": [
+      "B/AK",
+      "B/AK",
+      "B/2",
+      "B/2",
+      "B/2",
+      "B/2",
+      "B/2"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Gantelet Flamstorm (Mélée)",
+     "count": 6,
+     "range": "c",
+     "specials": [],
+     "vsInfantry": [
+      "2/1",
+      "2/1",
+      "2/1",
+      "2/1"
+     ],
+     "vsVehicle": [
+      "2/2",
+      "2/2",
+      "2/2",
+      "2/2",
+      "2/2",
+      "2/2",
+      "2/2"
+     ],
+     "vsAircraft": []
+    }
+   ]
+  },
+  {
+   "id": "imperium--escouade-inceptor",
+   "name": "Escouade Inceptor",
+   "subtitle": "Gravis Réacteur dorsaux",
+   "bloc": "Imperium",
+   "type": "infantry",
+   "faction": "space-marines",
+   "cost": 15,
+   "health": 3,
+   "move": 2,
+   "march": 5,
+   "armor": 4,
+   "capturable": false,
+   "skills": [
+    "Courageux",
+    "Résistant aux Dommages",
+    "Vol"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Bolter d'assaut",
+     "count": 6,
+     "range": 3,
+     "specials": [],
+     "vsInfantry": [
+      "3/1",
+      "3/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsVehicle": [
+      "3/2",
+      "3/2",
+      "2/1",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "1/1",
+      "1/1",
+      "1/1"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "imperium--escouade-terminator",
+   "name": "Escouade Terminator",
+   "subtitle": "Terminator",
+   "bloc": "Imperium",
+   "type": "infantry",
+   "faction": "space-marines",
+   "cost": 17,
+   "health": 3,
+   "move": 2,
+   "march": 3,
+   "armor": 4,
+   "capturable": false,
+   "skills": [
+    "Courageux",
+    "Garde d'Acier"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Bolter jumelé",
+     "count": 3,
+     "range": 6,
+     "specials": [],
+     "vsInfantry": [
+      "7/1",
+      "7/1",
+      "7/1",
+      "5/1"
+     ],
+     "vsVehicle": [
+      "4/2",
+      "3/1",
+      "3/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "3/2",
+      "2/2",
+      "1/1"
+     ]
+    },
+    {
+     "name": "Gantelet énergétique",
+     "count": 2,
+     "range": "c",
+     "specials": [],
+     "vsInfantry": [
+      "2/1",
+      "2/1",
+      "2/1",
+      "2/1"
+     ],
+     "vsVehicle": [
+      "2/2",
+      "2/2",
+      "2/2",
+      "2/2",
+      "2/2",
+      "2/2",
+      "2/2"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Epée Energétique",
+     "count": 1,
+     "range": "c",
+     "specials": [],
+     "vsInfantry": [
+      "2/1",
+      "2/1",
+      "2/1",
+      "2/1"
+     ],
+     "vsVehicle": [
+      "2/1",
+      "2/1",
+      "2/1",
+      "2/1",
+      "2/1",
+      "2/1",
+      "2/1"
+     ],
+     "vsAircraft": []
+    }
+   ]
+  },
+  {
+   "id": "imperium--escouade-d-assaut-terminator",
+   "name": "Escouade d’Assaut Terminator",
+   "subtitle": "Terminator",
+   "bloc": "Imperium",
+   "type": "infantry",
+   "faction": "space-marines",
+   "cost": 20,
+   "health": 3,
+   "move": 2,
+   "march": 3,
+   "armor": 4,
+   "capturable": false,
+   "skills": [
+    "Courageux",
+    "Garde d'Acier"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Marteau Thunder",
+     "count": 3,
+     "range": "c",
+     "specials": [
+      "Tesla Club : Tesla"
+     ],
+     "vsInfantry": [
+      "1/1",
+      "1/1",
+      "1/1",
+      "1/1"
+     ],
+     "vsVehicle": [
+      "1/4",
+      "1/4",
+      "1/4",
+      "1/4",
+      "1/4",
+      "1/4",
+      "1/4"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Bouclier d'assaut",
+     "count": 3,
+     "range": "c",
+     "specials": [
+      "Assault Shield"
+     ],
+     "vsInfantry": [
+      "1/1",
+      "1/1",
+      "1/1",
+      "1/1"
+     ],
+     "vsVehicle": [
+      "1/2",
+      "1/2",
+      "1/1",
+      "1/1",
+      "1/1",
+      "1/1",
+      "1/1"
+     ],
+     "vsAircraft": []
+    }
+   ]
+  },
+  {
+   "id": "imperium--dreadnought-redemptor",
+   "name": "Dreadnought Redemptor",
+   "subtitle": "Marcheur R5",
+   "bloc": "Imperium",
+   "type": "vehicle",
+   "faction": "space-marines",
+   "cost": 22,
+   "health": 6,
+   "move": 2,
+   "march": 4,
+   "armor": 5,
+   "capturable": false,
+   "skills": [],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Armes de mêlée de Dreadnought",
+     "count": 1,
+     "range": "c",
+     "specials": [
+      "Grapple"
+     ],
+     "vsInfantry": [
+      "2/2",
+      "2/2",
+      "2/2",
+      "2/2"
+     ],
+     "vsVehicle": [
+      "1/3",
+      "1/3",
+      "1/2",
+      "1/1",
+      "1/1",
+      "1/1",
+      "1/1"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Canon à plasma lourd",
+     "count": 1,
+     "range": 14,
+     "mount": "Face",
+     "specials": [
+      "Laser"
+     ],
+     "vsInfantry": [
+      "6/1",
+      "6/1",
+      "5/1",
+      "5/1"
+     ],
+     "vsVehicle": [
+      "13/1",
+      "12/1",
+      "11/1",
+      "10/1",
+      "9/1",
+      "8/1",
+      "7/1"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Canon d'assaut",
+     "count": 1,
+     "range": 8,
+     "mount": "Face",
+     "specials": [],
+     "vsInfantry": [
+      "5/1",
+      "5/1",
+      "5/1",
+      "4/1"
+     ],
+     "vsVehicle": [
+      "3/2",
+      "3/2",
+      "2/1",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "2/2",
+      "2/2",
+      "1/1"
+     ]
+    },
+    {
+     "name": "Bolter jumelé",
+     "count": 2,
+     "range": 6,
+     "mount": "Face",
+     "specials": [],
+     "vsInfantry": [
+      "7/1",
+      "7/1",
+      "7/1",
+      "5/1"
+     ],
+     "vsVehicle": [
+      "4/2",
+      "3/1",
+      "3/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "3/2",
+      "2/2",
+      "1/1"
+     ]
+    },
+    {
+     "name": "Lance-missiles",
+     "count": 1,
+     "range": 4,
+     "mount": "Face",
+     "specials": [],
+     "vsInfantry": [
+      "1/1",
+      "1/1",
+      "1/1",
+      "1/1"
+     ],
+     "vsVehicle": [
+      "1/AK",
+      "1/AK",
+      "1/4",
+      "1/4",
+      "1/3",
+      "1/3",
+      "1/2"
+     ],
+     "vsAircraft": []
+    }
+   ]
+  },
+  {
+   "id": "imperium--land-raider",
+   "name": "Land Raider",
+   "subtitle": "Véhicule R6",
+   "bloc": "Imperium",
+   "type": "vehicle",
+   "faction": "space-marines",
+   "cost": 32,
+   "health": 10,
+   "move": 2,
+   "march": 4,
+   "armor": 6,
+   "capturable": false,
+   "skills": [
+    "Résistant aux Dommages",
+    "Lance-Fumée",
+    "Chenillé",
+    "Véhicule Large",
+    "Passagers (10)"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Bolter lourd jumelé",
+     "count": 1,
+     "range": 8,
+     "mount": "Face",
+     "specials": [],
+     "vsInfantry": [
+      "7/2",
+      "7/2",
+      "7/2",
+      "5/2"
+     ],
+     "vsVehicle": [
+      "4/3",
+      "3/2",
+      "3/2",
+      "2/2",
+      "1/2"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Canon laser jumelé",
+     "count": 1,
+     "range": 14,
+     "mount": "Droite",
+     "specials": [],
+     "vsInfantry": [
+      "4/1",
+      "4/1",
+      "3/1",
+      "3/1"
+     ],
+     "vsVehicle": [
+      "8/1",
+      "8/1",
+      "6/1",
+      "6/1",
+      "5/1",
+      "4/1",
+      "3/1"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Canon laser jumelé",
+     "count": 1,
+     "range": 14,
+     "mount": "Gauche",
+     "specials": [],
+     "vsInfantry": [
+      "4/1",
+      "4/1",
+      "3/1",
+      "3/1"
+     ],
+     "vsVehicle": [
+      "8/1",
+      "8/1",
+      "6/1",
+      "6/1",
+      "5/1",
+      "4/1",
+      "3/1"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Bolter jumelé",
+     "count": 1,
+     "range": 6,
+     "mount": "Tourelle",
+     "specials": [],
+     "vsInfantry": [
+      "7/1",
+      "7/1",
+      "7/1",
+      "5/1"
+     ],
+     "vsVehicle": [
+      "4/2",
+      "3/1",
+      "3/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "3/2",
+      "2/2",
+      "1/1"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "imperium--rhino",
+   "name": "Rhino",
+   "subtitle": "Véhicule R3",
+   "bloc": "Imperium",
+   "type": "vehicle",
+   "faction": "space-marines",
+   "cost": 9,
+   "health": 6,
+   "move": 2,
+   "march": 5,
+   "armor": 3,
+   "capturable": false,
+   "skills": [
+    "Chenillé",
+    "Passagers (7)",
+    "Lance-Fumée"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Bolter jumelé",
+     "count": 1,
+     "range": 6,
+     "mount": "Tourelle",
+     "specials": [],
+     "vsInfantry": [
+      "7/1",
+      "7/1",
+      "7/1",
+      "5/1"
+     ],
+     "vsVehicle": [
+      "4/2",
+      "3/1",
+      "3/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "3/2",
+      "2/2",
+      "1/1"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "imperium--predator-annihilator",
+   "name": "Predator Annihilator",
+   "subtitle": "Véhicule R4",
+   "bloc": "Imperium",
+   "type": "vehicle",
+   "faction": "space-marines",
+   "cost": 19,
+   "health": 6,
+   "move": 2,
+   "march": 4,
+   "armor": 4,
+   "capturable": false,
+   "skills": [
+    "Chenillé",
+    "Lance-Fumée"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Canon laser jumelé",
+     "count": 1,
+     "range": 14,
+     "mount": "Tourelle",
+     "specials": [],
+     "vsInfantry": [
+      "4/1",
+      "4/1",
+      "3/1",
+      "3/1"
+     ],
+     "vsVehicle": [
+      "8/1",
+      "8/1",
+      "6/1",
+      "6/1",
+      "5/1",
+      "4/1",
+      "3/1"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Canon Laser",
+     "count": 1,
+     "range": 12,
+     "mount": "Droite",
+     "specials": [],
+     "vsInfantry": [
+      "B/1",
+      "B/1",
+      "B/1",
+      "B/1"
+     ],
+     "vsVehicle": [
+      "1/AK",
+      "1/AK",
+      "1/4",
+      "1/3",
+      "1/3",
+      "1/2",
+      "1/2"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Canon Laser",
+     "count": 1,
+     "range": 12,
+     "mount": "Gauche",
+     "specials": [],
+     "vsInfantry": [
+      "B/1",
+      "B/1",
+      "B/1",
+      "B/1"
+     ],
+     "vsVehicle": [
+      "1/AK",
+      "1/AK",
+      "1/4",
+      "1/3",
+      "1/3",
+      "1/2",
+      "1/2"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Bolter jumelé",
+     "count": 1,
+     "range": 6,
+     "mount": "Tourelle",
+     "specials": [],
+     "vsInfantry": [
+      "7/1",
+      "7/1",
+      "7/1",
+      "5/1"
+     ],
+     "vsVehicle": [
+      "4/2",
+      "3/1",
+      "3/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "3/2",
+      "2/2",
+      "1/1"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "imperium--predator-destructor",
+   "name": "Predator Destructor",
+   "subtitle": "Véhicule R4",
+   "bloc": "Imperium",
+   "type": "vehicle",
+   "faction": "space-marines",
+   "cost": 18,
+   "health": 6,
+   "move": 2,
+   "march": 4,
+   "armor": 4,
+   "capturable": false,
+   "skills": [
+    "Chenillé",
+    "Lance-Fumée"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Autocanon",
+     "count": 1,
+     "range": 16,
+     "mount": "Tourelle",
+     "specials": [],
+     "vsInfantry": [
+      "B/1",
+      "B/1",
+      "B/1",
+      "B/1"
+     ],
+     "vsVehicle": [
+      "1/AK",
+      "1/AK",
+      "1/5",
+      "1/4",
+      "1/4",
+      "1/3",
+      "1/3"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Bolter lourd",
+     "count": 1,
+     "range": 8,
+     "mount": "Droite",
+     "specials": [],
+     "vsInfantry": [
+      "6/2",
+      "6/2",
+      "6/2",
+      "4/2"
+     ],
+     "vsVehicle": [
+      "3/3",
+      "2/2",
+      "2/2",
+      "1/2",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "3/1",
+      "2/1"
+     ]
+    },
+    {
+     "name": "Bolter lourd",
+     "count": 1,
+     "range": 8,
+     "mount": "Gauche",
+     "specials": [],
+     "vsInfantry": [
+      "6/2",
+      "6/2",
+      "6/2",
+      "4/2"
+     ],
+     "vsVehicle": [
+      "3/3",
+      "2/2",
+      "2/2",
+      "1/2",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "3/1",
+      "2/1"
+     ]
+    },
+    {
+     "name": "Bolter jumelé",
+     "count": 1,
+     "range": 6,
+     "mount": "Tourelle",
+     "specials": [],
+     "vsInfantry": [
+      "7/1",
+      "7/1",
+      "7/1",
+      "5/1"
+     ],
+     "vsVehicle": [
+      "4/2",
+      "3/1",
+      "3/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "3/2",
+      "2/2",
+      "1/1"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "imperium--vindicator",
+   "name": "Vindicator",
+   "subtitle": "Véhicule R4",
+   "bloc": "Imperium",
+   "type": "vehicle",
+   "faction": "space-marines",
+   "cost": 15,
+   "health": 6,
+   "move": 2,
+   "march": 4,
+   "armor": 4,
+   "capturable": false,
+   "skills": [
+    "Chenillé",
+    "Lance-Fumée"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Bolter jumelé",
+     "count": 1,
+     "range": 6,
+     "mount": "Tourelle",
+     "specials": [],
+     "vsInfantry": [
+      "7/1",
+      "7/1",
+      "7/1",
+      "5/1"
+     ],
+     "vsVehicle": [
+      "4/2",
+      "3/1",
+      "3/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "3/2",
+      "2/2",
+      "1/1"
+     ]
+    },
+    {
+     "name": "Obusier de Vindicator",
+     "count": 1,
+     "range": "4-14",
+     "mount": "Face",
+     "specials": [
+      "Artillerie"
+     ],
+     "vsInfantry": [
+      "BB/1",
+      "BB/1",
+      "BB/1",
+      "BB/1"
+     ],
+     "vsVehicle": [
+      "1/AK",
+      "1/AK",
+      "1/AK",
+      "1/5",
+      "1/4",
+      "1/3",
+      "1/3"
+     ],
+     "vsAircraft": []
+    }
+   ]
+  },
+  {
+   "id": "imperium--whirlwind",
+   "name": "Whirlwind",
+   "subtitle": "Véhicule R4",
+   "bloc": "Imperium",
+   "type": "vehicle",
+   "faction": "space-marines",
+   "cost": 15,
+   "health": 6,
+   "move": 2,
+   "march": 4,
+   "armor": 4,
+   "capturable": false,
+   "skills": [
+    "Chenillé",
+    "Lance-Fumée"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Bolter jumelé",
+     "count": 1,
+     "range": 6,
+     "mount": "Tourelle",
+     "specials": [],
+     "vsInfantry": [
+      "7/1",
+      "7/1",
+      "7/1",
+      "5/1"
+     ],
+     "vsVehicle": [
+      "4/2",
+      "3/1",
+      "3/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "3/2",
+      "2/2",
+      "1/1"
+     ]
+    },
+    {
+     "name": "Lanceur Wirlwind",
+     "count": 1,
+     "range": "4-14",
+     "mount": "Face",
+     "specials": [
+      "Artillerie",
+      "Reload"
+     ],
+     "vsInfantry": [
+      "BB/1",
+      "BB/1",
+      "BB/1",
+      "B/1"
+     ],
+     "vsVehicle": [
+      "3/3",
+      "2/3",
+      "2/2",
+      "2/2",
+      "2/2",
+      "2/2",
+      "2/1"
+     ],
+     "vsAircraft": []
+    }
+   ]
+  },
+  {
+   "id": "imperium--rhino-damocles",
+   "name": "Rhino Damoclès",
+   "subtitle": "Véhicule R4",
+   "bloc": "Imperium",
+   "type": "vehicle",
+   "faction": "space-marines",
+   "cost": 14,
+   "health": 6,
+   "move": 2,
+   "march": 4,
+   "armor": 4,
+   "capturable": false,
+   "skills": [
+    "Chenillé",
+    "Lance-Fumée",
+    "Véhicule de Commandement"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Bolter jumelé",
+     "count": 1,
+     "range": 6,
+     "mount": "Tourelle",
+     "specials": [],
+     "vsInfantry": [
+      "7/1",
+      "7/1",
+      "7/1",
+      "5/1"
+     ],
+     "vsVehicle": [
+      "4/2",
+      "3/1",
+      "3/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "3/2",
+      "2/2",
+      "1/1"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "imperium--repulsor",
+   "name": "Repulsor",
+   "subtitle": "Véhicule R6",
+   "bloc": "Imperium",
+   "type": "vehicle",
+   "faction": "space-marines",
+   "cost": 29,
+   "health": 10,
+   "move": 2,
+   "march": 4,
+   "armor": 6,
+   "capturable": false,
+   "skills": [
+    "Jump",
+    "Passagers (10)",
+    "Lance-Fumée"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Mitrailleuse",
+     "count": 1,
+     "range": 6,
+     "mount": "Tourelle",
+     "specials": [],
+     "vsInfantry": [
+      "4/1",
+      "3/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsVehicle": [
+      "2/1",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "2/1",
+      "1/1"
+     ]
+    },
+    {
+     "name": "Canon d'assaut",
+     "count": 1,
+     "range": 8,
+     "mount": "Tourelle",
+     "specials": [],
+     "vsInfantry": [
+      "5/1",
+      "5/1",
+      "5/1",
+      "4/1"
+     ],
+     "vsVehicle": [
+      "3/2",
+      "3/2",
+      "2/1",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "2/2",
+      "2/2",
+      "1/1"
+     ]
+    },
+    {
+     "name": "Autocanon",
+     "count": 1,
+     "range": 16,
+     "mount": "Tourelle",
+     "specials": [],
+     "vsInfantry": [
+      "B/1",
+      "B/1",
+      "B/1",
+      "B/1"
+     ],
+     "vsVehicle": [
+      "1/AK",
+      "1/AK",
+      "1/5",
+      "1/4",
+      "1/4",
+      "1/3",
+      "1/3"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Canon laser jumelé",
+     "count": 1,
+     "range": 14,
+     "mount": "Face",
+     "specials": [],
+     "vsInfantry": [
+      "4/1",
+      "4/1",
+      "3/1",
+      "3/1"
+     ],
+     "vsVehicle": [
+      "8/1",
+      "8/1",
+      "6/1",
+      "6/1",
+      "5/1",
+      "4/1",
+      "3/1"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Lance grenades",
+     "count": 1,
+     "range": 3,
+     "mount": "Droite",
+     "specials": [
+      "Grenade"
+     ],
+     "vsInfantry": [
+      "B/1",
+      "B/1",
+      "B/1",
+      "B/1"
+     ],
+     "vsVehicle": [
+      "2/2",
+      "2/1",
+      "1/1"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Lance grenades",
+     "count": 1,
+     "range": 3,
+     "mount": "Gauche",
+     "specials": [
+      "Grenade"
+     ],
+     "vsInfantry": [
+      "B/1",
+      "B/1",
+      "B/1",
+      "B/1"
+     ],
+     "vsVehicle": [
+      "2/2",
+      "2/1",
+      "1/1"
+     ],
+     "vsAircraft": []
+    }
+   ]
+  },
+  {
+   "id": "imperium--repulsor-executioner",
+   "name": "Repulsor Executioner",
+   "subtitle": "Véhicule R6",
+   "bloc": "Imperium",
+   "type": "vehicle",
+   "faction": "space-marines",
+   "cost": 32,
+   "health": 10,
+   "move": 2,
+   "march": 4,
+   "armor": 6,
+   "capturable": false,
+   "skills": [
+    "Jump",
+    "Lance-Fumée",
+    "Passagers (7)"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Mitrailleuse",
+     "count": 1,
+     "range": 6,
+     "mount": "Tourelle",
+     "specials": [],
+     "vsInfantry": [
+      "4/1",
+      "3/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsVehicle": [
+      "2/1",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "2/1",
+      "1/1"
+     ]
+    },
+    {
+     "name": "Canon Destructeur Laser",
+     "count": 1,
+     "range": 24,
+     "mount": "Tourelle",
+     "specials": [],
+     "vsInfantry": [
+      "B/1",
+      "B/1",
+      "B/1",
+      "B/1"
+     ],
+     "vsVehicle": [
+      "1/AK",
+      "1/AK",
+      "1/AK",
+      "1/AK",
+      "1/8",
+      "1/7",
+      "1/6"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Canon d'assaut",
+     "count": 1,
+     "range": 8,
+     "mount": "Tourelle",
+     "specials": [],
+     "vsInfantry": [
+      "5/1",
+      "5/1",
+      "5/1",
+      "4/1"
+     ],
+     "vsVehicle": [
+      "3/2",
+      "3/2",
+      "2/1",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "2/2",
+      "2/2",
+      "1/1"
+     ]
+    },
+    {
+     "name": "Bolter lourd jumelé",
+     "count": 1,
+     "range": 8,
+     "mount": "Face",
+     "specials": [],
+     "vsInfantry": [
+      "7/2",
+      "7/2",
+      "7/2",
+      "5/2"
+     ],
+     "vsVehicle": [
+      "4/3",
+      "3/2",
+      "3/2",
+      "2/2",
+      "1/2"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Lance grenades",
+     "count": 1,
+     "range": 3,
+     "mount": "Droite",
+     "specials": [
+      "Grenade"
+     ],
+     "vsInfantry": [
+      "B/1",
+      "B/1",
+      "B/1",
+      "B/1"
+     ],
+     "vsVehicle": [
+      "2/2",
+      "2/1",
+      "1/1"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Lance grenades",
+     "count": 1,
+     "range": 3,
+     "mount": "Gauche",
+     "specials": [
+      "Grenade"
+     ],
+     "vsInfantry": [
+      "B/1",
+      "B/1",
+      "B/1",
+      "B/1"
+     ],
+     "vsVehicle": [
+      "2/2",
+      "2/1",
+      "1/1"
+     ],
+     "vsAircraft": []
+    }
+   ]
+  },
+  {
+   "id": "imperium--sicaran",
+   "name": "Sicaran",
+   "subtitle": "Véhicule R5",
+   "bloc": "Imperium",
+   "type": "vehicle",
+   "faction": "space-marines",
+   "cost": 25,
+   "health": 8,
+   "move": 2,
+   "march": 4,
+   "armor": 5,
+   "capturable": false,
+   "skills": [
+    "Chenillé",
+    "Rare",
+    "Véhicule Large"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Bolter lourd",
+     "count": 1,
+     "range": 8,
+     "mount": "Face",
+     "specials": [],
+     "vsInfantry": [
+      "6/2",
+      "6/2",
+      "6/2",
+      "4/2"
+     ],
+     "vsVehicle": [
+      "3/3",
+      "2/2",
+      "2/2",
+      "1/2",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "3/1",
+      "2/1"
+     ]
+    },
+    {
+     "name": "Bolter lourd",
+     "count": 1,
+     "range": 8,
+     "mount": "Droite",
+     "specials": [],
+     "vsInfantry": [
+      "6/2",
+      "6/2",
+      "6/2",
+      "4/2"
+     ],
+     "vsVehicle": [
+      "3/3",
+      "2/2",
+      "2/2",
+      "1/2",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "3/1",
+      "2/1"
+     ]
+    },
+    {
+     "name": "Bolter lourd",
+     "count": 1,
+     "range": 8,
+     "mount": "Gauche",
+     "specials": [],
+     "vsInfantry": [
+      "6/2",
+      "6/2",
+      "6/2",
+      "4/2"
+     ],
+     "vsVehicle": [
+      "3/3",
+      "2/2",
+      "2/2",
+      "1/2",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "3/1",
+      "2/1"
+     ]
+    },
+    {
+     "name": "Autocanon accélérateur jumelé",
+     "count": 1,
+     "range": 24,
+     "mount": "Tourelle",
+     "specials": [],
+     "vsInfantry": [
+      "BB/1",
+      "BB/1",
+      "B/1",
+      "B/1"
+     ],
+     "vsVehicle": [
+      "1/AK",
+      "1/AK",
+      "1/AK",
+      "1/AK",
+      "1/5",
+      "1/4",
+      "1/4"
+     ],
+     "vsAircraft": []
+    }
+   ]
+  },
+  {
+   "id": "ork--warboss",
+   "name": "Warboss",
+   "subtitle": "Nobz",
+   "bloc": "Ork",
+   "type": "hero",
+   "faction": "ork",
+   "cost": 13,
+   "health": 5,
+   "move": 2,
+   "march": 3,
+   "armor": 3,
+   "capturable": false,
+   "skills": [
+    "Courageux",
+    "Officier"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Pince Energétik",
+     "count": 1,
+     "range": "c",
+     "specials": [
+      "Cutting"
+     ],
+     "vsInfantry": [
+      "2/1",
+      "2/1",
+      "2/1",
+      "2/1"
+     ],
+     "vsVehicle": [
+      "2/2",
+      "2/2",
+      "2/2",
+      "2/2",
+      "2/2",
+      "2/2",
+      "2/2"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Kalibr'",
+     "count": 1,
+     "range": 4,
+     "specials": [],
+     "vsInfantry": [
+      "4/1",
+      "3/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsVehicle": [
+      "2/2",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "1/2",
+      "1/1"
+     ]
+    },
+    {
+     "name": "Kombi Rokette",
+     "count": 1,
+     "range": 4,
+     "specials": [],
+     "vsInfantry": [
+      "1/1",
+      "1/1",
+      "1/1",
+      "1/1"
+     ],
+     "vsVehicle": [
+      "1/AK",
+      "1/AK",
+      "1/4",
+      "1/4",
+      "1/3",
+      "1/3",
+      "1/2"
+     ],
+     "vsAircraft": []
+    }
+   ]
+  },
+  {
+   "id": "ork--mega-warboss",
+   "name": "Méga Warboss",
+   "subtitle": "Méga-armure Ork",
+   "bloc": "Ork",
+   "type": "hero",
+   "faction": "ork",
+   "cost": 16,
+   "health": 5,
+   "move": 1,
+   "march": 2,
+   "armor": 4,
+   "capturable": false,
+   "skills": [
+    "Garde d'Acier",
+    "Courageux",
+    "Officier"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Enorm' Kikoup",
+     "count": 1,
+     "range": "c",
+     "specials": [
+      "Cutting"
+     ],
+     "vsInfantry": [
+      "3/1",
+      "3/1",
+      "3/1",
+      "3/1"
+     ],
+     "vsVehicle": [
+      "3/1",
+      "3/1",
+      "3/1",
+      "2/1",
+      "2/1",
+      "1/1",
+      "1/1"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Gros Fling",
+     "count": 1,
+     "range": 6,
+     "specials": [],
+     "vsInfantry": [
+      "4/1",
+      "3/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsVehicle": [
+      "3/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "2/1",
+      "1/1"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ork--escouade-de-commandement",
+   "name": "Escouade de Commandement",
+   "subtitle": "Nobz",
+   "bloc": "Ork",
+   "type": "infantry",
+   "faction": "ork",
+   "cost": 10,
+   "health": 3,
+   "move": 2,
+   "march": 3,
+   "armor": 3,
+   "capturable": false,
+   "skills": [
+    "Escouade de Commandement"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Kalibr'",
+     "count": 3,
+     "range": 4,
+     "specials": [],
+     "vsInfantry": [
+      "4/1",
+      "3/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsVehicle": [
+      "2/2",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "1/2",
+      "1/1"
+     ]
+    },
+    {
+     "name": "Servobras",
+     "count": 1,
+     "range": "c",
+     "specials": [
+      "Grapple"
+     ],
+     "vsInfantry": [
+      "1/1",
+      "1/1",
+      "1/1",
+      "1/1"
+     ],
+     "vsVehicle": [
+      "1/2",
+      "1/2",
+      "1/1",
+      "1/1",
+      "1/1",
+      "1/1",
+      "1/1"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Kikoup",
+     "count": 3,
+     "range": "c",
+     "specials": [],
+     "vsInfantry": [
+      "2/1",
+      "2/1",
+      "1/1",
+      "1/1"
+     ],
+     "vsVehicle": [
+      "1/1",
+      "1/1",
+      "1/1"
+     ],
+     "vsAircraft": []
+    }
+   ]
+  },
+  {
+   "id": "ork--boyz",
+   "name": "Boyz",
+   "subtitle": "Boyz",
+   "bloc": "Ork",
+   "type": "infantry",
+   "faction": "ork",
+   "cost": 9,
+   "health": 5,
+   "move": 2,
+   "march": 3,
+   "armor": 2,
+   "capturable": false,
+   "skills": [
+    "Charge"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Kalibr'",
+     "count": 4,
+     "range": 4,
+     "specials": [],
+     "vsInfantry": [
+      "4/1",
+      "3/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsVehicle": [
+      "2/2",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "1/2",
+      "1/1"
+     ]
+    },
+    {
+     "name": "Gros Fling",
+     "count": 1,
+     "range": 6,
+     "specials": [],
+     "vsInfantry": [
+      "4/1",
+      "3/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsVehicle": [
+      "3/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "2/1",
+      "1/1"
+     ]
+    },
+    {
+     "name": "Kikoup",
+     "count": 5,
+     "range": "c",
+     "specials": [],
+     "vsInfantry": [
+      "2/1",
+      "2/1",
+      "1/1",
+      "1/1"
+     ],
+     "vsVehicle": [
+      "1/1",
+      "1/1",
+      "1/1"
+     ],
+     "vsAircraft": []
+    }
+   ]
+  },
+  {
+   "id": "ork--gobz",
+   "name": "Gobz",
+   "subtitle": "Gobz",
+   "bloc": "Ork",
+   "type": "infantry",
+   "faction": "ork",
+   "cost": 5,
+   "health": 5,
+   "move": 2,
+   "march": 4,
+   "armor": 1,
+   "capturable": false,
+   "skills": [],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Pistolet Grot",
+     "count": 5,
+     "range": 2,
+     "specials": [],
+     "vsInfantry": [
+      "1/1",
+      "1/1",
+      "1/1"
+     ],
+     "vsVehicle": [],
+     "vsAircraft": []
+    }
+   ]
+  },
+  {
+   "id": "ork--nobz",
+   "name": "Nobz",
+   "subtitle": "Nobz",
+   "bloc": "Ork",
+   "type": "infantry",
+   "faction": "ork",
+   "cost": 10,
+   "health": 3,
+   "move": 2,
+   "march": 3,
+   "armor": 3,
+   "capturable": false,
+   "skills": [],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Kalibr'",
+     "count": 2,
+     "range": 4,
+     "specials": [],
+     "vsInfantry": [
+      "4/1",
+      "3/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsVehicle": [
+      "2/2",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "1/2",
+      "1/1"
+     ]
+    },
+    {
+     "name": "Krameur'",
+     "count": 1,
+     "range": 1,
+     "specials": [
+      "Flame : Flamethrower"
+     ],
+     "vsInfantry": [
+      "BB/1",
+      "BB/1",
+      "BB/1",
+      "B/1"
+     ],
+     "vsVehicle": [
+      "BB/AK",
+      "BB/AK",
+      "B/2",
+      "B/2",
+      "B/2",
+      "B/2",
+      "B/2"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Pince Energétik",
+     "count": 1,
+     "range": "c",
+     "specials": [
+      "Cutting"
+     ],
+     "vsInfantry": [
+      "2/1",
+      "2/1",
+      "2/1",
+      "2/1"
+     ],
+     "vsVehicle": [
+      "2/2",
+      "2/2",
+      "2/2",
+      "2/2",
+      "2/2",
+      "2/2",
+      "2/2"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Kikoup",
+     "count": 2,
+     "range": "c",
+     "specials": [],
+     "vsInfantry": [
+      "2/1",
+      "2/1",
+      "1/1",
+      "1/1"
+     ],
+     "vsVehicle": [
+      "1/1",
+      "1/1",
+      "1/1"
+     ],
+     "vsAircraft": []
+    }
+   ]
+  },
+  {
+   "id": "ork--meganobz",
+   "name": "MégaNobz",
+   "subtitle": "Méga-armure Ork",
+   "bloc": "Ork",
+   "type": "infantry",
+   "faction": "ork",
+   "cost": 18,
+   "health": 3,
+   "move": 1,
+   "march": 2,
+   "armor": 4,
+   "capturable": false,
+   "skills": [
+    "Garde d'Acier"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Gros Fling",
+     "count": 3,
+     "range": 6,
+     "specials": [],
+     "vsInfantry": [
+      "4/1",
+      "3/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsVehicle": [
+      "3/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "2/1",
+      "1/1"
+     ]
+    },
+    {
+     "name": "Pince Energétik",
+     "count": 3,
+     "range": "c",
+     "specials": [
+      "Cutting"
+     ],
+     "vsInfantry": [
+      "2/1",
+      "2/1",
+      "2/1",
+      "2/1"
+     ],
+     "vsVehicle": [
+      "2/2",
+      "2/2",
+      "2/2",
+      "2/2",
+      "2/2",
+      "2/2",
+      "2/2"
+     ],
+     "vsAircraft": []
+    }
+   ]
+  },
+  {
+   "id": "ork--stormboyz",
+   "name": "StormBoyz",
+   "subtitle": "StormBoyz",
+   "bloc": "Ork",
+   "type": "infantry",
+   "faction": "ork",
+   "cost": 13,
+   "health": 5,
+   "move": 3,
+   "march": 5,
+   "armor": 2,
+   "capturable": false,
+   "skills": [
+    "Vol"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Kalibr'",
+     "count": 3,
+     "range": 4,
+     "specials": [],
+     "vsInfantry": [
+      "4/1",
+      "3/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsVehicle": [
+      "2/2",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "1/2",
+      "1/1"
+     ]
+    },
+    {
+     "name": "Kikoup",
+     "count": 5,
+     "range": "c",
+     "specials": [],
+     "vsInfantry": [
+      "2/1",
+      "2/1",
+      "1/1",
+      "1/1"
+     ],
+     "vsVehicle": [
+      "1/1",
+      "1/1",
+      "1/1"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Gros Fling",
+     "count": 1,
+     "range": 6,
+     "specials": [],
+     "vsInfantry": [
+      "4/1",
+      "3/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsVehicle": [
+      "3/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "2/1",
+      "1/1"
+     ]
+    },
+    {
+     "name": "Krameur'",
+     "count": 1,
+     "range": 1,
+     "specials": [
+      "Flame : Flamethrower"
+     ],
+     "vsInfantry": [
+      "BB/1",
+      "BB/1",
+      "BB/1",
+      "B/1"
+     ],
+     "vsVehicle": [
+      "BB/AK",
+      "BB/AK",
+      "B/2",
+      "B/2",
+      "B/2",
+      "B/2",
+      "B/2"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Krameur' (corp à corp)",
+     "count": 1,
+     "range": "c",
+     "specials": [],
+     "vsInfantry": [
+      "1/1",
+      "1/1",
+      "1/1",
+      "1/1"
+     ],
+     "vsVehicle": [
+      "1/1",
+      "1/1",
+      "1/1",
+      "1/1",
+      "1/1",
+      "1/1",
+      "1/1"
+     ],
+     "vsAircraft": []
+    }
+   ]
+  },
+  {
+   "id": "ork--crameurboyz",
+   "name": "CrameurBoyz",
+   "subtitle": "Boyz",
+   "bloc": "Ork",
+   "type": "infantry",
+   "faction": "ork",
+   "cost": 13,
+   "health": 3,
+   "move": 2,
+   "march": 3,
+   "armor": 2,
+   "capturable": false,
+   "skills": [],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Krameur'",
+     "count": 3,
+     "range": 1,
+     "specials": [
+      "Flame : Flamethrower"
+     ],
+     "vsInfantry": [
+      "BB/1",
+      "BB/1",
+      "BB/1",
+      "B/1"
+     ],
+     "vsVehicle": [
+      "BB/AK",
+      "BB/AK",
+      "B/2",
+      "B/2",
+      "B/2",
+      "B/2",
+      "B/2"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Krameur' (corp à corp)",
+     "count": 3,
+     "range": "c",
+     "specials": [],
+     "vsInfantry": [
+      "1/1",
+      "1/1",
+      "1/1",
+      "1/1"
+     ],
+     "vsVehicle": [
+      "1/1",
+      "1/1",
+      "1/1",
+      "1/1",
+      "1/1",
+      "1/1",
+      "1/1"
+     ],
+     "vsAircraft": []
+    }
+   ]
+  },
+  {
+   "id": "ork--tankbustas",
+   "name": "Tankbustas",
+   "subtitle": "Boyz",
+   "bloc": "Ork",
+   "type": "infantry",
+   "faction": "ork",
+   "cost": 10,
+   "health": 3,
+   "move": 2,
+   "march": 3,
+   "armor": 2,
+   "capturable": false,
+   "skills": [],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Kass'Tank Roketteur",
+     "count": 3,
+     "range": 4,
+     "specials": [
+      "Grenade"
+     ],
+     "vsInfantry": [
+      "B/1",
+      "B/1",
+      "B/1",
+      "B/1"
+     ],
+     "vsVehicle": [
+      "1/AK",
+      "1/AK",
+      "1/AK",
+      "1/4",
+      "1/3",
+      "1/3",
+      "1/2"
+     ],
+     "vsAircraft": []
+    }
+   ]
+  },
+  {
+   "id": "ork--kommandos",
+   "name": "Kommandos",
+   "subtitle": "Boyz",
+   "bloc": "Ork",
+   "type": "infantry",
+   "faction": "ork",
+   "cost": 16,
+   "health": 5,
+   "move": 2,
+   "march": 3,
+   "armor": 2,
+   "capturable": false,
+   "skills": [
+    "Observateur d'Artillerie",
+    "Espion"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Pince Energétik",
+     "count": 1,
+     "range": "c",
+     "specials": [
+      "Cutting"
+     ],
+     "vsInfantry": [
+      "2/1",
+      "2/1",
+      "2/1",
+      "2/1"
+     ],
+     "vsVehicle": [
+      "2/2",
+      "2/2",
+      "2/2",
+      "2/2",
+      "2/2",
+      "2/2",
+      "2/2"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Kalibr'",
+     "count": 1,
+     "range": 4,
+     "specials": [],
+     "vsInfantry": [
+      "4/1",
+      "3/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsVehicle": [
+      "2/2",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "1/2",
+      "1/1"
+     ]
+    },
+    {
+     "name": "Gros Fling",
+     "count": 2,
+     "range": 6,
+     "specials": [],
+     "vsInfantry": [
+      "4/1",
+      "3/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsVehicle": [
+      "3/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "2/1",
+      "1/1"
+     ]
+    },
+    {
+     "name": "Krameur'",
+     "count": 1,
+     "range": 1,
+     "specials": [
+      "Flame : Flamethrower"
+     ],
+     "vsInfantry": [
+      "BB/1",
+      "BB/1",
+      "BB/1",
+      "B/1"
+     ],
+     "vsVehicle": [
+      "BB/AK",
+      "BB/AK",
+      "B/2",
+      "B/2",
+      "B/2",
+      "B/2",
+      "B/2"
+     ],
+     "vsAircraft": []
+    }
+   ]
+  },
+  {
+   "id": "ork--deff-kopta",
+   "name": "Deff Kopta",
+   "subtitle": "Aéronef R1",
+   "bloc": "Ork",
+   "type": "aircraft",
+   "faction": "ork",
+   "cost": 8,
+   "health": 3,
+   "move": 3,
+   "march": 6,
+   "armor": 1,
+   "capturable": false,
+   "skills": [
+    "Vol"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Kalibr'",
+     "count": 1,
+     "range": 4,
+     "specials": [],
+     "vsInfantry": [
+      "4/1",
+      "3/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsVehicle": [
+      "2/2",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "1/2",
+      "1/1"
+     ]
+    },
+    {
+     "name": "Kombi Rokette",
+     "count": 2,
+     "range": 4,
+     "specials": [],
+     "vsInfantry": [
+      "1/1",
+      "1/1",
+      "1/1",
+      "1/1"
+     ],
+     "vsVehicle": [
+      "1/AK",
+      "1/AK",
+      "1/4",
+      "1/4",
+      "1/3",
+      "1/3",
+      "1/2"
+     ],
+     "vsAircraft": []
+    }
+   ]
+  },
+  {
+   "id": "ork--warbikers",
+   "name": "Warbikers",
+   "subtitle": "Véhicule R1",
+   "bloc": "Ork",
+   "type": "vehicle",
+   "faction": "ork",
+   "cost": 5,
+   "health": 3,
+   "move": 3,
+   "march": 7,
+   "armor": 1,
+   "capturable": false,
+   "skills": [
+    "Raid",
+    "Booster le Moteur"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Autocanon",
+     "count": 1,
+     "range": 16,
+     "specials": [],
+     "vsInfantry": [
+      "B/1",
+      "B/1",
+      "B/1",
+      "B/1"
+     ],
+     "vsVehicle": [
+      "1/AK",
+      "1/AK",
+      "1/5",
+      "1/4",
+      "1/4",
+      "1/3",
+      "1/3"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Kalibr'",
+     "count": 1,
+     "range": 4,
+     "specials": [],
+     "vsInfantry": [
+      "4/1",
+      "3/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsVehicle": [
+      "2/2",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "1/2",
+      "1/1"
+     ]
+    },
+    {
+     "name": "Autocanon",
+     "count": 1,
+     "range": 16,
+     "specials": [],
+     "vsInfantry": [
+      "B/1",
+      "B/1",
+      "B/1",
+      "B/1"
+     ],
+     "vsVehicle": [
+      "1/AK",
+      "1/AK",
+      "1/5",
+      "1/4",
+      "1/4",
+      "1/3",
+      "1/3"
+     ],
+     "vsAircraft": []
+    }
+   ]
+  },
+  {
+   "id": "ork--wartrike",
+   "name": "Wartrike",
+   "subtitle": "Véhicule R2",
+   "bloc": "Ork",
+   "type": "vehicle",
+   "faction": "ork",
+   "cost": 11,
+   "health": 4,
+   "move": 3,
+   "march": 5,
+   "armor": 2,
+   "capturable": false,
+   "skills": [
+    "Raid",
+    "Booster le Moteur"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Pince Energétik",
+     "count": 1,
+     "range": "c",
+     "mount": "Tourelle",
+     "specials": [
+      "Cutting"
+     ],
+     "vsInfantry": [
+      "2/1",
+      "2/1",
+      "2/1",
+      "2/1"
+     ],
+     "vsVehicle": [
+      "2/2",
+      "2/2",
+      "2/2",
+      "2/2",
+      "2/2",
+      "2/2",
+      "2/2"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Kalibr'",
+     "count": 1,
+     "range": 4,
+     "mount": "Tourelle",
+     "specials": [],
+     "vsInfantry": [
+      "4/1",
+      "3/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsVehicle": [
+      "2/2",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "1/2",
+      "1/1"
+     ]
+    },
+    {
+     "name": "Gros Fling",
+     "count": 1,
+     "range": 6,
+     "mount": "Face",
+     "specials": [],
+     "vsInfantry": [
+      "4/1",
+      "3/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsVehicle": [
+      "3/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "2/1",
+      "1/1"
+     ]
+    },
+    {
+     "name": "Gros Fling",
+     "count": 1,
+     "range": 6,
+     "mount": "Face",
+     "specials": [],
+     "vsInfantry": [
+      "4/1",
+      "3/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsVehicle": [
+      "3/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "2/1",
+      "1/1"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ork--dragsta",
+   "name": "Dragsta",
+   "subtitle": "Véhicule R3",
+   "bloc": "Ork",
+   "type": "vehicle",
+   "faction": "ork",
+   "cost": 10,
+   "health": 4,
+   "move": 2,
+   "march": 5,
+   "armor": 3,
+   "capturable": false,
+   "skills": [
+    "À Roues",
+    "Booster le Moteur"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Lance-missiles",
+     "count": 1,
+     "range": 4,
+     "mount": "Face",
+     "specials": [],
+     "vsInfantry": [
+      "1/1",
+      "1/1",
+      "1/1",
+      "1/1"
+     ],
+     "vsVehicle": [
+      "1/AK",
+      "1/AK",
+      "1/4",
+      "1/4",
+      "1/3",
+      "1/3",
+      "1/2"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Autocanon",
+     "count": 1,
+     "range": 16,
+     "mount": "Face",
+     "specials": [],
+     "vsInfantry": [
+      "B/1",
+      "B/1",
+      "B/1",
+      "B/1"
+     ],
+     "vsVehicle": [
+      "1/AK",
+      "1/AK",
+      "1/5",
+      "1/4",
+      "1/4",
+      "1/3",
+      "1/3"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Kalibr'",
+     "count": 1,
+     "range": 4,
+     "mount": "Tourelle",
+     "specials": [],
+     "vsInfantry": [
+      "4/1",
+      "3/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsVehicle": [
+      "2/2",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "1/2",
+      "1/1"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ork--snazzwagon",
+   "name": "Snazzwagon",
+   "subtitle": "Véhicule R3",
+   "bloc": "Ork",
+   "type": "vehicle",
+   "faction": "ork",
+   "cost": 10,
+   "health": 4,
+   "move": 2,
+   "march": 5,
+   "armor": 3,
+   "capturable": false,
+   "skills": [
+    "À Roues",
+    "Booster le Moteur"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Canon d'assaut",
+     "count": 1,
+     "range": 8,
+     "specials": [],
+     "vsInfantry": [
+      "5/1",
+      "5/1",
+      "5/1",
+      "4/1"
+     ],
+     "vsVehicle": [
+      "3/2",
+      "3/2",
+      "2/1",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "2/2",
+      "2/2",
+      "1/1"
+     ]
+    },
+    {
+     "name": "Kalibr'",
+     "count": 1,
+     "range": 4,
+     "specials": [],
+     "vsInfantry": [
+      "4/1",
+      "3/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsVehicle": [
+      "2/2",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "1/2",
+      "1/1"
+     ]
+    },
+    {
+     "name": "Gros Fling",
+     "count": 1,
+     "range": 6,
+     "specials": [],
+     "vsInfantry": [
+      "4/1",
+      "3/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsVehicle": [
+      "3/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "2/1",
+      "1/1"
+     ]
+    },
+    {
+     "name": "Coktail Gorka Morka",
+     "count": 1,
+     "range": "c",
+     "specials": [],
+     "vsInfantry": [
+      "1/1",
+      "1/1",
+      "1/1",
+      "1/1"
+     ],
+     "vsVehicle": [
+      "1/3",
+      "1/3",
+      "1/2",
+      "1/2",
+      "1/2",
+      "1/2",
+      "1/2"
+     ],
+     "vsAircraft": []
+    }
+   ]
+  },
+  {
+   "id": "ork--boit-ki-tue",
+   "name": "Boit'ki tue",
+   "subtitle": "Véhicule R3",
+   "bloc": "Ork",
+   "type": "vehicle",
+   "faction": "ork",
+   "cost": 9,
+   "health": 3,
+   "move": 2,
+   "march": 5,
+   "armor": 3,
+   "capturable": false,
+   "skills": [
+    "Résistant aux Dommages"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Pince Energétik",
+     "count": 1,
+     "range": "c",
+     "specials": [
+      "Cutting"
+     ],
+     "vsInfantry": [
+      "2/1",
+      "2/1",
+      "2/1",
+      "2/1"
+     ],
+     "vsVehicle": [
+      "2/2",
+      "2/2",
+      "2/2",
+      "2/2",
+      "2/2",
+      "2/2",
+      "2/2"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Gros Fling",
+     "count": 1,
+     "range": 6,
+     "specials": [],
+     "vsInfantry": [
+      "4/1",
+      "3/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsVehicle": [
+      "3/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "2/1",
+      "1/1"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ork--deff-dread",
+   "name": "Deff Dread",
+   "subtitle": "Véhicule R5",
+   "bloc": "Ork",
+   "type": "vehicle",
+   "faction": "ork",
+   "cost": 23,
+   "health": 6,
+   "move": 2,
+   "march": 4,
+   "armor": 5,
+   "capturable": false,
+   "skills": [
+    "Résistant aux Dommages"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Armes de mêlée de Dread'Ork",
+     "count": 1,
+     "range": "c",
+     "specials": [
+      "Grapple"
+     ],
+     "vsInfantry": [
+      "2/2",
+      "2/2",
+      "2/2",
+      "2/2"
+     ],
+     "vsVehicle": [
+      "1/3",
+      "1/3",
+      "1/2",
+      "1/1",
+      "1/1",
+      "1/1",
+      "1/1"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Armes de mêlée de Dread'Ork",
+     "count": 1,
+     "range": "c",
+     "specials": [
+      "Grapple"
+     ],
+     "vsInfantry": [
+      "2/2",
+      "2/2",
+      "2/2",
+      "2/2"
+     ],
+     "vsVehicle": [
+      "1/3",
+      "1/3",
+      "1/2",
+      "1/1",
+      "1/1",
+      "1/1",
+      "1/1"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Autocanon",
+     "count": 1,
+     "range": 16,
+     "specials": [],
+     "vsInfantry": [
+      "B/1",
+      "B/1",
+      "B/1",
+      "B/1"
+     ],
+     "vsVehicle": [
+      "1/AK",
+      "1/AK",
+      "1/5",
+      "1/4",
+      "1/4",
+      "1/3",
+      "1/3"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Krameur'",
+     "count": 1,
+     "range": 1,
+     "specials": [
+      "Flame : Flamethrower"
+     ],
+     "vsInfantry": [
+      "BB/1",
+      "BB/1",
+      "BB/1",
+      "B/1"
+     ],
+     "vsVehicle": [
+      "BB/AK",
+      "BB/AK",
+      "B/2",
+      "B/2",
+      "B/2",
+      "B/2",
+      "B/2"
+     ],
+     "vsAircraft": []
+    }
+   ]
+  },
+  {
+   "id": "ork--dakkajet",
+   "name": "Dakkajet",
+   "subtitle": "Aéronef R3",
+   "bloc": "Ork",
+   "type": "aircraft",
+   "faction": "ork",
+   "cost": 18,
+   "health": 4,
+   "move": 3,
+   "march": 6,
+   "armor": 3,
+   "capturable": false,
+   "skills": [
+    "Vol"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Gros Fling",
+     "count": 4,
+     "range": 6,
+     "mount": "Face",
+     "specials": [],
+     "vsInfantry": [
+      "4/1",
+      "3/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsVehicle": [
+      "3/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "2/1",
+      "1/1"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ork--stompa",
+   "name": "Stompa",
+   "subtitle": "Marcheur R7",
+   "bloc": "Ork",
+   "type": "vehicle",
+   "faction": "ork",
+   "cost": 51,
+   "health": 24,
+   "move": 2,
+   "march": 3,
+   "armor": 7,
+   "capturable": false,
+   "skills": [
+    "Résistant aux Dommages",
+    "Véhicule Large"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Piétiner - Stomp (Stompa)",
+     "count": 1,
+     "range": "c",
+     "specials": [],
+     "vsInfantry": [
+      "B/AK",
+      "B/AK",
+      "B/AK",
+      "B/AK"
+     ],
+     "vsVehicle": [
+      "2/4",
+      "2/4",
+      "2/3",
+      "2/3",
+      "2/3",
+      "2/2",
+      "2/2"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Epée tronçonneuse de Stompa",
+     "count": 1,
+     "range": "c",
+     "specials": [],
+     "vsInfantry": [
+      "3/AK",
+      "3/AK",
+      "3/AK",
+      "3/AK"
+     ],
+     "vsVehicle": [
+      "1/AK",
+      "1/AK",
+      "1/AK",
+      "1/8",
+      "1/7",
+      "1/7",
+      "1/6"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Canon Krabouillator",
+     "count": 1,
+     "range": 18,
+     "specials": [],
+     "vsInfantry": [
+      "B/1",
+      "B/1",
+      "B/1",
+      "B/1"
+     ],
+     "vsVehicle": [
+      "1/AK",
+      "1/AK",
+      "1/AK",
+      "1/5",
+      "1/4",
+      "1/3",
+      "1/2"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Canon d'assaut",
+     "count": 1,
+     "range": 8,
+     "specials": [],
+     "vsInfantry": [
+      "5/1",
+      "5/1",
+      "5/1",
+      "4/1"
+     ],
+     "vsVehicle": [
+      "3/2",
+      "3/2",
+      "2/1",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "2/2",
+      "2/2",
+      "1/1"
+     ]
+    },
+    {
+     "name": "Kass'Tank Roketteur",
+     "count": 1,
+     "range": 4,
+     "specials": [
+      "Grenade"
+     ],
+     "vsInfantry": [
+      "B/1",
+      "B/1",
+      "B/1",
+      "B/1"
+     ],
+     "vsVehicle": [
+      "1/AK",
+      "1/AK",
+      "1/AK",
+      "1/4",
+      "1/3",
+      "1/3",
+      "1/2"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Gros Fling",
+     "count": 1,
+     "range": 6,
+     "specials": [],
+     "vsInfantry": [
+      "4/1",
+      "3/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsVehicle": [
+      "3/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "2/1",
+      "1/1"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "ork--trukk",
+   "name": "Trukk",
+   "subtitle": "Véhicule R2",
+   "bloc": "Ork",
+   "type": "vehicle",
+   "faction": "ork",
+   "cost": 8,
+   "health": 4,
+   "move": 3,
+   "march": 5,
+   "armor": 2,
+   "capturable": false,
+   "skills": [
+    "À Roues",
+    "Passagers (10)",
+    "Véhicule d'Assaut"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Gros Fling",
+     "count": 1,
+     "range": 6,
+     "mount": "Face",
+     "specials": [],
+     "vsInfantry": [
+      "4/1",
+      "3/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsVehicle": [
+      "3/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "2/1",
+      "1/1"
+     ]
+    },
+    {
+     "name": "Gros Fling",
+     "count": 1,
+     "range": 6,
+     "mount": "Droite",
+     "specials": [],
+     "vsInfantry": [
+      "4/1",
+      "3/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsVehicle": [
+      "3/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "2/1",
+      "1/1"
+     ]
+    },
+    {
+     "name": "Gros Fling",
+     "count": 1,
+     "range": 6,
+     "mount": "Gauche",
+     "specials": [],
+     "vsInfantry": [
+      "4/1",
+      "3/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsVehicle": [
+      "3/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "2/1",
+      "1/1"
+     ]
+    },
+    {
+     "name": "Armes de mêlée de Trukk",
+     "count": 1,
+     "range": "c",
+     "specials": [
+      "Grapple"
+     ],
+     "vsInfantry": [
+      "2/2",
+      "2/1",
+      "2/1",
+      "2/1"
+     ],
+     "vsVehicle": [
+      "1/3",
+      "1/3",
+      "1/2",
+      "1/1",
+      "1/1"
+     ],
+     "vsAircraft": []
+    }
+   ]
+  },
+  {
+   "id": "ork--battlewagon",
+   "name": "BattleWagon",
+   "subtitle": "Véhicule R5",
+   "bloc": "Ork",
+   "type": "vehicle",
+   "faction": "ork",
+   "cost": 25,
+   "health": 8,
+   "move": 2,
+   "march": 4,
+   "armor": 5,
+   "capturable": false,
+   "skills": [
+    "Passagers (7)",
+    "Semi-Chenillé"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Gros Fling",
+     "count": 1,
+     "range": 6,
+     "mount": "Tourelle",
+     "specials": [],
+     "vsInfantry": [
+      "4/1",
+      "3/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsVehicle": [
+      "3/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "2/1",
+      "1/1"
+     ]
+    },
+    {
+     "name": "Gros Fling",
+     "count": 1,
+     "range": 6,
+     "mount": "Tourelle",
+     "specials": [],
+     "vsInfantry": [
+      "4/1",
+      "3/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsVehicle": [
+      "3/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "2/1",
+      "1/1"
+     ]
+    },
+    {
+     "name": "Gros Fling",
+     "count": 1,
+     "range": 6,
+     "mount": "Droite",
+     "specials": [],
+     "vsInfantry": [
+      "4/1",
+      "3/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsVehicle": [
+      "3/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "2/1",
+      "1/1"
+     ]
+    },
+    {
+     "name": "Gros Fling",
+     "count": 1,
+     "range": 6,
+     "mount": "Gauche",
+     "specials": [],
+     "vsInfantry": [
+      "4/1",
+      "3/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsVehicle": [
+      "3/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "2/1",
+      "1/1"
+     ]
+    },
+    {
+     "name": "Obusier",
+     "count": 1,
+     "range": 18,
+     "mount": "Tourelle",
+     "specials": [],
+     "vsInfantry": [
+      "B/1",
+      "B/1",
+      "B/1",
+      "B/1"
+     ],
+     "vsVehicle": [
+      "1/AK",
+      "1/AK",
+      "1/AK",
+      "1/5",
+      "1/4",
+      "1/3",
+      "1/2"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Armes de mêlée de Trukk",
+     "count": 1,
+     "range": "c",
+     "specials": [
+      "Grapple"
+     ],
+     "vsInfantry": [
+      "2/2",
+      "2/1",
+      "2/1",
+      "2/1"
+     ],
+     "vsVehicle": [
+      "1/3",
+      "1/3",
+      "1/2",
+      "1/1",
+      "1/1"
+     ],
+     "vsAircraft": []
+    }
+   ]
+  },
+  {
+   "id": "ork--squigs",
+   "name": "Squigs",
+   "subtitle": "SquigBoyz",
+   "bloc": "Ork",
+   "type": "infantry",
+   "faction": "ork",
+   "cost": 6,
+   "health": 3,
+   "move": 3,
+   "march": 6,
+   "armor": 2,
+   "capturable": false,
+   "skills": [
+    "Animal Sauvage",
+    "Charge"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Kalibr'",
+     "count": 1,
+     "range": 4,
+     "specials": [],
+     "vsInfantry": [
+      "4/1",
+      "3/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsVehicle": [
+      "2/2",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "1/2",
+      "1/1"
+     ]
+    },
+    {
+     "name": "Kikoup",
+     "count": 1,
+     "range": "c",
+     "specials": [],
+     "vsInfantry": [
+      "2/1",
+      "2/1",
+      "1/1",
+      "1/1"
+     ],
+     "vsVehicle": [
+      "1/1",
+      "1/1",
+      "1/1"
+     ],
+     "vsAircraft": []
+    }
+   ]
+  },
+  {
+   "id": "ork--mega-kanon-kustom",
+   "name": "Méga-Kanon Kustom",
+   "subtitle": "Véhicule R2",
+   "bloc": "Ork",
+   "type": "vehicle",
+   "faction": "ork",
+   "cost": 11,
+   "health": 5,
+   "move": 3,
+   "march": 5,
+   "armor": 2,
+   "capturable": false,
+   "skills": [],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Kanon Custom : Artillerie",
+     "count": 1,
+     "range": "4-14",
+     "specials": [
+      "Artillerie"
+     ],
+     "vsInfantry": [
+      "BB/1",
+      "BB/1",
+      "BB/1",
+      "BB/1"
+     ],
+     "vsVehicle": [
+      "B/AK",
+      "B/3",
+      "B/2",
+      "B/2",
+      "B/1",
+      "B/1",
+      "B/1"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Pistolet Grot",
+     "count": 5,
+     "range": 2,
+     "specials": [],
+     "vsInfantry": [
+      "1/1",
+      "1/1",
+      "1/1"
+     ],
+     "vsVehicle": [],
+     "vsAircraft": []
+    }
+   ]
+  },
+  {
+   "id": "ork--gorkanot",
+   "name": "Gorkanot",
+   "subtitle": "Véhicule R5",
+   "bloc": "Ork",
+   "type": "vehicle",
+   "faction": "ork",
+   "cost": 23,
+   "health": 20,
+   "move": 2,
+   "march": 4,
+   "armor": 5,
+   "capturable": false,
+   "skills": [
+    "Résistant aux Dommages",
+    "Passagers (7)"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Pince de Gork",
+     "count": 1,
+     "range": "c",
+     "mount": "Face",
+     "specials": [
+      "Grapple"
+     ],
+     "vsInfantry": [
+      "2/2",
+      "2/2",
+      "2/2",
+      "2/2"
+     ],
+     "vsVehicle": [
+      "1/3",
+      "1/3",
+      "1/2",
+      "1/1",
+      "1/1",
+      "1/1",
+      "1/1"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Gros Fling Jumelé",
+     "count": 1,
+     "range": 6,
+     "mount": "Face",
+     "specials": [],
+     "vsInfantry": [
+      "6/1",
+      "5/1",
+      "4/1",
+      "2/1"
+     ],
+     "vsVehicle": [
+      "6/1",
+      "4/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "2/1",
+      "1/1"
+     ]
+    },
+    {
+     "name": "Gros Fling Jumelé",
+     "count": 1,
+     "range": 6,
+     "mount": "Face",
+     "specials": [],
+     "vsInfantry": [
+      "6/1",
+      "5/1",
+      "4/1",
+      "2/1"
+     ],
+     "vsVehicle": [
+      "6/1",
+      "4/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "2/1",
+      "1/1"
+     ]
+    },
+    {
+     "name": "Méga-gros Fling",
+     "count": 1,
+     "range": 8,
+     "mount": "Face",
+     "specials": [],
+     "vsInfantry": [
+      "7/2",
+      "7/2",
+      "7/2",
+      "5/2"
+     ],
+     "vsVehicle": [
+      "4/3",
+      "3/2",
+      "3/2",
+      "2/2",
+      "1/2",
+      "1/1",
+      "1/1"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Lance-missiles",
+     "count": 1,
+     "range": 4,
+     "mount": "Tourelle",
+     "specials": [],
+     "vsInfantry": [
+      "1/1",
+      "1/1",
+      "1/1",
+      "1/1"
+     ],
+     "vsVehicle": [
+      "1/AK",
+      "1/AK",
+      "1/4",
+      "1/4",
+      "1/3",
+      "1/3",
+      "1/2"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Krameur'",
+     "count": 1,
+     "range": 1,
+     "mount": "Face",
+     "specials": [
+      "Flame : Flamethrower"
+     ],
+     "vsInfantry": [
+      "BB/1",
+      "BB/1",
+      "BB/1",
+      "B/1"
+     ],
+     "vsVehicle": [
+      "BB/AK",
+      "BB/AK",
+      "B/2",
+      "B/2",
+      "B/2",
+      "B/2",
+      "B/2"
+     ],
+     "vsAircraft": []
+    }
+   ]
+  },
+  {
+   "id": "chaos--seigneur-du-chaos",
+   "name": "Seigneur du Chaos",
+   "subtitle": "Space Marines",
+   "bloc": "Chaos",
+   "type": "hero",
+   "faction": "chaos-space-marines",
+   "cost": 14,
+   "health": 5,
+   "move": 2,
+   "march": 4,
+   "armor": 3,
+   "capturable": false,
+   "skills": [
+    "Fanatique",
+    "Résistant aux Dommages",
+    "Officier"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Pistolet à plasma",
+     "count": 1,
+     "range": 3,
+     "specials": [
+      "Laser pistol"
+     ],
+     "vsInfantry": [
+      "2/1",
+      "2/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsVehicle": [
+      "2/1",
+      "1/1",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "1/1",
+      "1/1",
+      "1/1"
+     ]
+    },
+    {
+     "name": "Marteau Thunder",
+     "count": 1,
+     "range": "c",
+     "specials": [
+      "Tesla Club : Tesla"
+     ],
+     "vsInfantry": [
+      "1/1",
+      "1/1",
+      "1/1",
+      "1/1"
+     ],
+     "vsVehicle": [
+      "1/4",
+      "1/4",
+      "1/4",
+      "1/4",
+      "1/4",
+      "1/4",
+      "1/4"
+     ],
+     "vsAircraft": []
+    }
+   ]
+  },
+  {
+   "id": "chaos--escouade-de-commandement",
+   "name": "Escouade de Commandement",
+   "subtitle": "Space Marines",
+   "bloc": "Chaos",
+   "type": "infantry",
+   "faction": "chaos-space-marines",
+   "cost": 18,
+   "health": 3,
+   "move": 2,
+   "march": 4,
+   "armor": 3,
+   "capturable": false,
+   "skills": [
+    "Fanatique",
+    "Résistant aux Dommages",
+    "Escouade de Commandement"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Hache énergétique",
+     "count": 2,
+     "range": "c",
+     "specials": [],
+     "vsInfantry": [
+      "2/1",
+      "2/1",
+      "2/1",
+      "2/1"
+     ],
+     "vsVehicle": [
+      "2/1",
+      "2/1",
+      "2/1",
+      "2/1",
+      "2/1",
+      "2/1",
+      "2/1"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Servobras",
+     "count": 1,
+     "range": "c",
+     "specials": [
+      "Grapple"
+     ],
+     "vsInfantry": [
+      "1/1",
+      "1/1",
+      "1/1",
+      "1/1"
+     ],
+     "vsVehicle": [
+      "1/2",
+      "1/2",
+      "1/1",
+      "1/1",
+      "1/1",
+      "1/1",
+      "1/1"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Pistolet bolter",
+     "count": 3,
+     "range": 2,
+     "specials": [],
+     "vsInfantry": [
+      "3/1",
+      "3/1",
+      "2/1"
+     ],
+     "vsVehicle": [
+      "2/1"
+     ],
+     "vsAircraft": []
+    }
+   ]
+  },
+  {
+   "id": "chaos--legionnaires-fusil-bolter",
+   "name": "Légionnaires",
+   "subtitle": "Fusil bolter",
+   "bloc": "Chaos",
+   "type": "infantry",
+   "faction": "chaos-space-marines",
+   "cost": 10,
+   "health": 3,
+   "move": 2,
+   "march": 4,
+   "armor": 3,
+   "capturable": false,
+   "skills": [
+    "Fanatique",
+    "Résistant aux Dommages"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Fusil bolter",
+     "count": 3,
+     "range": 4,
+     "specials": [],
+     "vsInfantry": [
+      "5/1",
+      "5/1",
+      "4/1",
+      "2/1"
+     ],
+     "vsVehicle": [
+      "3/2",
+      "3/2",
+      "2/1",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "1/2",
+      "1/1",
+      "1/1"
+     ]
+    },
+    {
+     "name": "Epée tronçonneuse",
+     "count": 1,
+     "range": "c",
+     "specials": [],
+     "vsInfantry": [
+      "3/1",
+      "3/1",
+      "3/1",
+      "3/1"
+     ],
+     "vsVehicle": [
+      "2/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsAircraft": []
+    }
+   ]
+  },
+  {
+   "id": "chaos--legionnaires-pistolet-bolter",
+   "name": "Légionnaires",
+   "subtitle": "Pistolet bolter",
+   "bloc": "Chaos",
+   "type": "infantry",
+   "faction": "chaos-space-marines",
+   "cost": 12,
+   "health": 3,
+   "move": 2,
+   "march": 4,
+   "armor": 3,
+   "capturable": false,
+   "skills": [
+    "Fanatique",
+    "Résistant aux Dommages"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Pistolet bolter",
+     "count": 3,
+     "range": 2,
+     "specials": [],
+     "vsInfantry": [
+      "3/1",
+      "3/1",
+      "2/1"
+     ],
+     "vsVehicle": [
+      "2/1"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Epée tronçonneuse",
+     "count": 3,
+     "range": "c",
+     "specials": [],
+     "vsInfantry": [
+      "3/1",
+      "3/1",
+      "3/1",
+      "3/1"
+     ],
+     "vsVehicle": [
+      "2/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsAircraft": []
+    }
+   ]
+  },
+  {
+   "id": "chaos--legionnaires-fusil-bolter-bolter-lourd",
+   "name": "Légionnaires",
+   "subtitle": "Fusil bolter + Bolter lourd",
+   "bloc": "Chaos",
+   "type": "infantry",
+   "faction": "chaos-space-marines",
+   "cost": 11,
+   "health": 3,
+   "move": 2,
+   "march": 4,
+   "armor": 3,
+   "capturable": false,
+   "skills": [
+    "Fanatique",
+    "Résistant aux Dommages"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Fusil bolter",
+     "count": 2,
+     "range": 4,
+     "specials": [],
+     "vsInfantry": [
+      "5/1",
+      "5/1",
+      "4/1",
+      "2/1"
+     ],
+     "vsVehicle": [
+      "3/2",
+      "3/2",
+      "2/1",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "1/2",
+      "1/1",
+      "1/1"
+     ]
+    },
+    {
+     "name": "Bolter lourd",
+     "count": 1,
+     "range": 8,
+     "specials": [],
+     "vsInfantry": [
+      "6/2",
+      "6/2",
+      "6/2",
+      "4/2"
+     ],
+     "vsVehicle": [
+      "3/3",
+      "2/2",
+      "2/2",
+      "1/2",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "3/1",
+      "2/1"
+     ]
+    },
+    {
+     "name": "Epée tronçonneuse",
+     "count": 1,
+     "range": "c",
+     "specials": [],
+     "vsInfantry": [
+      "3/1",
+      "3/1",
+      "3/1",
+      "3/1"
+     ],
+     "vsVehicle": [
+      "2/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsAircraft": []
+    }
+   ]
+  },
+  {
+   "id": "chaos--legionnaires-fusil-bolter-autocanon",
+   "name": "Légionnaires",
+   "subtitle": "Fusil bolter + Autocanon",
+   "bloc": "Chaos",
+   "type": "infantry",
+   "faction": "chaos-space-marines",
+   "cost": 11,
+   "health": 3,
+   "move": 2,
+   "march": 4,
+   "armor": 3,
+   "capturable": false,
+   "skills": [
+    "Fanatique",
+    "Résistant aux Dommages"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Fusil bolter",
+     "count": 2,
+     "range": 4,
+     "specials": [],
+     "vsInfantry": [
+      "5/1",
+      "5/1",
+      "4/1",
+      "2/1"
+     ],
+     "vsVehicle": [
+      "3/2",
+      "3/2",
+      "2/1",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "1/2",
+      "1/1",
+      "1/1"
+     ]
+    },
+    {
+     "name": "Autocanon",
+     "count": 1,
+     "range": 16,
+     "specials": [],
+     "vsInfantry": [
+      "B/1",
+      "B/1",
+      "B/1",
+      "B/1"
+     ],
+     "vsVehicle": [
+      "1/AK",
+      "1/AK",
+      "1/5",
+      "1/4",
+      "1/4",
+      "1/3",
+      "1/3"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Epée tronçonneuse",
+     "count": 1,
+     "range": "c",
+     "specials": [],
+     "vsInfantry": [
+      "3/1",
+      "3/1",
+      "3/1",
+      "3/1"
+     ],
+     "vsVehicle": [
+      "2/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsAircraft": []
+    }
+   ]
+  },
+  {
+   "id": "chaos--bande-de-cultistes",
+   "name": "Bande de Cultistes",
+   "subtitle": "Cultiste",
+   "bloc": "Chaos",
+   "type": "infantry",
+   "faction": "chaos-space-marines",
+   "cost": 6,
+   "health": 5,
+   "move": 2,
+   "march": 4,
+   "armor": 1,
+   "capturable": false,
+   "skills": [],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Mitrailleuse",
+     "count": 5,
+     "range": 6,
+     "specials": [],
+     "vsInfantry": [
+      "4/1",
+      "3/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsVehicle": [
+      "2/1",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "2/1",
+      "1/1"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "chaos--marines-de-la-peste",
+   "name": "Marines de la Peste",
+   "subtitle": "Space Marines",
+   "bloc": "Chaos",
+   "type": "infantry",
+   "faction": "chaos-space-marines",
+   "cost": 11,
+   "health": 3,
+   "move": 2,
+   "march": 4,
+   "armor": 3,
+   "capturable": false,
+   "skills": [
+    "Fanatique",
+    "Résistant aux Dommages"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Fusil bolter",
+     "count": 3,
+     "range": 4,
+     "specials": [],
+     "vsInfantry": [
+      "5/1",
+      "5/1",
+      "4/1",
+      "2/1"
+     ],
+     "vsVehicle": [
+      "3/2",
+      "3/2",
+      "2/1",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "1/2",
+      "1/1",
+      "1/1"
+     ]
+    },
+    {
+     "name": "Epée Energétique",
+     "count": 1,
+     "range": "c",
+     "specials": [],
+     "vsInfantry": [
+      "2/1",
+      "2/1",
+      "2/1",
+      "2/1"
+     ],
+     "vsVehicle": [
+      "2/1",
+      "2/1",
+      "2/1",
+      "2/1",
+      "2/1",
+      "2/1",
+      "2/1"
+     ],
+     "vsAircraft": []
+    }
+   ]
+  },
+  {
+   "id": "chaos--veroleux",
+   "name": "Véroleux",
+   "subtitle": "Veroleux",
+   "bloc": "Chaos",
+   "type": "infantry",
+   "faction": "chaos-space-marines",
+   "cost": 7,
+   "health": 5,
+   "move": 2,
+   "march": 4,
+   "armor": 1,
+   "capturable": false,
+   "skills": [
+    "Zombie"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Armes improvisée",
+     "count": 5,
+     "range": "c",
+     "specials": [],
+     "vsInfantry": [
+      "2/1",
+      "2/1",
+      "1/1",
+      "1/1"
+     ],
+     "vsVehicle": [
+      "1/1",
+      "1/1",
+      "1/1"
+     ],
+     "vsAircraft": []
+    }
+   ]
+  },
+  {
+   "id": "chaos--drone-fetide",
+   "name": "Drone Fétide",
+   "subtitle": "Véhicule R2",
+   "bloc": "Chaos",
+   "type": "vehicle",
+   "faction": "chaos-space-marines",
+   "cost": 12,
+   "health": 4,
+   "move": 3,
+   "march": 5,
+   "armor": 2,
+   "capturable": false,
+   "skills": [
+    "Résistant aux Dommages",
+    "Vol"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Crache peste",
+     "count": 2,
+     "range": 2,
+     "specials": [
+      "Flame : Flamethrower"
+     ],
+     "vsInfantry": [
+      "B/1",
+      "B/1",
+      "B/1",
+      "B/1"
+     ],
+     "vsVehicle": [
+      "B/2",
+      "B/2",
+      "B/2",
+      "B/2",
+      "B/2",
+      "B/2",
+      "B/2"
+     ],
+     "vsAircraft": []
+    }
+   ]
+  },
+  {
+   "id": "chaos--chenilles-mephitiques",
+   "name": "Chenillés Méphitiques",
+   "subtitle": "Véhicule R2",
+   "bloc": "Chaos",
+   "type": "vehicle",
+   "faction": "chaos-space-marines",
+   "cost": 8,
+   "health": 4,
+   "move": 3,
+   "march": 5,
+   "armor": 2,
+   "capturable": false,
+   "skills": [
+    "Résistant aux Dommages",
+    "Chenillé"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Multi-fuseur",
+     "count": 1,
+     "range": 8,
+     "specials": [
+      "Phaser",
+      "Salvo"
+     ],
+     "vsInfantry": [
+      "4/1",
+      "4/1",
+      "4/1",
+      "4/1"
+     ],
+     "vsVehicle": [
+      "1/4",
+      "1/4",
+      "1/4",
+      "1/4",
+      "1/4",
+      "1/4",
+      "1/4"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Lance-missiles",
+     "count": 1,
+     "range": 4,
+     "specials": [],
+     "vsInfantry": [
+      "1/1",
+      "1/1",
+      "1/1",
+      "1/1"
+     ],
+     "vsVehicle": [
+      "1/AK",
+      "1/AK",
+      "1/4",
+      "1/4",
+      "1/3",
+      "1/3",
+      "1/2"
+     ],
+     "vsAircraft": []
+    }
+   ]
+  },
+  {
+   "id": "chaos--berzerks-de-khorne",
+   "name": "Berzerks de Khorne",
+   "subtitle": "Space Marines",
+   "bloc": "Chaos",
+   "type": "infantry",
+   "faction": "chaos-space-marines",
+   "cost": 14,
+   "health": 3,
+   "move": 2,
+   "march": 4,
+   "armor": 3,
+   "capturable": false,
+   "skills": [
+    "Fanatique",
+    "Résistant aux Dommages",
+    "Frénésie"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Epée tronçonneuse",
+     "count": 3,
+     "range": "c",
+     "specials": [],
+     "vsInfantry": [
+      "3/1",
+      "3/1",
+      "3/1",
+      "3/1"
+     ],
+     "vsVehicle": [
+      "2/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Pistolet bolter",
+     "count": 2,
+     "range": 2,
+     "specials": [],
+     "vsInfantry": [
+      "3/1",
+      "3/1",
+      "2/1"
+     ],
+     "vsVehicle": [
+      "2/1"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Pistolet à plasma",
+     "count": 1,
+     "range": 3,
+     "specials": [
+      "Laser pistol"
+     ],
+     "vsInfantry": [
+      "2/1",
+      "2/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsVehicle": [
+      "2/1",
+      "1/1",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "1/1",
+      "1/1",
+      "1/1"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "chaos--escouade-d-infracteurs",
+   "name": "Escouade d'Infracteurs",
+   "subtitle": "Space Marines",
+   "bloc": "Chaos",
+   "type": "infantry",
+   "faction": "chaos-space-marines",
+   "cost": 14,
+   "health": 3,
+   "move": 2,
+   "march": 4,
+   "armor": 3,
+   "capturable": false,
+   "skills": [
+    "Fanatique",
+    "Résistant aux Dommages",
+    "Première Frappe"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Sabre Emperor's Children",
+     "count": 3,
+     "range": "c",
+     "specials": [],
+     "vsInfantry": [
+      "2/1",
+      "2/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsVehicle": [
+      "2/1",
+      "1/1",
+      "1/1"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Pistolet bolter",
+     "count": 3,
+     "range": 2,
+     "specials": [],
+     "vsInfantry": [
+      "3/1",
+      "3/1",
+      "2/1"
+     ],
+     "vsVehicle": [
+      "2/1"
+     ],
+     "vsAircraft": []
+    }
+   ]
+  },
+  {
+   "id": "chaos--escouade-de-tourmenteurs",
+   "name": "Escouade de Tourmenteurs",
+   "subtitle": "Space Marines",
+   "bloc": "Chaos",
+   "type": "infantry",
+   "faction": "chaos-space-marines",
+   "cost": 13,
+   "health": 3,
+   "move": 2,
+   "march": 4,
+   "armor": 3,
+   "capturable": false,
+   "skills": [
+    "Fanatique",
+    "Résistant aux Dommages",
+    "Scout"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Fusil bolter",
+     "count": 3,
+     "range": 4,
+     "specials": [],
+     "vsInfantry": [
+      "5/1",
+      "5/1",
+      "4/1",
+      "2/1"
+     ],
+     "vsVehicle": [
+      "3/2",
+      "3/2",
+      "2/1",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "1/2",
+      "1/1",
+      "1/1"
+     ]
+    },
+    {
+     "name": "Pistolet bolter",
+     "count": 3,
+     "range": 2,
+     "specials": [],
+     "vsInfantry": [
+      "3/1",
+      "3/1",
+      "2/1"
+     ],
+     "vsVehicle": [
+      "2/1"
+     ],
+     "vsAircraft": []
+    }
+   ]
+  },
+  {
+   "id": "chaos--noise-marines",
+   "name": "Noise Marines",
+   "subtitle": "Space Marines",
+   "bloc": "Chaos",
+   "type": "infantry",
+   "faction": "chaos-space-marines",
+   "cost": 15,
+   "health": 3,
+   "move": 2,
+   "march": 4,
+   "armor": 3,
+   "capturable": false,
+   "skills": [
+    "Fanatique",
+    "Résistant aux Dommages"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Destructeur Sonique",
+     "count": 3,
+     "range": 3,
+     "specials": [
+      "Destructeur Sonique"
+     ],
+     "vsInfantry": [
+      "B/1",
+      "B/1",
+      "B/1",
+      "B/1"
+     ],
+     "vsVehicle": [
+      "1/2",
+      "1/2",
+      "1/2",
+      "B/3",
+      "B/3",
+      "B/4",
+      "B/4"
+     ],
+     "vsAircraft": []
+    }
+   ]
+  },
+  {
+   "id": "chaos--land-raider-du-chaos",
+   "name": "Land Raider du Chaos",
+   "subtitle": "Véhicule R6",
+   "bloc": "Chaos",
+   "type": "vehicle",
+   "faction": "chaos-space-marines",
+   "cost": 32,
+   "health": 10,
+   "move": 2,
+   "march": 4,
+   "armor": 6,
+   "capturable": false,
+   "skills": [
+    "Résistant aux Dommages",
+    "Lance-Fumée",
+    "Chenillé",
+    "Véhicule Large",
+    "Passagers (10)"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Bolter lourd jumelé",
+     "count": 1,
+     "range": 8,
+     "mount": "Face",
+     "specials": [],
+     "vsInfantry": [
+      "7/2",
+      "7/2",
+      "7/2",
+      "5/2"
+     ],
+     "vsVehicle": [
+      "4/3",
+      "3/2",
+      "3/2",
+      "2/2",
+      "1/2"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Canon laser jumelé",
+     "count": 1,
+     "range": 14,
+     "mount": "Droite",
+     "specials": [],
+     "vsInfantry": [
+      "4/1",
+      "4/1",
+      "3/1",
+      "3/1"
+     ],
+     "vsVehicle": [
+      "8/1",
+      "8/1",
+      "6/1",
+      "6/1",
+      "5/1",
+      "4/1",
+      "3/1"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Canon laser jumelé",
+     "count": 1,
+     "range": 14,
+     "mount": "Gauche",
+     "specials": [],
+     "vsInfantry": [
+      "4/1",
+      "4/1",
+      "3/1",
+      "3/1"
+     ],
+     "vsVehicle": [
+      "8/1",
+      "8/1",
+      "6/1",
+      "6/1",
+      "5/1",
+      "4/1",
+      "3/1"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Bolter jumelé",
+     "count": 1,
+     "range": 6,
+     "mount": "Tourelle",
+     "specials": [],
+     "vsInfantry": [
+      "7/1",
+      "7/1",
+      "7/1",
+      "5/1"
+     ],
+     "vsVehicle": [
+      "4/2",
+      "3/1",
+      "3/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "3/2",
+      "2/2",
+      "1/1"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "chaos--rhino-du-chaos",
+   "name": "Rhino du Chaos",
+   "subtitle": "Véhicule R3",
+   "bloc": "Chaos",
+   "type": "vehicle",
+   "faction": "chaos-space-marines",
+   "cost": 9,
+   "health": 6,
+   "move": 2,
+   "march": 5,
+   "armor": 3,
+   "capturable": false,
+   "skills": [
+    "Chenillé",
+    "Passagers (7)",
+    "Lance-Fumée"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Bolter jumelé",
+     "count": 1,
+     "range": 6,
+     "specials": [],
+     "vsInfantry": [
+      "7/1",
+      "7/1",
+      "7/1",
+      "5/1"
+     ],
+     "vsVehicle": [
+      "4/2",
+      "3/1",
+      "3/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "3/2",
+      "2/2",
+      "1/1"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "chaos--vindicator",
+   "name": "Vindicator",
+   "subtitle": "Véhicule R4",
+   "bloc": "Chaos",
+   "type": "vehicle",
+   "faction": "chaos-space-marines",
+   "cost": 15,
+   "health": 6,
+   "move": 2,
+   "march": 4,
+   "armor": 4,
+   "capturable": false,
+   "skills": [
+    "Chenillé",
+    "Lance-Fumée"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Bolter jumelé",
+     "count": 1,
+     "range": 6,
+     "mount": "Tourelle",
+     "specials": [],
+     "vsInfantry": [
+      "7/1",
+      "7/1",
+      "7/1",
+      "5/1"
+     ],
+     "vsVehicle": [
+      "4/2",
+      "3/1",
+      "3/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "3/2",
+      "2/2",
+      "1/1"
+     ]
+    },
+    {
+     "name": "Obusier de Vindicator",
+     "count": 1,
+     "range": "4-14",
+     "mount": "Face",
+     "specials": [
+      "Artillerie"
+     ],
+     "vsInfantry": [
+      "BB/1",
+      "BB/1",
+      "BB/1",
+      "BB/1"
+     ],
+     "vsVehicle": [
+      "1/AK",
+      "1/AK",
+      "1/AK",
+      "1/5",
+      "1/4",
+      "1/3",
+      "1/3"
+     ],
+     "vsAircraft": []
+    }
+   ]
+  },
+  {
+   "id": "chaos--predator-annihilator",
+   "name": "Predator Annihilator",
+   "subtitle": "Véhicule R4",
+   "bloc": "Chaos",
+   "type": "vehicle",
+   "faction": "chaos-space-marines",
+   "cost": 19,
+   "health": 6,
+   "move": 2,
+   "march": 4,
+   "armor": 4,
+   "capturable": false,
+   "skills": [
+    "Chenillé",
+    "Lance-Fumée"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Canon laser jumelé",
+     "count": 1,
+     "range": 14,
+     "mount": "Tourelle",
+     "specials": [],
+     "vsInfantry": [
+      "4/1",
+      "4/1",
+      "3/1",
+      "3/1"
+     ],
+     "vsVehicle": [
+      "8/1",
+      "8/1",
+      "6/1",
+      "6/1",
+      "5/1",
+      "4/1",
+      "3/1"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Canon Laser",
+     "count": 1,
+     "range": 12,
+     "mount": "Droite",
+     "specials": [],
+     "vsInfantry": [
+      "B/1",
+      "B/1",
+      "B/1",
+      "B/1"
+     ],
+     "vsVehicle": [
+      "1/AK",
+      "1/AK",
+      "1/4",
+      "1/3",
+      "1/3",
+      "1/2",
+      "1/2"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Canon Laser",
+     "count": 1,
+     "range": 12,
+     "mount": "Gauche",
+     "specials": [],
+     "vsInfantry": [
+      "B/1",
+      "B/1",
+      "B/1",
+      "B/1"
+     ],
+     "vsVehicle": [
+      "1/AK",
+      "1/AK",
+      "1/4",
+      "1/3",
+      "1/3",
+      "1/2",
+      "1/2"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Bolter jumelé",
+     "count": 1,
+     "range": 6,
+     "mount": "Tourelle",
+     "specials": [],
+     "vsInfantry": [
+      "7/1",
+      "7/1",
+      "7/1",
+      "5/1"
+     ],
+     "vsVehicle": [
+      "4/2",
+      "3/1",
+      "3/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "3/2",
+      "2/2",
+      "1/1"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "chaos--predator-destructor",
+   "name": "Predator Destructor",
+   "subtitle": "Véhicule R4",
+   "bloc": "Chaos",
+   "type": "vehicle",
+   "faction": "chaos-space-marines",
+   "cost": 18,
+   "health": 6,
+   "move": 2,
+   "march": 4,
+   "armor": 4,
+   "capturable": false,
+   "skills": [
+    "Chenillé",
+    "Lance-Fumée"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Autocanon",
+     "count": 1,
+     "range": 16,
+     "mount": "Tourelle",
+     "specials": [],
+     "vsInfantry": [
+      "B/1",
+      "B/1",
+      "B/1",
+      "B/1"
+     ],
+     "vsVehicle": [
+      "1/AK",
+      "1/AK",
+      "1/5",
+      "1/4",
+      "1/4",
+      "1/3",
+      "1/3"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Bolter lourd",
+     "count": 1,
+     "range": 8,
+     "mount": "Droite",
+     "specials": [],
+     "vsInfantry": [
+      "6/2",
+      "6/2",
+      "6/2",
+      "4/2"
+     ],
+     "vsVehicle": [
+      "3/3",
+      "2/2",
+      "2/2",
+      "1/2",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "3/1",
+      "2/1"
+     ]
+    },
+    {
+     "name": "Bolter lourd",
+     "count": 1,
+     "range": 8,
+     "mount": "Gauche",
+     "specials": [],
+     "vsInfantry": [
+      "6/2",
+      "6/2",
+      "6/2",
+      "4/2"
+     ],
+     "vsVehicle": [
+      "3/3",
+      "2/2",
+      "2/2",
+      "1/2",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "3/1",
+      "2/1"
+     ]
+    },
+    {
+     "name": "Bolter jumelé",
+     "count": 1,
+     "range": 6,
+     "mount": "Tourelle",
+     "specials": [],
+     "vsInfantry": [
+      "7/1",
+      "7/1",
+      "7/1",
+      "5/1"
+     ],
+     "vsVehicle": [
+      "4/2",
+      "3/1",
+      "3/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "3/2",
+      "2/2",
+      "1/1"
+     ]
+    }
+   ]
+  },
+  {
+   "id": "chaos--sicaran",
+   "name": "Sicaran",
+   "subtitle": "Véhicule R5",
+   "bloc": "Chaos",
+   "type": "vehicle",
+   "faction": "chaos-space-marines",
+   "cost": 25,
+   "health": 8,
+   "move": 2,
+   "march": 4,
+   "armor": 5,
+   "capturable": false,
+   "skills": [
+    "Chenillé",
+    "Rare",
+    "Véhicule Large"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Bolter lourd",
+     "count": 1,
+     "range": 8,
+     "mount": "Face",
+     "specials": [],
+     "vsInfantry": [
+      "6/2",
+      "6/2",
+      "6/2",
+      "4/2"
+     ],
+     "vsVehicle": [
+      "3/3",
+      "2/2",
+      "2/2",
+      "1/2",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "3/1",
+      "2/1"
+     ]
+    },
+    {
+     "name": "Bolter lourd",
+     "count": 1,
+     "range": 8,
+     "mount": "Droite",
+     "specials": [],
+     "vsInfantry": [
+      "6/2",
+      "6/2",
+      "6/2",
+      "4/2"
+     ],
+     "vsVehicle": [
+      "3/3",
+      "2/2",
+      "2/2",
+      "1/2",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "3/1",
+      "2/1"
+     ]
+    },
+    {
+     "name": "Bolter lourd",
+     "count": 1,
+     "range": 8,
+     "mount": "Gauche",
+     "specials": [],
+     "vsInfantry": [
+      "6/2",
+      "6/2",
+      "6/2",
+      "4/2"
+     ],
+     "vsVehicle": [
+      "3/3",
+      "2/2",
+      "2/2",
+      "1/2",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "3/1",
+      "2/1"
+     ]
+    },
+    {
+     "name": "Autocanon accélérateur jumelé",
+     "count": 1,
+     "range": 24,
+     "mount": "Tourelle",
+     "specials": [],
+     "vsInfantry": [
+      "BB/1",
+      "BB/1",
+      "B/1",
+      "B/1"
+     ],
+     "vsVehicle": [
+      "1/AK",
+      "1/AK",
+      "1/AK",
+      "1/AK",
+      "1/5",
+      "1/4",
+      "1/4"
+     ],
+     "vsAircraft": []
+    }
+   ]
+  },
+  {
+   "id": "chaos--terminators",
+   "name": "Terminators",
+   "subtitle": "Terminator",
+   "bloc": "Chaos",
+   "type": "infantry",
+   "faction": "chaos-space-marines",
+   "cost": 17,
+   "health": 3,
+   "move": 2,
+   "march": 3,
+   "armor": 4,
+   "capturable": false,
+   "skills": [
+    "Fanatique",
+    "Garde d'Acier"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Bolter jumelé",
+     "count": 3,
+     "range": 6,
+     "specials": [],
+     "vsInfantry": [
+      "7/1",
+      "7/1",
+      "7/1",
+      "5/1"
+     ],
+     "vsVehicle": [
+      "4/2",
+      "3/1",
+      "3/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "3/2",
+      "2/2",
+      "1/1"
+     ]
+    },
+    {
+     "name": "Hache énergétique",
+     "count": 2,
+     "range": "c",
+     "specials": [],
+     "vsInfantry": [
+      "2/1",
+      "2/1",
+      "2/1",
+      "2/1"
+     ],
+     "vsVehicle": [
+      "2/1",
+      "2/1",
+      "2/1",
+      "2/1",
+      "2/1",
+      "2/1",
+      "2/1"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Epée Energétique",
+     "count": 1,
+     "range": "c",
+     "specials": [],
+     "vsInfantry": [
+      "2/1",
+      "2/1",
+      "2/1",
+      "2/1"
+     ],
+     "vsVehicle": [
+      "2/1",
+      "2/1",
+      "2/1",
+      "2/1",
+      "2/1",
+      "2/1",
+      "2/1"
+     ],
+     "vsAircraft": []
+    }
+   ]
+  },
+  {
+   "id": "chaos--havocs-bolter-lourd",
+   "name": "Havocs",
+   "subtitle": "Bolter lourd",
+   "bloc": "Chaos",
+   "type": "infantry",
+   "faction": "chaos-space-marines",
+   "cost": 13,
+   "health": 3,
+   "move": 2,
+   "march": 4,
+   "armor": 3,
+   "capturable": false,
+   "skills": [
+    "Fanatique",
+    "Résistant aux Dommages"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Bolter lourd",
+     "count": 2,
+     "range": 8,
+     "specials": [],
+     "vsInfantry": [
+      "6/2",
+      "6/2",
+      "6/2",
+      "4/2"
+     ],
+     "vsVehicle": [
+      "3/3",
+      "2/2",
+      "2/2",
+      "1/2",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "3/1",
+      "2/1"
+     ]
+    },
+    {
+     "name": "Fusil à plasma",
+     "count": 1,
+     "range": 6,
+     "specials": [],
+     "vsInfantry": [
+      "2/1",
+      "2/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsVehicle": [
+      "5/1",
+      "4/1",
+      "3/1",
+      "2/1",
+      "1/1",
+      "1/1"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Hache énergétique",
+     "count": 1,
+     "range": "c",
+     "specials": [],
+     "vsInfantry": [
+      "2/1",
+      "2/1",
+      "2/1",
+      "2/1"
+     ],
+     "vsVehicle": [
+      "2/1",
+      "2/1",
+      "2/1",
+      "2/1",
+      "2/1",
+      "2/1",
+      "2/1"
+     ],
+     "vsAircraft": []
+    }
+   ]
+  },
+  {
+   "id": "chaos--havocs-lance-missiles",
+   "name": "Havocs",
+   "subtitle": "Lance-missiles",
+   "bloc": "Chaos",
+   "type": "infantry",
+   "faction": "chaos-space-marines",
+   "cost": 13,
+   "health": 3,
+   "move": 2,
+   "march": 4,
+   "armor": 3,
+   "capturable": false,
+   "skills": [
+    "Fanatique",
+    "Résistant aux Dommages"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Lance-missiles",
+     "count": 2,
+     "range": 4,
+     "specials": [],
+     "vsInfantry": [
+      "1/1",
+      "1/1",
+      "1/1",
+      "1/1"
+     ],
+     "vsVehicle": [
+      "1/AK",
+      "1/AK",
+      "1/4",
+      "1/4",
+      "1/3",
+      "1/3",
+      "1/2"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Fusil à plasma",
+     "count": 1,
+     "range": 6,
+     "specials": [],
+     "vsInfantry": [
+      "2/1",
+      "2/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsVehicle": [
+      "5/1",
+      "4/1",
+      "3/1",
+      "2/1",
+      "1/1",
+      "1/1"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Hache énergétique",
+     "count": 1,
+     "range": "c",
+     "specials": [],
+     "vsInfantry": [
+      "2/1",
+      "2/1",
+      "2/1",
+      "2/1"
+     ],
+     "vsVehicle": [
+      "2/1",
+      "2/1",
+      "2/1",
+      "2/1",
+      "2/1",
+      "2/1",
+      "2/1"
+     ],
+     "vsAircraft": []
+    }
+   ]
+  },
+  {
+   "id": "chaos--havocs-canon-laser",
+   "name": "Havocs",
+   "subtitle": "Canon Laser",
+   "bloc": "Chaos",
+   "type": "infantry",
+   "faction": "chaos-space-marines",
+   "cost": 13,
+   "health": 3,
+   "move": 2,
+   "march": 4,
+   "armor": 3,
+   "capturable": false,
+   "skills": [
+    "Fanatique",
+    "Résistant aux Dommages"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Canon Laser",
+     "count": 2,
+     "range": 12,
+     "specials": [],
+     "vsInfantry": [
+      "B/1",
+      "B/1",
+      "B/1",
+      "B/1"
+     ],
+     "vsVehicle": [
+      "1/AK",
+      "1/AK",
+      "1/4",
+      "1/3",
+      "1/3",
+      "1/2",
+      "1/2"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Fusil à plasma",
+     "count": 1,
+     "range": 6,
+     "specials": [],
+     "vsInfantry": [
+      "2/1",
+      "2/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsVehicle": [
+      "5/1",
+      "4/1",
+      "3/1",
+      "2/1",
+      "1/1",
+      "1/1"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Hache énergétique",
+     "count": 1,
+     "range": "c",
+     "specials": [],
+     "vsInfantry": [
+      "2/1",
+      "2/1",
+      "2/1",
+      "2/1"
+     ],
+     "vsVehicle": [
+      "2/1",
+      "2/1",
+      "2/1",
+      "2/1",
+      "2/1",
+      "2/1",
+      "2/1"
+     ],
+     "vsAircraft": []
+    }
+   ]
+  },
+  {
+   "id": "chaos--havocs-canon-d-assaut",
+   "name": "Havocs",
+   "subtitle": "Canon d'assaut",
+   "bloc": "Chaos",
+   "type": "infantry",
+   "faction": "chaos-space-marines",
+   "cost": 11,
+   "health": 3,
+   "move": 2,
+   "march": 4,
+   "armor": 3,
+   "capturable": false,
+   "skills": [
+    "Fanatique",
+    "Résistant aux Dommages"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Canon d'assaut",
+     "count": 2,
+     "range": 8,
+     "specials": [],
+     "vsInfantry": [
+      "5/1",
+      "5/1",
+      "5/1",
+      "4/1"
+     ],
+     "vsVehicle": [
+      "3/2",
+      "3/2",
+      "2/1",
+      "1/1"
+     ],
+     "vsAircraft": [
+      "2/2",
+      "2/2",
+      "1/1"
+     ]
+    },
+    {
+     "name": "Fusil à plasma",
+     "count": 1,
+     "range": 6,
+     "specials": [],
+     "vsInfantry": [
+      "2/1",
+      "2/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsVehicle": [
+      "5/1",
+      "4/1",
+      "3/1",
+      "2/1",
+      "1/1",
+      "1/1"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Hache énergétique",
+     "count": 1,
+     "range": "c",
+     "specials": [],
+     "vsInfantry": [
+      "2/1",
+      "2/1",
+      "2/1",
+      "2/1"
+     ],
+     "vsVehicle": [
+      "2/1",
+      "2/1",
+      "2/1",
+      "2/1",
+      "2/1",
+      "2/1",
+      "2/1"
+     ],
+     "vsAircraft": []
+    }
+   ]
+  },
+  {
+   "id": "chaos--havocs-autocanon",
+   "name": "Havocs",
+   "subtitle": "Autocanon",
+   "bloc": "Chaos",
+   "type": "infantry",
+   "faction": "chaos-space-marines",
+   "cost": 13,
+   "health": 3,
+   "move": 2,
+   "march": 4,
+   "armor": 3,
+   "capturable": false,
+   "skills": [
+    "Fanatique",
+    "Résistant aux Dommages"
+   ],
+   "customSkills": [],
+   "weapons": [
+    {
+     "name": "Autocanon",
+     "count": 2,
+     "range": 16,
+     "specials": [],
+     "vsInfantry": [
+      "B/1",
+      "B/1",
+      "B/1",
+      "B/1"
+     ],
+     "vsVehicle": [
+      "1/AK",
+      "1/AK",
+      "1/5",
+      "1/4",
+      "1/4",
+      "1/3",
+      "1/3"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Fusil à plasma",
+     "count": 1,
+     "range": 6,
+     "specials": [],
+     "vsInfantry": [
+      "2/1",
+      "2/1",
+      "2/1",
+      "1/1"
+     ],
+     "vsVehicle": [
+      "5/1",
+      "4/1",
+      "3/1",
+      "2/1",
+      "1/1",
+      "1/1"
+     ],
+     "vsAircraft": []
+    },
+    {
+     "name": "Hache énergétique",
+     "count": 1,
+     "range": "c",
+     "specials": [],
+     "vsInfantry": [
+      "2/1",
+      "2/1",
+      "2/1",
+      "2/1"
+     ],
+     "vsVehicle": [
+      "2/1",
+      "2/1",
+      "2/1",
+      "2/1",
+      "2/1",
+      "2/1",
+      "2/1"
+     ],
+     "vsAircraft": []
+    }
+   ]
+  }
+ ]
+}
