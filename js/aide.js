@@ -58,8 +58,8 @@ const SECTIONS = () => [
     id: 'shot',
     title: L('Le Shot Format', 'The Shot Format'),
     what: L(
-      "Une version courte pour des parties de 30 à 45 minutes : un héros, un à quatre escouades et un véhicule, 40 points (4 points de plus pour le héros dans une armée de faction ou mercenaire).",
-      'A short version for 30 to 45 minute games: one hero, one to four squads and one vehicle, 40 points (4 more for the hero in a faction or mercenary army).'),
+      "Une version courte pour des parties de 30 à 45 minutes : un héros, un à quatre escouades et un véhicule, 40 points (4 points de plus pour le héros dans une armée de faction).",
+      'A short version for 30 to 45 minute games: one hero, one to four squads and one vehicle, 40 points (4 more for the hero in a faction army).'),
     steps: [
       L("Choisissez un bloc et créez l'armée. Elle se présente en postes : unité de commandement, unités de combat, véhicule.",
         'Pick a bloc and create the army. It is laid out as slots: command unit, combat units, vehicle.'),

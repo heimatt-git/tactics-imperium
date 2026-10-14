@@ -137,7 +137,7 @@ function renderHome() {
     <section class="home-hero">
       <div class="eyebrow">${t('Outil communautaire · base {v}', { v: esc(D.meta.version || '') })}</div>
       <h1 class="h-display">${t('Levez votre armée')}</h1>
-      <p>${t('Choisissez un bloc et un format, puis composez vos pelotons. Les points, le bonus de faction, les héros et les véhicules capturés sont vérifiés en direct. {u} unités et {p} pelotons disponibles.', { u: D.units.length, p: D.platoons.length })}</p>
+      <p>${t('Choisissez un bloc et un format, puis composez vos pelotons. Les points, le bonus de faction et les héros sont vérifiés en direct. {u} unités et {p} pelotons disponibles.', { u: D.units.length, p: D.platoons.length })}</p>
     </section>
     <div class="home-grid">
       <section class="panel">

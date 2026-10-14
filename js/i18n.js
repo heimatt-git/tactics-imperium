@@ -90,8 +90,8 @@ const EN = {
   'Retour aux listes': 'Back to lists', 'Builder complet': 'Full builder', 'Thème': 'Theme',
   'Passer en anglais': 'Switch to French',
   'par {by}': 'by {by}',
-  'Des parties courtes, {d}. Un héros, une à quatre escouades, un véhicule : <b>{b} PA</b>, +{h} PA pour le héros en armée de faction ou mercenaire.':
-    'Short games, {d}. One hero, one to four squads, one vehicle: <b>{b} AP</b>, +{h} AP for the hero in a faction or mercenary army.',
+  'Des parties courtes, {d}. Un héros, une à quatre escouades, un véhicule : <b>{b} PA</b>, +{h} PA pour le héros en armée de faction.':
+    'Short games, {d}. One hero, one to four squads, one vehicle: <b>{b} AP</b>, +{h} AP for the hero in a faction army.',
   'Nouvelle armée': 'New army', 'Nom (facultatif)': 'Name (optional)', "Nom de l'armée": 'Army name', 'Créer': 'Create',
   'Mes armées ({n})': 'My armies ({n})', 'valide': 'valid', 'incomplète': 'incomplete',
   'Supprimer {n}': 'Delete {n}', 'Supprimer ?': 'Delete?',
@@ -155,7 +155,7 @@ const EN = {
   "Changer de thème": "Change theme",
   "Outil communautaire · base {v}": "Community tool · database {v}",
   "Levez votre armée": "Raise your army",
-  "Choisissez un bloc et un format, puis composez vos pelotons. Les points, le bonus de faction, les héros et les véhicules capturés sont vérifiés en direct. {u} unités et {p} pelotons disponibles.": "Pick a bloc and a format, then build your platoons. Points, faction bonus, heroes and captured vehicles are checked live. {u} units and {p} platoons available.",
+  "Choisissez un bloc et un format, puis composez vos pelotons. Les points, le bonus de faction et les héros sont vérifiés en direct. {u} unités et {p} pelotons disponibles.": "Pick a bloc and a format, then build your platoons. Points, faction bonus and heroes are checked live. {u} units and {p} platoons available.",
   "Nom": "Name",
   "Ex. Mon équipe": "e.g. My team",
   "{n} unités": "{n} units",

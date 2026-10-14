@@ -161,7 +161,7 @@ function renderHome() {
     <section class="sf-hero">
       <p class="eyebrow">${esc(F.tagline)} · ${esc(t('par {by}', { by: F.by }))}</p>
       <h1>${esc(F.name)}</h1>
-      <p class="sf-lead">${t('Des parties courtes, {d}. Un héros, une à quatre escouades, un véhicule : <b>{b} PA</b>, +{h} PA pour le héros en armée de faction ou mercenaire.', { d: esc(F.duration), b: F.budget, h: F.heroBonus })}</p>
+      <p class="sf-lead">${t('Des parties courtes, {d}. Un héros, une à quatre escouades, un véhicule : <b>{b} PA</b>, +{h} PA pour le héros en armée de faction.', { d: esc(F.duration), b: F.budget, h: F.heroBonus })}</p>
     </section>
 
     <form class="sf-card sf-new" id="new-form">
@@ -231,7 +231,6 @@ function rulesHTML() {
       <li>${t('0 à {c} escouades supplémentaires, armure {n} max.', { c: F.combatOptional.count, n: F.combatOptional.maxArmor })}</li>
       <li>${t('1 véhicule obligatoire, armure {n} max.', { n: F.vehicle.maxArmor })}</li>
       <li>${t("{b} PA, +{h} PA (10 %) pour le héros si l'armée respecte les règles de faction (livre TACTICS: Imperium).", { b: F.budget, h: F.heroBonus })}</li>
-      <li>${F.allowMercenaryArmy ? t('Armée Mercenaire jouable, mais pas de mercenaire dans les armées des autres blocs ; pas de véhicule capturé.') : t('Ni mercenaire, ni véhicule capturé.')}</li>
       <li>${esc(t('Interdits : {list}.', { list: [...Object.values(F.bannedSkills || {}), ...(F.bannedHeroes || [])].join(', ') }))}</li>
     </ul>
     <h3>${t('Restrictions')}</h3><ul>${F.reminders.map((s) => `<li>${esc(s)}</li>`).join('')}</ul>
