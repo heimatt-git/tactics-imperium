@@ -167,7 +167,7 @@ const EN = {
   "Importer un lien de partage": "Import a share link",
   "Collez un lien ou un code de liste": "Paste a link or list code",
   "Importer": "Import",
-  "Outil de fan non officiel. TACTICS: Imperium et les données de jeu appartiennent à leurs ayants droit. Les photos de la communauté proposées en option appartiennent à leurs auteurs (CC BY 4.0). Données reprises de l'application l’ancienne application 1.50 et corrigées par la communauté. Signalez une erreur via le dépôt GitHub (Issues → Signaler une erreur d'unité).": "Unofficial fan tool. DUST, TACTICS: Imperium and the game data belong to their rights holders. Optional community photos belong to their authors (CC BY 4.0). Data taken from the l’ancienne application 1.50 app and corrected by the community. Report an error on the GitHub repository (Issues → Report a unit error).",
+  "Projet de fan non officiel et gratuit. Règles et données issues des documents de fans Dust Imperium. Warhammer 40,000 et ses marques appartiennent à leurs ayants droit (Games Workshop). Les photos viennent de fans et restent la propriété de leurs auteurs. Signalez une erreur via le dépôt GitHub (Issues).": "Unofficial, free fan project. Rules and data come from the Dust Imperium fan documents. Warhammer 40,000 and its trademarks belong to their rights holders (Games Workshop). Photos are made by fans and remain the property of their authors. Report an error on the GitHub repository (Issues).",
   " (copie)": " (copy)",
   "Confirmer": "Confirm",
   "Supprimer": "Delete",

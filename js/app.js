@@ -173,7 +173,7 @@ function renderHome() {
       </section>
     </div>
     ${imagesPanelHTML()}
-    <p class="foot">${t("Outil de fan non officiel. TACTICS: Imperium et les données de jeu appartiennent à leurs ayants droit. Les photos de la communauté proposées en option appartiennent à leurs auteurs (CC BY 4.0). Données reprises de l'application l’ancienne application 1.50 et corrigées par la communauté. Signalez une erreur via le dépôt GitHub (Issues → Signaler une erreur d'unité).")}</p>
+    <p class="foot">${t("Projet de fan non officiel et gratuit. Règles et données issues des documents de fans Dust Imperium. Warhammer 40,000 et ses marques appartiennent à leurs ayants droit (Games Workshop). Les photos viennent de fans et restent la propriété de leurs auteurs. Signalez une erreur via le dépôt GitHub (Issues).")}</p>
   </main>`;
   bindTopbar();
   bindImagesPanel();

@@ -5,7 +5,7 @@ import { diceSvg, diceTitle, attackHtml } from './dice.js';
 import './mech.js';
 
 // Signature de l'auteur du site (logo + crédit)
-export const LOGO = 'img/logo-loir.png';
+export const LOGO = 'img/icon-192.png';
 export const brandLogo = () => `<img class="brand-logo" src="${LOGO}" alt="" width="34" height="34">`;
 export const creditLine = () => t("Créé par Dust Imperium");
 export function mountCredit() {
