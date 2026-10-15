@@ -58,6 +58,21 @@
    ]
   },
   {
+   "id": "Tau",
+   "name": "Tau",
+   "nameEn": "Tau",
+   "color": "#c2a34f",
+   "description": "Empire de l'Éther et ses alliés indigènes, entre technologie avancée et chasse sauvage.",
+   "factions": [
+    {
+     "id": "kroot",
+     "name": "Kroot",
+     "description": "Chasseurs mercenaires et leurs bêtes : éclaireurs, meutes et grosses bêtes de guerre.",
+     "color": "#a88a3c"
+    }
+   ]
+  },
+  {
    "id": "Mercenaries",
    "name": "Xenos",
    "nameEn": "Xenos",

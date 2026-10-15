@@ -48,5 +48,8 @@
  "Assault Shield": "Assault shield: it protects its bearer when advancing into melee.",
  "Reload": "Slow-reloading weapon: it cannot fire every turn.",
  "Advanced Reactive fire": "Advanced reactive fire: the weapon can return fire more effectively when the enemy approaches.",
- "Destructeur Sonique": "Sonic weapon: its waves hit several targets at once."
+ "Destructeur Sonique": "Sonic weapon: its waves hit several targets at once.",
+ "Black Ops": "Specialist trained for covert strikes behind enemy lines.",
+ "Tactique Défensive": "The unit is trained to hold its ground and fight from cover.",
+ "Stunned": "Weapon that stuns its target and slows it down."
 }

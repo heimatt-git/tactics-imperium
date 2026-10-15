@@ -48,5 +48,8 @@
  "Assault Shield": "Bouclier d'assaut : il protège son porteur quand il avance au contact.",
  "Reload": "Arme lente à recharger : elle ne peut pas tirer à chaque tour.",
  "Advanced Reactive fire": "Tir réactif amélioré : l'arme peut riposter plus efficacement quand l'ennemi s'approche.",
- "Destructeur Sonique": "Arme sonique : ses ondes frappent plusieurs cibles à la fois."
+ "Destructeur Sonique": "Arme sonique : ses ondes frappent plusieurs cibles à la fois.",
+ "Black Ops": "Spécialiste formé aux coups de main discrets derrière les lignes ennemies.",
+ "Tactique Défensive": "L'unité est entraînée à tenir sa position et à se battre à couvert.",
+ "Stunned": "Arme qui étourdit sa cible et la ralentit."
 }
