@@ -1,4 +1,4 @@
-// Page « Aide » : une courte notice par onglet (builder, Shot Format, Ma collection, Atelier), en français et en anglais.
+// Page « Aide » : une courte notice par onglet (builder, cartes, Ma collection, Atelier), en français et en anglais.
 import { LANG, initLang, setLang } from './i18n.js';
 import { esc, store, brandLogo, mountCredit, mountFeedback } from './ui.js';
 
@@ -27,8 +27,6 @@ const SECTIONS = () => [
     tips: [
       L("Vos listes sont gardées dans ce navigateur. Si vous changez d'appareil ou videz les données du navigateur, utilisez le lien de partage pour les retrouver.",
         'Your lists are kept in this browser. If you switch devices or clear browser data, use the share link to bring them back.'),
-      L("Les créations CONFIDENTIAL n'apparaissent que si vous cochez l'option à la création de l'armée.",
-        'CONFIDENTIAL creations only appear if you tick the option when creating the army.'),
     ],
   },
   {
@@ -40,39 +38,18 @@ const SECTIONS = () => [
     steps: [
       L("Ouvrez la fiche d'une unité : la carte est en haut, avec le bouton « Télécharger la carte (PNG) ».",
         'Open a unit’s sheet: the card is at the top, with the “Download the card (PNG)” button.'),
-      L("Dans « Image de la carte générée », choisissez l'image : votre photo, la photo de la communauté, ou le pixel art. Sans rien choisir, la carte montre le pixel art de l'unité, ou une icône s'il n'existe pas encore.",
-        'In “Generated card image”, pick the picture: your photo, the community photo, or the pixel art. With no choice, the card shows the unit’s pixel art, or an icon if none exists yet.'),
+      L("Dans « Image de la carte générée », choisissez l'image : votre photo ou la photo de la communauté. Sans rien choisir, la carte montre la photo de la communauté de l'unité, ou une icône s'il n'en existe pas encore.",
+        'In “Generated card image”, pick the picture: your photo or the community photo. With no choice, the card shows the unit’s community photo, or an icon if none exists yet.'),
       L("« Ajouter ma photo » permet d'envoyer votre propre figurine peinte et de la cadrer avec la souris.",
         '“Add my photo” lets you add your own painted miniature and frame it with the mouse.'),
-      L("Les petites vignettes en pixel art dans les listes sont celles des unités qui ont une illustration.",
-        'The small pixel-art thumbnails in lists belong to units that have an illustration.'),
+      L("La petite vignette à côté du nom d'une unité, dans les listes, est sa photo de la communauté.",
+        'The small thumbnail beside a unit’s name in the lists is its community photo.'),
     ],
     tips: [
       L("Vos photos et vos choix restent dans ce navigateur : ils ne sont ni envoyés ni partagés.",
         'Your photos and choices stay in this browser: they are neither sent nor shared.'),
       L("« Mes images de la carte officielle » sert à garder vos propres scans pour votre usage personnel ; elles ne sont jamais mises en ligne.",
         '“My official card images” keeps your own scans for personal use; they are never uploaded.'),
-    ],
-  },
-  {
-    id: 'shot',
-    title: L('Le Shot Format', 'The Shot Format'),
-    what: L(
-      "Une version courte pour des parties de 30 à 45 minutes : un héros, un à quatre escouades et un véhicule, 40 points (4 points de plus pour le héros dans une armée de faction).",
-      'A short version for 30 to 45 minute games: one hero, one to four squads and one vehicle, 40 points (4 more for the hero in a faction army).'),
-    steps: [
-      L("Choisissez un bloc et créez l'armée. Elle se présente en postes : unité de commandement, unités de combat, véhicule.",
-        'Pick a bloc and create the army. It is laid out as slots: command unit, combat units, vehicle.'),
-      L("Pour chaque poste, « Choisir » ouvre la liste des unités autorisées. Le bouton « i » à gauche d'une unité montre sa fiche sans quitter la liste.",
-        'For each slot, “Choose” opens the list of allowed units. The “i” button beside a unit shows its sheet without leaving the list.'),
-      L("Le bandeau indique les points et si l'armée est complète ; la rubrique « Vérification » liste ce qui manque.",
-        'The banner shows the points and whether the army is complete; the “Checks” box lists what is missing.'),
-      L("Les boutons « Partager », « Fiche de partie », « PDF » et « Texte » servent à envoyer, imprimer ou copier votre liste.",
-        'The “Share”, “Game sheet”, “PDF” and “Text” buttons send, print or copy your list.'),
-    ],
-    tips: [
-      L("Pas d'aéronef, pas d'avantage de peloton, pas de héros « surhumain » (Super Human), pas d'unité Strong Point.",
-        'No aircraft, no platoon advantage, no “Super Human” heroes, no Strong Point units.'),
     ],
   },
   {
@@ -94,7 +71,6 @@ const SECTIONS = () => [
     tips: [
       L("Votre collection reste dans ce navigateur. Pensez à l'exporter régulièrement avec « Exporter (fichier JSON) » : un navigateur peut vider ses données, surtout sur téléphone. Le fichier sert aussi à la copier sur un autre appareil.",
         'Your collection stays in this browser. Remember to export it now and then with “Export (JSON file)”: a browser can clear its data, especially on a phone. The file also moves it to another device.'),
-      L("La collection n'existe pas dans le Shot Format.", 'The collection is not part of the Shot Format.'),
     ],
   },
   {
@@ -116,8 +92,6 @@ const SECTIONS = () => [
     tips: [
       L("Votre projet reste dans ce navigateur tant que vous ne l'exportez pas : exportez-le pour le garder, et rechargez le fichier avec « Reprendre un projet » pour continuer.",
         'Your project stays in this browser until you export it: export it to keep it, and reload the file with “Resume a project” to continue.'),
-      L("Dans le builder, les créations CONFIDENTIAL ne se voient que si l'option est cochée ; elles ne sont pas dans le Shot Format.",
-        'In the builder, CONFIDENTIAL creations only show if the option is ticked; they are not in the Shot Format.'),
       L("Proposez uniquement vos propres créations, et des photos de vos propres figurines.",
         'Only submit your own creations, and photos of your own miniatures.'),
     ],
@@ -127,8 +101,8 @@ const SECTIONS = () => [
     title: L('Questions fréquentes', 'Frequently asked questions'),
     qa: [
       [L("Je ne vois pas de vignette sur une unité.", 'I do not see a thumbnail on a unit.'),
-       L("Les vignettes sont celles du pixel art : une unité qui n'a pas encore d'illustration n'en a pas. Sa carte, elle, montre une icône par défaut.",
-         'Thumbnails are the pixel art ones: a unit with no illustration yet has none. Its card shows a default icon instead.')],
+       L("Les vignettes sont les photos de la communauté : une unité qui n'a pas encore de photo n'en a pas. Sa carte, elle, montre une icône par défaut.",
+         'Thumbnails are the community photos: a unit with no photo yet has none. Its card shows a default icon instead.')],
       [L("J'ai changé d'appareil : où sont mes listes et ma collection ?", 'I changed device: where are my lists and collection?'),
        L("Elles sont gardées dans le navigateur de l'ancien appareil. Utilisez le lien de partage pour une liste, et le fichier d'export pour la collection.",
          'They are kept in the old device’s browser. Use the share link for a list, and the export file for the collection.')],
@@ -136,8 +110,8 @@ const SECTIONS = () => [
        L("Non. Elles restent dans votre navigateur et ne servent qu'à vos propres cartes.",
          'No. They stay in your browser and are only used for your own cards.')],
       [L("Quelque chose ne marche pas.", 'Something is not working.'),
-       L("Rechargez la page avec Ctrl+F5. Si le problème persiste, dites-le sur le Discord en précisant l'appareil et le navigateur.",
-         'Reload the page with Ctrl+F5. If the problem persists, say so on the Discord, mentioning your device and browser.')],
+       L("Rechargez la page avec Ctrl+F5. Si le problème persiste, utilisez le bouton « Donner mon avis » en précisant l'appareil et le navigateur.",
+         'Reload the page with Ctrl+F5. If the problem persists, use the “Give feedback” button, mentioning your device and browser.')],
     ],
   },
 ];
