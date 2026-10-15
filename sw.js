@@ -1,6 +1,6 @@
 // Service worker du TACTICS: Imperium Builder : permet l'installation et l'ouverture sans connexion.
 // Principe prudent : on essaie TOUJOURS le réseau d'abord (le site reste à jour), le cache ne sert que si le réseau échoue.
-const CACHE = 'imperium-v5';
+const CACHE = 'imperium-v6';
 const MAX_ENTRIES = 500;
 const NET_TIMEOUT = 5000; // réseau trop lent : on prend la copie en cache
 const PAGES = ['index.html', 'atelier.html', 'aide.html'];
