@@ -8,6 +8,12 @@
    "description": "Les armées de l'Humanité : soldats de la Garde, Space Marines et Chevaliers, réunis sous une même bannière.",
    "factions": [
     {
+     "id": "adeptus-mechanicus",
+     "name": "Adeptus Mechanicus",
+     "description": "Prêtres-techniciens de Mars, cyborgs et machines de guerre.",
+     "color": "#9a3b2a"
+    },
+    {
      "id": "astra-militarum",
      "name": "Astra Militarum",
      "description": "L'immense infanterie de l'Impérium, soutenue par ses chars.",
