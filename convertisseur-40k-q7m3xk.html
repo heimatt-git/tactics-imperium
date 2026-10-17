@@ -2333,13 +2333,15 @@ window.CardBundle = { generatedCardSVG: __cardgen.generatedCardSVG, validateData
     const allWarns = [...warns, ...v.warnings];
     if (errs.length) return showReport(`<p><b>Export impossible : ${errs.length} erreur(s) à corriger.</b></p><ul>${errs.map((e) => `<li>${esc(e)}</li>`).join('')}</ul>`);
     const pretty = (o) => JSON.stringify(o, null, 1);
-    const txt = ['PAQUET DUST IMPERIUM — ' + today, '', `${units.length} carte(s) vérifiée(s) :`, ...lines, '', 'À publier : fusionner units-a-ajouter.json dans data/units.json, photos-a-ajouter.json dans data/photos.json,', 'copier le dossier photos/ dans photos/, puis lancer la validation et envoyer sur GitHub.', '(Le convertisseur n\'envoie jamais rien tout seul : dites à Claude « publie le paquet ».)', '', ...(allWarns.length ? ['Avertissements :', ...allWarns] : ['Aucun avertissement.'])].join('\n');
-    files.unshift({ name: 'paquet/units-a-ajouter.json', data: new TextEncoder().encode(pretty({ units })) }, { name: 'paquet/photos-a-ajouter.json', data: new TextEncoder().encode(pretty(photos)) }, { name: 'paquet/RAPPORT.txt', data: new TextEncoder().encode(txt) });
+    // factions ajoutées par le convertisseur (sous-factions Space Marines…) : à ajouter aussi dans blocs.json du site
+    const facs = (rules.extraFactions || []).filter((xf) => units.some((u) => u.bloc === xf.bloc && u.faction === xf.id)).map((xf) => ({ bloc: xf.bloc, faction: { id: xf.id, name: xf.name, description: xf.description, color: xf.color } }));
+    const txt = ['PAQUET DUST IMPERIUM — ' + today, '', `${units.length} carte(s) vérifiée(s) :`, ...lines, '', 'À publier : ouvrir l\'éditeur de table, onglet Unités, bouton « Importer un paquet du convertisseur », choisir ce .zip,', 'cocher les fiches voulues, puis onglet Publier. (Le convertisseur n\'envoie jamais rien tout seul.)', '', ...(allWarns.length ? ['Avertissements :', ...allWarns] : ['Aucun avertissement.'])].join('\n');
+    files.unshift({ name: 'paquet/units-a-ajouter.json', data: new TextEncoder().encode(pretty({ units })) }, { name: 'paquet/photos-a-ajouter.json', data: new TextEncoder().encode(pretty(photos)) }, { name: 'paquet/factions-a-ajouter.json', data: new TextEncoder().encode(pretty({ factions: facs })) }, { name: 'paquet/RAPPORT.txt', data: new TextEncoder().encode(txt) });
     const stamp = new Date().toISOString().slice(0, 16).replace(/[-:T]/g, '');
     const a = document.createElement('a');
     a.href = URL.createObjectURL(zip(files)); a.download = `paquet-dust-${stamp}.zip`;
     document.body.appendChild(a); a.click(); a.remove();
-    showReport(`<p><b>Paquet téléchargé</b> (${units.length} carte(s), ${Object.keys(photos).length} photo(s)). Contrôle du site : aucune erreur.</p><ul>${lines.map((l) => `<li>${esc(l)}</li>`).join('')}</ul>${allWarns.length ? `<p>Avertissements :</p><ul>${allWarns.map((w) => `<li>${esc(w)}</li>`).join('')}</ul>` : ''}<p class="muted">Quand vous voulez le publier, dites-moi « publie le paquet » et donnez-moi le fichier .zip.</p>`);
+    showReport(`<p><b>Paquet téléchargé</b> (${units.length} carte(s), ${Object.keys(photos).length} photo(s)). Contrôle du site : aucune erreur.</p><ul>${lines.map((l) => `<li>${esc(l)}</li>`).join('')}</ul>${allWarns.length ? `<p>Avertissements :</p><ul>${allWarns.map((w) => `<li>${esc(w)}</li>`).join('')}</ul>` : ''}<p class="muted">Pour le mettre sur le builder : éditeur de table → onglet Unités → « Importer un paquet du convertisseur » → onglet Publier.</p>`);
   }
   $('#exp-pack').onclick = exportPack;
   $('#exp-ok').onclick = () => exportUnits(true);
