@@ -2,6 +2,7 @@
 import { indexData, typeLabel, withCustom } from './data.js';
 import { validateData, validateCustom, UNIT_TYPES } from './validate.js';
 import { initProposals, renderProposals, pendingCount, normCustom, blobs } from './proposals.js';
+import { initImportPack, importPackFile } from './importpack.js';
 import { framingHTML, mountFraming } from './framing.js';
 import { generatedCardSVG, cardFontsReady } from './cardgen.js';
 import { esc, store, toast, openModal, unitCardHTML, guessRepo, brandLogo, mountCredit } from './ui.js';
@@ -85,6 +86,7 @@ async function init() {
     E.d.pixelPending = E.d.pixelPending.filter((x) => x !== id);
     if (!E.orig.pixel.units.includes(id)) { E.d.pixel.units = E.d.pixel.units.filter((x) => x !== id); delete E.d.pixel.focus[id]; }
   }
+  initImportPack({ E, saveDraft, render, clone });
   initProposals({ E, saveDraft, render, clone, slug, unitForm, bindUnitForm });
   if (lost) setTimeout(() => toast(t('{n} photo(s) non publiée(s) perdue(s) au rechargement : ajoutez-les à nouveau.', { n: lost })), 500);
   render();
@@ -165,6 +167,7 @@ function renderUnits(body, ch) {
   const u = units.find((x) => x.id === E.sel);
   body.innerHTML = `<div class="ed-grid">
     <aside class="ed-side">
+      <label class="btn sm" style="text-align:center" title="Fichier paquet-dust-….zip fabriqué par le convertisseur 40k">Importer un paquet du convertisseur<input type="file" id="u-pack" accept=".zip,application/zip" hidden></label>
       <input type="search" id="u-q" placeholder="${t('Rechercher une unité')}" value="${esc(E.q)}">
       <select id="u-bloc"><option value="all">${t('Tous les blocs')}</option>${E.d.blocsFile.blocs.map((b) => `<option value="${esc(b.id)}" ${E.fbloc === b.id ? 'selected' : ''}>${esc(bn(b))}</option>`).join('')}</select>
       <label class="check"><input type="checkbox" id="u-changed" ${E.onlyChanged ? 'checked' : ''}> ${t('Seulement les fiches modifiées')}</label>
@@ -174,6 +177,7 @@ function renderUnits(body, ch) {
     <section>${u ? unitForm(u) : `<div class="ed-sec"><p class="hint" style="margin:0">${t('Choisissez une unité à gauche pour la corriger, ou créez-en une nouvelle.')}</p></div>`}</section>
   </div>`;
 
+  body.querySelector('#u-pack').addEventListener('change', (e) => { const f = e.target.files[0]; e.target.value = ''; if (f) importPackFile(f); });
   const q = body.querySelector('#u-q');
   q.addEventListener('input', () => { E.q = q.value; const p = q.selectionStart; render(); const q2 = document.getElementById('u-q'); q2.focus(); q2.setSelectionRange(p, p); });
   body.querySelector('#u-bloc').addEventListener('change', (e) => { E.fbloc = e.target.value; render(); });
